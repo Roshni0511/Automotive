@@ -18,21 +18,37 @@ export default function Footer() {
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
+                    <div style={{marginTop:"22px"}}>
+                      <h4 class="text-light mb-3">Opening Hours</h4>
+                       <p class="mb-4">9:00 AM to 6:30 PM</p>
+                
+                    </div>
+                    
                 </div>
+             
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Opening Hours</h4>
-                    <h6 class="text-light">Monday - Friday:</h6>
-                    <p class="mb-4">09.00 AM - 09.00 PM</p>
-                    <h6 class="text-light">Saturday - Sunday:</h6>
-                    <p class="mb-0">09.00 AM - 12.00 PM</p>
+                    <h4 class="text-light mb-4">Quick Link</h4>
+                    <a class="btn btn-link" href="/">Home</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Services</a>
+                    <a class="btn btn-link" href="">Latest Events</a>
+                    <a class="btn btn-link" href="">Blog</a>
+                    <a class="btn btn-link" href="">Gallery</a>
+                    <a class="btn btn-link" href="">Testimonials</a>
+                    <a class="btn btn-link" href="">Contact</a>
+                    <a class="btn btn-link" href="">News Letters</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Diagnostic Test</a>
-                    <a class="btn btn-link" href="">Engine Servicing</a>
-                    <a class="btn btn-link" href="">Tires Replacement</a>
-                    <a class="btn btn-link" href="">Oil Changing</a>
-                    <a class="btn btn-link" href="">Vacuam Cleaning</a>
+                   <div class="col-lg-3 col-md-6">
+                      <h4 class="text-light mb-4">Our Services</h4>
+                    <a class="btn btn-link" href="">Mechanical Service</a>
+                    <a class="btn btn-link" href="">Tyre Service</a>
+                    <a class="btn btn-link" href="">Car Accessories</a>
+                   
+                    <a class="btn btn-link" href="">Car Detailing</a>
+                    <a class="btn btn-link" href="">Body Shop Service</a>
+                    <a class="btn btn-link" href="">Insurance Renewal</a>
+                    <a class="btn btn-link" href="">Car Customize</a>
+             
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
@@ -46,22 +62,15 @@ export default function Footer() {
         </div>
         <div class="container">
             <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                <div class="row" style={{justifyContent:'center'}}>
+                    <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#"> 2022 - 2032 Automotive</a>, All Right Reserved.
 
                      
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        <br />Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="https://successinnovativetechnologiespvtltd.com/">Success Innovative Technologies Private Limited</a>
+                        
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div>
+            
                 </div>
             </div>
         </div>
