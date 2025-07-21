@@ -88,10 +88,10 @@ export default function Navbar() {
                   <a href="/About" className="dropdown-item">
                     <i className="fas fa-user"></i> About Us
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/OurMission" className="dropdown-item">
                     <i className="fas fa-bullseye"></i> Our Mission
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/OurVision" className="dropdown-item">
                     <i className="fas fa-eye"></i> Our Vision
                   </a>
                 </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
 
             <div className="nav-item dropdown services-dropdown">
               <a
-                href="#"
+                href="/Services"
                 className="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >

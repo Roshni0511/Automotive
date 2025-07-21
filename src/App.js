@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 import Home from "./pages/Home";
 import About from "./pages/About";
+import OurMission from "./pages/OurMission";
+import OurVision from "./pages/OurVision";
+import Services from "./pages/Services";
 
 
 
@@ -16,6 +19,9 @@ function App() {
 <Routes>
   <Route path="/" element={<Home />}/>
   <Route path="/About" element={<About />}/>
+  <Route path="/OurMission" element={<OurMission/>}/>
+  <Route path="/OurVision" element={<OurVision/>}/>
+  <Route path="/Services" element={<Services/>}/>
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
