@@ -1,7 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 export default function Home() {
+
   return (
+    <>
+       <Navbar />
     <div>
        {/* <!-- Carousel Start --> */}
     <div class="container-fluid p-0 mb-5">
@@ -56,5 +60,7 @@ export default function Home() {
     </div>
     {/* <!-- Carousel End --> */}
     </div>
+    </>
+ 
   )
 }
