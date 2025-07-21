@@ -44,17 +44,47 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" className="nav-item nav-link active">Home</a>
-                <a href="about.html" className="nav-item nav-link">About</a>
-                <a href="service.html" className="nav-item nav-link">Services</a>
-                <div className="nav-item dropdown">
-                    <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div className="dropdown-menu fade-up m-0">
-                        <a href="booking.html" className="dropdown-item">Booking</a>
-                        <a href="team.html" className="dropdown-item">Technicians</a>
-                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
-                        <a href="404.html" className="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+             <div className="nav-item dropdown about-dropdown">
+  <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+  <div className="dropdown-menu custom-dropdown">
+    <div className="service-group">
+      <a href="about.html" className="dropdown-item"><i className="fas fa-user"></i> About Us</a>
+      <a href="mission.html" className="dropdown-item"><i className="fas fa-bullseye"></i> Our Mission</a>
+      <a href="vision.html" className="dropdown-item"><i className="fas fa-eye"></i> Our Vision</a>
+    </div>
+  </div>
+</div>
+
+             <div className="nav-item dropdown services-dropdown">
+  <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+  <div className="dropdown-menu custom-dropdown">
+    <div className="service-group">
+      <a href="mechanical.html" className="dropdown-item"><i className="fas fa-tools"></i> Mechanical Service</a>
+  <a href="tyre.html" className="dropdown-item"><i class="fas fa-cogs"></i><span>Tyre Service</span></a>
+
+      <a href="accessories.html" className="dropdown-item"><i className="fas fa-car"></i> Car Accessories</a>
+      <a href="detailing.html" className="dropdown-item"><i className="fas fa-spray-can"></i> Car Detailing</a>
+  
+      <a href="bodyshop.html" className="dropdown-item"><i className="fas fa-car-crash"></i> Body Shop Service</a>
+      <a href="insurance.html" className="dropdown-item"><i className="fas fa-file-invoice"></i> Insurance Renewal</a>
+      <a href="customize.html" className="dropdown-item"><i className="fas fa-paint-brush"></i> Car Customize</a>
+    </div>
+  </div>
+</div>
+
+                 <a href="service.html" className="nav-item nav-link">Blog</a>
+                <div className="nav-item dropdown gallery-dropdown">
+  <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+  <div className="dropdown-menu custom-dropdown">
+    <div className="service-group">
+      <a href="booking.html" className="dropdown-item"><i className="fas fa-image"></i> Photos</a>
+      <a href="team.html" className="dropdown-item"><i className="fas fa-video"></i> Videos</a>
+      <a href="testimonial.html" className="dropdown-item"><i className="fas fa-award"></i> Achievements Gallery</a>
+      <a href="404.html" className="dropdown-item"><i className="fas fa-calendar-day"></i> Daily Activity Gallery</a>
+    </div>
+  </div>
+</div>
+
                 <a href="contact.html" className="nav-item nav-link">Contact</a>
             </div>
             <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></a>
