@@ -445,3 +445,65 @@
 .image-hover-zoom:hover {
   transform: scale(1.05);
 }
+.call-banner {
+  background-color: #d80000;
+  padding: 40px 0;
+  color: white;
+  position: relative;
+}
+
+.call-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  max-width: 40%;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.slashes {
+  color: white;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.big-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 50px;
+}
+
+.phone-circle {
+  background-color: #d80000;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.phone-info h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.image-section img {
+  height: 200px;
+  object-fit: contain;
+}
