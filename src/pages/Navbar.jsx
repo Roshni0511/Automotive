@@ -73,7 +73,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto p-4 p-lg-0">
+          <div className="navbar-nav m-auto p-4 p-lg-0">
             <a href="/" className="nav-item nav-link active">
               Home
             </a>
@@ -150,16 +150,16 @@ export default function Navbar() {
               </a>
               <div className="dropdown-menu custom-dropdown">
                 <div className="service-group">
-                  <a href="" className="dropdown-item">
+                  <a href="/Gallery" className="dropdown-item">
                     <i className="fas fa-image"></i> Photos
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Video" className="dropdown-item">
                     <i className="fas fa-video"></i> Videos
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Achievements_gallery" className="dropdown-item">
                     <i className="fas fa-award"></i> Achievements Gallery
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Daily_Activity" className="dropdown-item">
                     <i className="fas fa-calendar-day"></i> Daily Activity
                     Gallery
                   </a>
@@ -167,11 +167,11 @@ export default function Navbar() {
               </div>
             </div>
 
-            <a href="contact/" className="nav-item nav-link">
+            <a href="/Contact" className="nav-item nav-link">
               Contact
             </a>
           </div>
-          <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
+          <a href="/Contact" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
             Get A Quote<i className="fa fa-arrow-right ms-3"></i>
           </a>
         </div>

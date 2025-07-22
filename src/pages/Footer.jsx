@@ -29,13 +29,13 @@ export default function Footer() {
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Link</h4>
                     <a class="btn btn-link" href="/">Home</a>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Services</a>
+                    <a class="btn btn-link" href="/About">About Us</a>
+                    <a class="btn btn-link" href="/Services">Services</a>
                     <a class="btn btn-link" href="">Latest Events</a>
-                    <a class="btn btn-link" href="">Blog</a>
-                    <a class="btn btn-link" href="">Gallery</a>
-                    <a class="btn btn-link" href="">Testimonials</a>
-                    <a class="btn btn-link" href="">Contact</a>
+                    <a class="btn btn-link" href="/Blog">Blog</a>
+                    <a class="btn btn-link" href="/Gallery">Gallery</a>
+                    <a class="btn btn-link" href="/Testimonial_page">Testimonials</a>
+                    <a class="btn btn-link" href="/Contact">Contact</a>
                     <a class="btn btn-link" href="">News Letters</a>
                 </div>
                    <div class="col-lg-3 col-md-6">

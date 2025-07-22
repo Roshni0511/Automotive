@@ -25,7 +25,7 @@ export default function Home() {
               <div className="carousel-item active">
                 <img
                   className="w-100"
-                  src="assets/img/carousel-bg-1.jpg"
+                  src="/assets/img/slider-6-1.jpg"
                   alt="Image"
                 />
                 <div className="carousel-caption d-flex align-items-center">
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="carousel-item">
                 <img
                   className="w-100"
-                  src="assets/img/carousel-bg-2.jpg"
+                  src="/assets/img/slider-4-1.jpg"
                   alt="Image"
                 />
                 <div className="carousel-caption d-flex align-items-center">

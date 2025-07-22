@@ -168,9 +168,15 @@ export default function About() {
         Our expertise with various vehicles and technologies ensures
         dependable, specialized, and uncompromising service for every customer.
       </p>
-      <a href="#" className="btn btn-primary py-3 px-5">
+      {/* <a href="#" className="btn btn-primary py-3 px-5">
         Learn More
-      </a>
+      </a> */}
+        <a class="dedcription-btn" href="#">
+                <span class="name-descripeion"> Learn More</span>
+                <div class="btn-icon heart">
+                  <i class="fas fa-car"></i>
+                </div>
+              </a>
     </div>
     <div className="col-lg-7">
       <div className="row">
