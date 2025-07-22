@@ -57,10 +57,12 @@ export default function Navbar() {
         <a
           href="/"
           className="navbar-brand d-flex align-items-center px-4 px-lg-5"
+          style={{background:" #d81324"}}
         >
-          <h2 className="m-0 text-primary">
+          {/* <h2 className="m-0 text-primary">
             <i className="fa fa-car me-3"></i>CarServ
-          </h2>
+          </h2> */}
+          <img src="assets/img/logo-white.png" alt="" style={{maxWidth:'140px'}}/>
         </a>
         <button
           type="button"
@@ -102,7 +104,7 @@ export default function Navbar() {
               <a
                 href="/Services"
                 className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
+                // data-bs-toggle="dropdown"
               >
                 Services
               </a>
