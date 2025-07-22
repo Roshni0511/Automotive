@@ -15,7 +15,7 @@ import Achievements_gallery from "./pages/Achievements_gallery";
 import Daily_Activity from "./pages/Daily_Activity";
 import Testimonial_page from "./pages/Testimonial_page";
 
-
+import MechanicalService from "./pages/MechanicalService";
 
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
   <Route path="/Daily_Activity" element={<Daily_Activity/>}/>
   <Route path="/Contact" element={<Contact/>}/>
   <Route path="/Testimonial_page" element={<Testimonial_page/>}/>
+    <Route path="/MechanicalService" element={<MechanicalService/>}/>
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

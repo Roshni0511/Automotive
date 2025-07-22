@@ -110,7 +110,7 @@ export default function Navbar() {
               </a>
               <div className="dropdown-menu custom-dropdown">
                 <div className="service-group">
-                  <a href="/" className="dropdown-item">
+                  <a href="/MechanicalService" className="dropdown-item">
                     <i className="fas fa-tools"></i> Mechanical Service
                   </a>
                   <a href="/" className="dropdown-item">
