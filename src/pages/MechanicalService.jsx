@@ -57,11 +57,11 @@ const MechanicalService = () => {
                             <div class="single-img mt-35 mb-70">
                                 <img src="	https://automotivesurat.com/assets/img/service/automotive-mechanical-services.jpg" alt="" />
                             </div>
-                            <h3>Why choose us?</h3>
+                      
 
 
                             
-                          <div className="single-content__feature ul_li">
+                          <div className="single-content__feature ul_li" style={{paddingTop:'30px'}}>
 
 <div className="single-content-feature">
   <div
