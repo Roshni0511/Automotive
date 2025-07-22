@@ -446,7 +446,7 @@
   transform: scale(1.05);
 }
 .call-banner {
-  background-color: #d80000;
+background-image: url("../img/test.jpg");
   padding: 40px 0;
   color: white;
   position: relative;
@@ -482,13 +482,20 @@
 }
 
 .right-section {
+  background-color: white;
+  color: black;
+  padding: 15px 17px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.call-box {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: white;
-  color: black;
-  padding: 15px 20px;
-  border-radius: 50px;
 }
 
 .phone-circle {
@@ -498,12 +505,216 @@
   border-radius: 50%;
 }
 
-.phone-info h3 {
+.phone-info h4 {
   font-weight: 700;
+  color: #0c1c3f;
   margin: 0;
 }
+
+.small-text {
+  font-weight: 500;
+  font-size: 25px;
+  color: #D81324;
+}
+
 
 .image-section img {
   height: 200px;
   object-fit: contain;
+}
+.animated-phone {
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.car-road {
+  width: 330px;
+  overflow: hidden;
+}
+
+.car {
+  width: 330px;
+  position: relative;
+}
+
+.car-base {
+  background: #D81324;
+  width: 100%;
+  height: 66px;
+  border-radius: 6px 15px 30px 30px;
+}
+
+.car-top {
+  height: 108px;
+  width: 198px;
+  background: #D81324;
+  margin-bottom: -54px;
+  border-radius: 300px / 180px;
+  margin-left: 45px;
+  position: relative;
+}
+
+.car-top::before {
+  width: 0;
+  height: 0;
+  border-top: 54px solid transparent;
+  border-bottom: 36px solid transparent;
+  border-right: 129px solid #D81324;
+  position: absolute;
+  left: -30px;
+  content: '';
+}
+
+.car-top::after {
+  position: absolute;
+  right: -87px;
+  content: '';
+  top: 42px;
+  border-radius: 50% 50% 0 0;
+  width: 180px;
+  height: 24px;
+  background: #D81324;
+}
+
+.window {
+  position: absolute;
+  background: white;
+  width: 126px;
+  height: 33px;
+  top: 9px;
+  border-radius: 50% 50% 0 0;
+  left: 36px;
+}
+
+.window::before {
+  content: '';
+  position: absolute;
+  left: 60px;
+  background: #D81324;
+  height: 100%;
+  width: 15px;
+}
+
+.wheel {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #4a4a4a;
+  position: absolute;
+  border: 6px solid white;
+  -webkit-animation: rotateWheel 0.7s infinite linear;
+  animation: rotateWheel 0.7s infinite linear;
+}
+
+.wheel::before {
+  content: '';
+  width: 42px;
+  height: 42px;
+  top: 12px;
+  left: 12px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+}
+
+.wheel:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  width: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4a4a4a;
+}
+
+.wheel-left {
+  left: 36px;
+  bottom: -30px;
+}
+
+.wheel-right {
+  right: 36px;
+  bottom: -30px;
+}
+
+.wheel-spike {
+  position: absolute;
+  top: 50%;
+  bottom: 12px;
+  width: calc(100% - 24px);
+  left: 12px;
+  height: 9px;
+  transform: translateY(-50%);
+  background: #4a4a4a;
+}
+
+.wheel-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: white;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.head-light {
+  position: absolute;
+  background: #e2dfcb;
+  right: 3px;
+  top: 57px;
+  border-radius: 50% 15px 15px 50%;
+  width: 30px;
+  height: 12px;
+}
+
+.road {
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+  animation: border-dance 0.5s infinite linear;
+  height: 9px;
+  background-image: linear-gradient(
+    to left,
+    #ccc 0%,
+    #ccc 20%,
+    #fff 20%,
+    #fff 40%,
+    #ccc 40%,
+    #ccc 60%,
+    #fff 60%,
+    #fff 80%,
+    #ccc 80%
+  );
+}
+
+@keyframes rotateWheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes border-dance {
+  0% {
+    left: 120px;
+  }
+  100% {
+    left: 0px;
+  }
 }
