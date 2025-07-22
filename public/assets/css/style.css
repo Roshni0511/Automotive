@@ -17,7 +17,9 @@
     bottom: 45px;
     z-index: 99;
 }
-
+p{
+    text-align: justify;
+}
 
 /*** Spinner ***/
 #spinner {

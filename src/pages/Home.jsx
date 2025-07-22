@@ -318,9 +318,15 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <a href="/About" className="btn btn-primary py-3 px-5">
+                {/* <a href="/About" className="btn btn-primary py-3 px-5">
                   Read More<i className="fa fa-arrow-right ms-3"></i>
-                </a>
+                </a> */}
+                 <a class="dedcription-btn" href="/About">
+                          <span class="name-descripeion"> Read More</span>
+                          <div class="btn-icon heart">
+                            <i class="fas fa-car"></i>
+                          </div>
+                        </a>
               </div>
             </div>
           </div>
@@ -417,11 +423,17 @@ export default function Home() {
                           <i className="fa fa-check text-success me-3"></i>
                           Detailed Error Reports
                         </p>
-                        <a
+                        {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                         <a class="dedcription-btn" href="/Services">
+                          <span class="name-descripeion"> Read More</span>
+                          <div class="btn-icon heart">
+                            <i class="fas fa-car"></i>
+                          </div>
                         </a>
                       </div>
                     </div>
@@ -461,11 +473,17 @@ export default function Home() {
                           <i className="fa fa-check text-success me-3"></i>Fuel
                           Efficiency Improvements
                         </p>
-                        <a
+                        {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                         <a class="dedcription-btn" href="/Services">
+                          <span class="name-descripeion"> Read More</span>
+                          <div class="btn-icon heart">
+                            <i class="fas fa-car"></i>
+                          </div>
                         </a>
                       </div>
                     </div>
@@ -505,11 +523,17 @@ export default function Home() {
                           <i className="fa fa-check text-success me-3"></i>Quick
                           Installation
                         </p>
-                        <a
+                        {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                         <a class="dedcription-btn" href="/Services">
+                          <span class="name-descripeion"> Read More</span>
+                          <div class="btn-icon heart">
+                            <i class="fas fa-car"></i>
+                          </div>
                         </a>
                       </div>
                     </div>
@@ -548,12 +572,19 @@ export default function Home() {
                           <i className="fa fa-check text-success me-3"></i>Fast
                           & Hassle-Free Service
                         </p>
-                        <a
+                        {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                        <a class="dedcription-btn" href="/Services">
+                          <span class="name-descripeion"> Read More</span>
+                          <div class="btn-icon heart">
+                            <i class="fas fa-car"></i>
+                          </div>
                         </a>
+
                       </div>
                     </div>
                   </div>
@@ -584,8 +615,14 @@ export default function Home() {
                 dependable, specialized, and uncompromising service for every
                 customer.
               </p>
-              <a href="#" className="btn btn-primary py-3 px-5">
+              {/* <a href="#" className="btn btn-primary py-3 px-5">
                 Learn More
+              </a> */}
+              <a class="dedcription-btn" href="#">
+                <span class="name-descripeion"> Learn More</span>
+                <div class="btn-icon heart">
+                  <i class="fas fa-car"></i>
+                </div>
               </a>
             </div>
             <div className="col-lg-7">

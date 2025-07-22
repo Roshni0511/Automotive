@@ -7,6 +7,7 @@ import OurMission from "./pages/OurMission";
 import OurVision from "./pages/OurVision";
 import Services from "./pages/Services";
 import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 
 
 
@@ -24,6 +25,7 @@ function App() {
   <Route path="/OurVision" element={<OurVision/>}/>
   <Route path="/Services" element={<Services/>}/>
   <Route path="/Blog" element={<Blog/>}/>
+  <Route path="/BlogDetails" element={<BlogDetails/>}/>
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
