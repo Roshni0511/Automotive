@@ -63,7 +63,7 @@ export default function Footer() {
         <div class="container">
             <div class="copyright">
                 <div class="row" style={{justifyContent:'center'}}>
-                    <div class="col-md-6 text-center text-md-center mb-3 mb-md-0">
+                    <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#"> 2022 - 2032 Automotive</a>, All Right Reserved.
 
                      
