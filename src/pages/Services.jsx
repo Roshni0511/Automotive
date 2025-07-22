@@ -1,6 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Counter from './Counter'
+import { FaPhoneAlt } from 'react-icons/fa';
+
 
 const Services = () => {
   return (
@@ -16,7 +19,7 @@ const Services = () => {
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb justify-content-center text-uppercase">
                         <li className="breadcrumb-item"><a href="#">Home</a></li>
-                        <li className="breadcrumb-item"><a href="#">Pages</a></li>
+                        
                         <li className="breadcrumb-item text-white active" aria-current="page">Services</li>
                     </ol>
                 </nav>
@@ -28,7 +31,7 @@ const Services = () => {
  {/* <!-- Services Start --> */}
     <div class="container pt-5">
         <div class="d-flex flex-column text-center mb-5">
-            <h5 class="text-primary mb-3">Our Services</h5>
+            <h5 class="text-primary mb-3">// Our Services //</h5>
             <h1 class="m-0">Premium Security Services</h1>
         </div>
         <div class="row pb-3">
@@ -37,12 +40,13 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2" ></i>View More</a>
       </div>
     </div>
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Mechanical Service</h6>
+      <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-tools" style={{fontSize:'20px'}}></i>
+  </h3>
+      <h6 class="card-title text-white text-truncate" style={{marginLeft:'15px',marginBottom:'0px'}}>Mechanical Service</h6>
     </div>
     <div class="card-footer">
       All our workshops are equipped with highly experienced mechanics & state-of-the-art diagnostic tools.
@@ -55,12 +59,12 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2" ></i>View More</a>
       </div>
     </div>
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Body Shop Service</h6>
+      <h3 class="flaticon-home font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-car " style={{fontSize:'20px'}}> </i></h3>
+      <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Body Shop Service</h6>
     </div>
     <div class="card-footer">
       Keep your car shining like brand new with us. Visit our service station to experience a professional cleaning for your car.
@@ -73,12 +77,12 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2"></i>View More</a>
       </div>
     </div>
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Tyre Service</h6>
+      <h3 class="flaticon-factory font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-cog me-2" style={{fontSize:'20px'}}></i></h3>
+      <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Tyre Service</h6>
     </div>
     <div class="card-footer">
       We can help to protect your tires and get maximum performance delivery from your car's tyres.
@@ -91,12 +95,13 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2"></i>View More</a>
       </div>
     </div>
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Insurance Renewal</h6>
+      <h3 class="flaticon-transportation font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-shield-alt" style={{fontSize:'20px'}}></i>
+</h3>
+      <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Insurance Renewal</h6>
     </div>
     <div class="card-footer">
       We understand insurance policy and make the process of buying or renewing car insurance as simple as possible.
@@ -109,12 +114,13 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2"></i>View More</a>
       </div>
     </div>
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Car Accessories</h6>
+      <h3 class="flaticon-desk font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-toolbox" style={{fontSize:'20px'}}></i>
+</h3>
+      <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Car Accessories</h6>
     </div>
     <div class="card-footer">
       Components that can potentially enhance your car, they are the small details that make a difference.
@@ -129,13 +135,14 @@ const Services = () => {
     <div class="team-item position-relative">
       <img class="card-img-top" src="assets/img/service-1.jpg" alt="" />
       <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-        <a href="#" class="btn btn-primary">View More</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2"></i>View More</a>
       </div>
     </div>
 
     <div class="card-body bg-secondary d-flex align-items-center p-0">
-      <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-      <h6 class="card-title text-white text-truncate m-0">Car Customize</h6>
+      <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-wrench" style={{fontSize:'20px'}}></i>
+</h3>
+      <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Car Customize</h6>
     </div>
 
     <div class="card-footer">
@@ -151,15 +158,14 @@ const Services = () => {
 
     {/* <!-- 👇 Overlay should be inside team-item and controlled via CSS --> */}
     <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-      <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-      <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
-      <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+       <a href="#" class="btn btn-primary"><i class="fas fa-eye me-2"></i>View More</a>
     </div>
   </div>
 
   <div class="card-body bg-secondary d-flex align-items-center p-0">
-    <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}></h3>
-    <h6 class="card-title text-white text-truncate m-0">Car Detailing</h6>
+    <h3 class="flaticon-bodyguard font-weight-normal d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white m-0 mr-3" style={{width:'45px',height:'45px'}}><i class="fas fa-spray-can" style={{fontSize:'20px'}}></i>
+</h3>
+    <h6 class="card-title text-white text-truncate "  style={{marginLeft:'15px',marginBottom:'0px'}}>Car Detailing</h6>
   </div>
 
   <div class="card-footer">
@@ -170,6 +176,69 @@ const Services = () => {
         </div>
     </div>
     {/* <!-- Services End --> */}
+ <div className="call-banner">
+      <div className="call-banner-content container">
+         <div class="car-road">
+  <div class="car">
+    <div class="car-top">
+      <div class="window">
+      </div>  
+    </div>  
+    <div class="car-base">
+    </div>
+    <div class="wheel-left wheel">
+       <div class="wheel-spike">
+       </div> 
+       <div class="wheel-center">
+       </div>
+    </div>
+    <div class="wheel-right wheel">
+       <div class="wheel-spike">
+       </div> 
+      <div class="wheel-center">
+       </div>
+    </div>
+    <div class="head-light"></div>
+  </div> 
+  <div class="road">
+  </div>
+</div>  
+        <div className="right-section animated-phone">
+  <p className="small-text">
+ 
+Get an Estimate For Your Service
+  </p>
+<div style={{display:'flex'}}>
+
+  <div className="call-box">
+    <div className="phone-circle">
+      <FaPhoneAlt size={24} />
+    </div>
+    <div className="phone-info">
+      <p style={{ marginBottom: '0px' }}>Call us Now</p>
+      <h4>+0261 266 2999</h4>
+    </div>
+  </div>
+  <div style={{margin:'10px 0px 0px 50px'}}>
+    <a href="/Services" class="btn btn-primary">Discover More</a>
+    
+  </div>
+</div>
+</div>
+
+        <div className="left-section">
+          {/* <p className="small-text">
+            <span className="slashes">///</span> IF ANY CAR RELATED ISSUES ARE BOTHERING
+          </p>
+          <h2 className="big-text">GIVE A CALL TO DUCATIBOX</h2> */}
+        </div>
+  
+      
+
+     
+      </div>
+    </div>
+    <Counter />
       </div>
       <Footer />
     </>
