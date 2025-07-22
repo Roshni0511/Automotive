@@ -389,7 +389,7 @@ export default function Home() {
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
-                            src="assets/img/service-1.jpg"
+                            src="/assets/img/service.jpg"
                             style={{ objectFit: "cover" }}
                             alt=""
                           />

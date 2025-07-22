@@ -57,7 +57,7 @@ export default function Navbar() {
         <a
           href="/"
           className="navbar-brand d-flex align-items-center px-4 px-lg-5"
-          style={{background:" #d81324"}}
+          style={{background:" #d81324",borderRadius:'0px 50px 50px 0px'}}
         >
           {/* <h2 className="m-0 text-primary">
             <i className="fa fa-car me-3"></i>CarServ
@@ -137,7 +137,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <a href="" className="nav-item nav-link">
+            <a href="/Blog" className="nav-item nav-link">
               Blog
             </a>
             <div className="nav-item dropdown gallery-dropdown">
@@ -171,7 +171,7 @@ export default function Navbar() {
               Contact
             </a>
           </div>
-          <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+          <a href="" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
             Get A Quote<i className="fa fa-arrow-right ms-3"></i>
           </a>
         </div>
