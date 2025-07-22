@@ -74,7 +74,7 @@ export default function Blog() {
             <div className="card mb-2 p-3">
               <a href="/BlogDetails"><img className="card-img-top" src={blog.img} alt={blog.alt} /></a>
               <div className="card-body bg-secondary d-flex justify-content-between align-items-center p-0">
-                <h6 className="card-title text-white text-truncate m-0 ml-3 ps-3">{blog.title}</h6>
+                <h6 className="card-title text-white text-truncate m-0 ml-3 ps-3"><a href="/BlogDetails" className="text-white">{blog.title}</a></h6>
                 <a
                   href="#"
                   className="fa fa-link d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white text-decoration-none m-0 ml-auto"

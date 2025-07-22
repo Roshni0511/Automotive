@@ -41,65 +41,68 @@ export default function BlogDetails() {
             <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="d-flex flex-column text-left mb-4">
                     <h5 class="text-primary mb-3">// Blog Detail //</h5>
-                    <h1 className="mb-4">Lorem ipsum dolor sit amet</h1>
+                    <h1 className="mb-4">Understanding the Role of Hydraulic Systems in Modern Machinery</h1>
                     <div class="d-index-flex mb-2">
                         <span class="mr-3"><i class="fa fa-user text-primary"></i> Admin</span>
-                        <span class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</span>
+                        <span class="mr-3"><i class="fa fa-folder text-primary"></i>Mechanical Engineering</span>
                         <span class="mr-3"><i class="fa fa-comments text-primary"></i> 15</span>
                     </div>
                 </div>
                 <div class="mb-5 wow fadeIn" data-wow-delay="0.3s">
                     <img class="img-thumbnail mb-4 p-3" src="assets/img/carousel-1.jpg" alt="Image" />
-                    <p className="wow fadeIn" data-wow-delay="0.3s">Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero, eos tempor gubergren clita est consetetur dolores et dolor. Sadipscing lorem kasd labore ea sanctus sanctus, dolores invidunt et consetetur et duo. Tempor dolores accusam sit vero sit, sed labore duo vero et at, et amet et justo gubergren. Labore aliquyam voluptua dolor nonumy lorem. Sanctus sed sadipscing rebum ipsum dolor et ea no. Ipsum elitr sea erat.</p>
-                    <p className="wow fadeIn" data-wow-delay="0.3s">Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt, sed duo dolor et amet no et. Ut takimata tempor kasd amet kasd ut. No et ipsum amet tempor et. Sed nonumy sed vero ut, sed aliquyam accusam clita dolores tempor est. Ea et takimata consetetur et amet sanctus. Duo no diam ipsum diam dolores, eirmod diam dolores clita sed erat magna. Dolore ut amet ea magna. Sea et dolore sit labore at amet eos. Dolor voluptua sit rebum sit ut nonumy. Dolor amet amet sit sadipscing, lorem.</p>
-                    <h2 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Est dolor lorem et ea</h2>
+                    <p className="wow fadeIn" data-wow-delay="0.3s"> Hydraulic systems have become the backbone of modern industrial and automotive applications due to their unmatched ability to generate and control large amounts of force with high precision. These systems operate by transmitting energy through incompressible fluids, usually specialized hydraulic oils, which allows machines to perform heavy-duty tasks with minimal mechanical complexity. From pressing metals in manufacturing plants to lifting entire vehicles in service stations, hydraulic technology ensures reliability, consistency, and speed. In fact, many advanced machines—from construction excavators to airplane landing gear—rely heavily on hydraulics for their core functionality. What makes these systems particularly valuable is their flexibility; the same core principles can be applied to devices ranging from small handheld tools to massive industrial equipment.  </p>
+  
+                   
+                    <h2 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Applications in the Automotive Industry</h2>
                     <img class="img-thumbnail p-3 w-50 float-left mr-4 mb-3" src="assets/img/blog-1.jpg" alt="Image" />
-                    <p className="wow fadeIn" data-wow-delay="0.3s">Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit voluptua eos. Dolores et no stet magna et gubergren amet dolor sit, lorem dolore est vero et. Justo erat magna ipsum magna sea. Magna amet est sit sed sadipscing. At takimata dolores ut dolore takimata stet nonumy ipsum, gubergren vero ea consetetur aliquyam kasd est magna justo, dolore justo at dolore et aliquyam nonumy lorem gubergren. Amet duo invidunt kasd labore aliquyam. Vero dolores lorem elitr justo ut, accusam erat sed dolor at accusam takimata ipsum sea diam. Ipsum voluptua lorem sed amet, amet sea sit et at nonumy labore takimata, justo ipsum voluptua stet takimata. Ea lorem elitr aliquyam gubergren sit magna sanctus, sed sed dolore ipsum justo dolor et amet invidunt erat. Sadipscing sanctus stet.</p>
-                    <h3 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Est dolor lorem et ea</h3>
+                    <p className="wow fadeIn" data-wow-delay="0.3s">   In the automotive sector, hydraulic systems play a vital role in ensuring vehicle performance, safety, and comfort. One of the most common and critical applications is in the braking system, where hydraulic brake fluid is used to transfer force from the brake pedal to the brake calipers, allowing for smooth and responsive stopping power. This ensures that drivers can effectively control the vehicle even in emergency situations. Additionally, power steering systems utilize hydraulic pressure to assist the driver in turning the steering wheel, especially at low speeds or while maneuvering in tight spaces. This not only makes driving easier but also reduces strain and fatigue on the driver during long journeys or while navigating through congested urban environments.  Moreover, hydraulic suspension systems are designed to absorb shocks and vibrations caused by uneven road surfaces, providing a smoother and more comfortable ride for passengers. These systems adjust dynamically to road conditions and driving behavior, enhancing both handling and ride quality. In high-performance and luxury vehicles, advanced hydraulic suspension technologies allow the car to adapt its height and stiffness, improving aerodynamics, cornering stability, and overall driving experience. 
+    </p>
+
+                    <h3 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Maintenance Tips for Hydraulic Systems</h3>
                     <img class="img-thumbnail p-3 w-50 float-right ml-4 mb-3" src="assets/img/blog-1.jpg" alt="Image" />
-                    <p className="wow fadeIn" data-wow-delay="0.3s">Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit voluptua eos. Dolores et no stet magna et gubergren amet dolor sit, lorem dolore est vero et. Justo erat magna ipsum magna sea. Magna amet est sit sed sadipscing. At takimata dolores ut dolore takimata stet nonumy ipsum, gubergren vero ea consetetur aliquyam kasd est magna justo, dolore justo at dolore et aliquyam nonumy lorem gubergren. Amet duo invidunt kasd labore aliquyam. Vero dolores lorem elitr justo ut, accusam erat sed dolor at accusam takimata ipsum sea diam. Ipsum voluptua lorem sed amet, amet sea sit et at nonumy labore takimata, justo ipsum voluptua stet takimata. Ea lorem elitr aliquyam gubergren sit magna sanctus, sed sed dolore ipsum justo dolor et amet invidunt erat. Sadipscing sanctus stet.</p>
+                    <p className="wow fadeIn" data-wow-delay="0.3s"> Regular maintenance of hydraulic systems is essential to ensure their long-term performance, reliability, and safety. This includes routine inspections, monitoring fluid levels, checking for signs of wear or damage, and timely replacement of hydraulic filters. Hydraulic fluid serves not only as a medium for power transmission but also for lubrication and heat dissipation. Therefore, keeping the fluid clean and at the correct level is crucial. Contaminated or degraded fluid can lead to poor system performance, component damage, and even complete system failure.
+  It is important to inspect hoses, seals, and connections for any signs of leaks, cracks, or corrosion. Even a small leak can reduce system efficiency and lead to a gradual loss of power or control. Overheating is another common issue that can result from poor fluid quality, blocked filters, or excessive system load. If left unaddressed, overheating can damage internal components and significantly shorten the system’s lifespan.
+</p>
                 </div>
                 
                 <div class="media bg-primary text-white mb-5 p-4 p-md-5 d-flex wow fadeIn" data-wow-delay="0.3s">
                     <img src="assets/img/user.jpg" alt="Image" class="img-thumbnail p-3 mr-4 mt-1 bg-primary" style={{width:"100px"}} />
                     <div class="media-body">
-                        <h5 class="mb-3">John Doe</h5>
-                        <p class="m-0">Conset elitr erat vero sanctus labore dolor ipsum et diam, tempor dolores eos dolor conset lorem ipsum, ipsum accusam ipsum sit no ut est. Guber ea ipsum erat conset magna kasd amet est magna elitr ea sit justo sed sanctus.</p>
+                        <h5 class="mb-3">John Engineer</h5>
+                        <p class="m-0">With over 15 years in mechanical engineering, John shares deep insights on hydraulic systems, their evolution, and applications in modern machinery and vehicles.</p>
                     </div>
                 </div>
 
-                <div class="mb-5">
-                    <h4 class="mb-4">3 Comments</h4>
-                    <div class="media mb-4 d-flex align-items-start">
-                        <img src="assets/img/user.jpg" alt="Image" class="img-thumbnail p-2 mr-3 mt-1" style={{width:"60px"}} />
-                        <div class="media-body">
-                            <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                            <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                            {/* <button class="btn btn-sm btn-dark">Reply</button> */}
-                            <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
-                        </div>
-                    </div>
-                    <div class="media mb-4 d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
-                        <img src="assets/img/user.jpg" alt="Image" class="img-thumbnail p-2 mr-3 mt-1"
-                            style={{width:"60px"}} />
-                        <div class="media-body">
-                            <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                            <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                            {/* <button class="btn btn-sm btn-dark">Reply</button> */}
-                            <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
-                            <div class="media mt-4 d-flex align-items-start">
-                                <img src="assets/img/user.jpg" alt="Image" class="img-thumbnail p-2 mr-3 mt-1"
-                                    style={{width:"60px"}} />
-                                <div class="media-body">
-                                    <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                    <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                                    {/* <button class="btn btn-sm btn-dark">Reply</button> */}
-                                     <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <div className="mb-5">
+    <h4 className="mb-4">3 Comments</h4>
+
+    <div className="media mb-4 d-flex align-items-start">
+      <img src="assets/img/user.jpg" alt="User" className="img-thumbnail p-2 mr-3 mt-1" style={{ width: "60px" }} />
+      <div className="media-body">
+        <h6>Jane Smith <small><i>10 July 2025 at 09:45am</i></small></h6>
+        <p>This article clarified a lot for me about how hydraulics power the tools we use every day. Very helpful and informative!</p>
+        <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
+      </div>
+    </div>
+
+    <div className="media mb-4 d-flex align-items-start wow fadeIn" data-wow-delay="0.3s">
+      <img src="assets/img/user.jpg" alt="User" className="img-thumbnail p-2 mr-3 mt-1" style={{ width: "60px" }} />
+      <div className="media-body">
+        <h6>Rahul Patel <small><i>09 July 2025 at 03:30pm</i></small></h6>
+        <p>Great piece! Would love to see a follow-up on common hydraulic issues and how to diagnose them.</p>
+        <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
+
+        <div className="media mt-4 d-flex align-items-start">
+          <img src="assets/img/user.jpg" alt="User" className="img-thumbnail p-2 mr-3 mt-1" style={{ width: "60px" }} />
+          <div className="media-body">
+            <h6>Admin <small><i>09 July 2025 at 05:00pm</i></small></h6>
+            <p>Thank you Rahul! We'll be covering maintenance diagnostics in our next blog post. Stay tuned!</p>
+            <a href="#" className="btn btn-primary py-1 px-2">Reply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
                 <div style={{padding: "30px", background: "#f6f6f6"}} className="wow fadeIn" data-wow-delay="0.3s">
                     <h4 class="mb-4">Leave a comment</h4>
@@ -128,126 +131,98 @@ export default function BlogDetails() {
                 </div>
             </div>
 
-            <div class="col-lg-4 mt-5 mt-lg-0 wow fadeIn" data-wow-delay="0.3s">
-                <div class="mb-5">
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Keyword" />
-                            <div class="input-group-append">
-                                <span class="input-group-text bg-transparent text-primary" style={{height:'48px',borderRadius:'0 4.8px 4.8px 0'}}><i
-                                        class="fa fa-search"></i></span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="mb-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h4 class="mb-4">Categories</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Web Design
-                            <span class="badge badge-primary badge-pill">150</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Web Development
-                            <span class="badge badge-primary badge-pill">131</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Online Marketing
-                            <span class="badge badge-primary badge-pill">78</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Keyword Research
-                            <span class="badge badge-primary badge-pill">56</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Email Marketing
-                            <span class="badge badge-primary badge-pill">98</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mb-5">
-                    <img src="assets/img/blog-1.jpg" alt="" class="img-thumbnail p-3" />
-                </div>
-                <div class="mb-5">
-                    <h4 class="mb-4">Recent Post</h4>
-                    <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                        <img class="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{width: "80px", height: "80px"}} alt="" />
-                        <div class="d-flex flex-column pl-3">
-                            <a class="font-weight-bold text-secondary mb-2" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-muted"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-muted"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                        <img class="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{width: "80px", height: "80px"}} alt="" />
-                        <div class="d-flex flex-column pl-3">
-                            <a class="font-weight-bold text-secondary mb-2" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-muted"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-muted"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                        <img class="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{width: "80px", height: "80px"}} alt="" />
-                        <div class="d-flex flex-column pl-3">
-                            <a class="font-weight-bold text-secondary mb-2" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-muted"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-muted"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center border-bottom mb-3 pb-3">
-                        <img class="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{width: "80px", height: "80px"}} alt="" />
-                        <div class="d-flex flex-column pl-3">
-                            <a class="font-weight-bold text-secondary mb-2" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-muted"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-muted"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <img class="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{width: "80px", height: "80px"}} alt="" />
-                        <div class="d-flex flex-column pl-3">
-                            <a class="font-weight-bold text-secondary mb-2" href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-muted"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-muted"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-muted"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-5">
-                    <img src="assets/img/blog-1.jpg" alt="" class="img-thumbnail p-3" />
-                </div>
-                <div class="mb-5">
-                    <h4 class="mb-4">Tag Cloud</h4>
-                    <div class="d-flex flex-wrap m-n1">
-                        <a href="" class="btn btn-outline-primary m-1">Design</a>
-                        <a href="" class="btn btn-outline-primary m-1">Development</a>
-                        <a href="" class="btn btn-outline-primary m-1">Marketing</a>
-                        <a href="" class="btn btn-outline-primary m-1">SEO</a>
-                        <a href="" class="btn btn-outline-primary m-1">Writing</a>
-                        <a href="" class="btn btn-outline-primary m-1">Consulting</a>
-                    </div>
-                </div>
-                <div class="mb-5">
-                    <img src="assets/img/blog-1.jpg" alt="" class="img-thumbnail p-3" />
-                </div>
-                <div>
-                    <h4 class="mb-4">Plain Text</h4>
-                    Aliquyam sed lorem gubergren stet diam dolor sed ut sit. Ut sanctus erat ea est invidunt aliquyam dolor et. Et no consetetur eos labore ea erat voluptua et. Et aliquyam dolore sed erat. Magna sanctus sed eos tempor rebum dolor, tempor takimata clita sit et elitr ut eirmod. Dolore no.
-                </div>
-            </div>
+            <div className="col-lg-4 mt-5 mt-lg-0 wow fadeIn" data-wow-delay="0.3s">
+  <div className="mb-5">
+    <form action="">
+      <div className="input-group">
+        <input type="text" className="form-control form-control-lg" placeholder="Search blog topics..." />
+        <div className="input-group-append">
+          <span className="input-group-text bg-transparent text-primary" style={{ height: '48px', borderRadius: '0 4.8px 4.8px 0' }}>
+            <i className="fa fa-search"></i>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div className="mb-5 wow fadeIn" data-wow-delay="0.3s">
+    <h4 className="mb-4">Categories</h4>
+    <ul className="list-group">
+      <li className="list-group-item p-3 d-flex justify-content-between align-items-center">
+        Engine Repair
+        <span className="badge badge-primary badge-pill">120</span>
+      </li>
+      <li className="list-group-item p-3 d-flex justify-content-between align-items-center">
+        Hydraulic Systems
+        <span className="badge badge-primary badge-pill">87</span>
+      </li>
+      <li className="list-group-item p-3 d-flex justify-content-between align-items-center">
+        Electrical Systems
+        <span className="badge badge-primary badge-pill">102</span>
+      </li>
+      <li className="list-group-item p-3 d-flex justify-content-between align-items-center">
+        Preventive Maintenance
+        <span className="badge badge-primary badge-pill">66</span>
+      </li>
+      <li className="list-group-item p-3 d-flex justify-content-between align-items-center">
+        Diagnostics
+        <span className="badge badge-primary badge-pill">44</span>
+      </li>
+    </ul>
+  </div>
+
+  <div className="mb-5">
+    <img src="assets/img/blog-1.jpg" alt="Maintenance Tips" className="img-thumbnail p-3" />
+  </div>
+
+  <div className="mb-5">
+    <h4 className="mb-4">Recent Post</h4>
+
+    {[1, 2, 3, 4, 5].map((_, index) => (
+      <div className="d-flex align-items-center border-bottom mb-3 pb-3" key={index}>
+        <img className="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{ width: "80px", height: "80px" }} alt="Recent Post" />
+        <div className="d-flex flex-column pl-3">
+          <a className="font-weight-bold text-secondary mb-2" href="">
+            5 Key Things Every Car Owner Should Know About Maintenance
+          </a>
+          <div className="d-flex">
+            <small className="mr-3"><i className="fa fa-user text-muted"></i> Admin</small>
+            <small className="mr-3"><i className="fa fa-folder text-muted"></i> Auto Tips</small>
+            <small className="mr-3"><i className="fa fa-comments text-muted"></i> {15 + index}</small>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div className="mb-5">
+    <img src="assets/img/blog-1.jpg" alt="Workshop" className="img-thumbnail p-3" />
+  </div>
+
+  <div className="mb-5">
+    <h4 className="mb-4">Tag Cloud</h4>
+    <div className="d-flex flex-wrap m-n1">
+      <a href="" className="btn btn-outline-primary m-1">Hydraulics</a>
+      <a href="" className="btn btn-outline-primary m-1">Repairs</a>
+      <a href="" className="btn btn-outline-primary m-1">Maintenance</a>
+      <a href="" className="btn btn-outline-primary m-1">Diagnostics</a>
+      <a href="" className="btn btn-outline-primary m-1">Servicing</a>
+      <a href="" className="btn btn-outline-primary m-1">Automotive</a>
+    </div>
+  </div>
+
+  <div className="mb-5">
+    <img src="assets/img/blog-1.jpg" alt="Garage Tools" className="img-thumbnail p-3" />
+  </div>
+
+  <div>
+    <h4 className="mb-4">Plain Text</h4>
+    <p>
+      Keeping your vehicle in top shape goes beyond just oil changes. Routine inspections, component checks, and performance diagnostics all contribute to a reliable and safe driving experience. From brake performance to fluid efficiency, understanding your car's needs ensures longevity and peace of mind on the road. Trust expert care and regular service to keep your machine running like new.
+    </p>
+  </div>
+</div>
+
         </div>
     </div>
  
