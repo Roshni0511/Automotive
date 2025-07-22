@@ -9,6 +9,7 @@ import Services from "./pages/Services";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Contact from "./pages/Contact";
+import MechanicalService from "./pages/MechanicalService";
 
 
 
@@ -28,6 +29,7 @@ function App() {
   <Route path="/Blog" element={<Blog/>}/>
   <Route path="/BlogDetails" element={<BlogDetails/>}/>
   <Route path="/Contact" element={<Contact/>}/>
+  <Route path="/MechanicalService" element={<MechanicalService/>}/>
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
