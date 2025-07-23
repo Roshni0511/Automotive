@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
 export default function Video() {
+    const [isOpen, setOpen] = useState(false);
+  const [videoId, setVideoId] = useState('');
+
+  const videos = [
+    {
+      id: 'hvXotgxBOvk',
+      title: 'Boss: Capra Demon',
+    },
+    {
+      id: 'MmCTJNr10xc',
+      title: 'Boss: Ornstein & Smough',
+    },
+    {
+      id: 'VXQuHSi0FqE',
+      title: 'Boss: Demon Firesage',
+    },
+  ];
+
+  const handleOpen = (id) => {
+    setVideoId(id);
+    setOpen(true);
+  };
+
   return (
     <div>
       <Navbar />
@@ -23,7 +46,40 @@ export default function Video() {
     </div>
     {/* <!-- Page Header End --> */}
 
-    
+     <div className="container py-5">
+      <h3 className="mb-4 text-center">Gallery of YouTube Videos</h3>
+      <div className="row">
+        {videos.map((video) => (
+          <div className="col-sm-4 text-center mb-4" key={video.id}>
+            <div
+              className="position-relative"
+              style={{ cursor: 'pointer' }}
+              onClick={() => handleOpen(video.id)}
+            >
+              <img
+                src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+                alt={video.title}
+                className="img-fluid rounded shadow"
+              />
+              <button
+                type="button"
+                className="btn btn-danger position-absolute top-50 start-50 translate-middle"
+              >
+                <i className="glyphicon glyphicon-play"></i>
+              </button>
+            </div>
+            <p className="mt-2">{video.title}</p>
+          </div>
+        ))}
+      </div>
+
+      <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId={videoId}
+        onClose={() => setOpen(false)}
+      />
+    </div>
 
       <Footer />
     </div>

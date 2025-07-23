@@ -272,22 +272,7 @@ const MechanicalService = () => {
 </div>
 
                             
-                            <h3>Our benefits</h3>
-                            <p>Choosing the right visa agency can make a world of difference in your journey toward international exploration, growth, and success. At e.visa  we take   Here are the distinctive benefits of partnering with us:</p>
-                            <div class="row align-items-center mt-10">
-                                <div class="col-lg-6 mt-30">
-                                    <img src="assets/img/coaching/c_single2.jpg" alt="" />
-                                </div>
-                                <div class="col-lg-6 mt-30">
-                                    <ul class="single-content-list list-unstyled pl-25">
-                                        <li><img src="assets/img/icon/star.svg" alt="" />Top-tier Interactive Online Readiness</li>
-                                        <li><img src="assets/img/icon/star.svg" alt="" />Customized Study Plans</li>
-                                        <li><img src="assets/img/icon/star.svg" alt="" />Skill Building Sessions</li>
-                                        <li><img src="assets/img/icon/star.svg" alt="" />Full Length Mock Test</li>
-                                        <li><img src="assets/img/icon/star.svg" alt="" />Test Evaluations By Experts</li>
-                                    </ul>
-                                </div>
-                            </div>
+                         
                         </div>
                     </div>
                 </div>
