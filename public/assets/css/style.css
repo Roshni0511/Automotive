@@ -1184,6 +1184,16 @@ background-image: url("../img/test.jpg");
     color: #fff;
 }
 
+.xb-item--inner {
+  transition: all 0.3s ease-in-out;
+}
+
+.xb-item--inner:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
 
 /*  */
 

@@ -61,7 +61,7 @@ const MechanicalService = () => {
 
 
                             
-                          <div className="single-content__feature ul_li" style={{paddingTop:'30px'}}>
+              <div className="single-content__feature ul_li" style={{paddingTop:'30px'}}>
 
 <div className="single-content-feature">
   <div
@@ -104,14 +104,15 @@ const MechanicalService = () => {
           color: "#00204A",
         }}
       >
-     Instant Car Services
+        Instant Car Services
       </h3>
       <p style={{ margin: 0, fontSize: "16px", color: "#666" }}>
-         Get fast and reliable service for your car without any hassle.
+        Get fast and reliable service for your car without any hassle.
       </p>
     </div>
   </div>
 </div>
+
 
 <div className="single-content-feature">
   <div
