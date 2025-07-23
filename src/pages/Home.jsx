@@ -331,40 +331,67 @@ export default function Home() {
               <div className="col-lg-4">
                 <div className="nav w-100 nav-pills me-4">
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2 active"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-1"
                     type="button"
                   >
                     <i className="fa fa-car-side fa-2x me-3"></i>
-                    <h4 className="m-0">Diagnostic Test</h4>
+                    <h5 className="m-0">Diagnostic Test</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-2"
                     type="button"
                   >
                     <i className="fa fa-car fa-2x me-3"></i>
-                    <h4 className="m-0">Engine Servicing</h4>
+                    <h5 className="m-0">Engine Servicing</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-3"
                     type="button"
                   >
                     <i className="fa fa-cog fa-2x me-3"></i>
-                    <h4 className="m-0">Tires Replacement</h4>
+                    <h5 className="m-0">Tires Replacement</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-4"
                     type="button"
                   >
                     <i className="fa fa-oil-can fa-2x me-3"></i>
-                    <h4 className="m-0">Oil Changing</h4>
+                    <h5 className="m-0">Oil Changing</h5>
+                  </button>
+                  <button
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tab-pane-5"
+                    type="button"
+                  >
+                    <i className="fa fa-oil-can fa-2x me-3"></i>
+                    <h5 className="m-0">Oil Changing</h5>
+                  </button>
+                  <button
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tab-pane-6"
+                    type="button"
+                  >
+                    <i className="fa fa-oil-can fa-2x me-3"></i>
+                    <h5 className="m-0">Oil Changing</h5>
+                  </button>
+                  <button
+                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-0"
+                    data-bs-toggle="pill"
+                    data-bs-target="#tab-pane-7"
+                    type="button"
+                  >
+                    <i className="fa fa-oil-can fa-2x me-3"></i>
+                    <h5 className="m-0">Oil Changing</h5>
                   </button>
                 </div>
               </div>
@@ -372,7 +399,7 @@ export default function Home() {
                 <div className="tab-content w-100">
                   <div className="tab-pane fade show active" id="tab-pane-1">
                     <div className="row g-4">
-                      <div className="col-md-6" style={{ minHeight: "350px" }}>
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
@@ -422,7 +449,7 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="tab-pane-2">
                     <div className="row g-4">
-                      <div className="col-md-6" style={{ minHeight: "350px" }}>
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
@@ -472,7 +499,7 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="tab-pane-3">
                     <div className="row g-4">
-                      <div className="col-md-6" style={{ minHeight: "350px" }}>
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
@@ -522,7 +549,7 @@ export default function Home() {
 
                   <div className="tab-pane fade" id="tab-pane-4">
                     <div className="row g-4">
-                      <div className="col-md-6" style={{ minHeight: "350px" }}>
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
