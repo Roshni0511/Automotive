@@ -28,7 +28,7 @@ export default function Video() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar />    
 
      {/* <!-- Page Header Start --> */}
     <div class="container-fluid page-header mb-5 p-0" style={{backgroundImage: "url(assets/img/carousel-bg-1.jpg)"}}>
