@@ -1936,6 +1936,211 @@ text-align: center;
 }
 /*  */
 
+/*================================================
+FAQ CSS
+=================================================*/
+.faq-area .faq-accordion-tab .tabs {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.faq-area .faq-accordion-tab .tabs li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.faq-area .faq-accordion-tab .tabs li a {
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+  display: block;
+  box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
+  font-size: 17px;
+  /* font-weight: 700; */
+}
+.faq-area .faq-accordion-tab .tabs li a i {
+  font-size: 30px;
+}
+.faq-area .faq-accordion-tab .tabs li a span {
+  display: block;
+  margin-top: 8px;
+}
+
+
+.faq-area .tab .tabs-item {
+  display: none;
+}
+.faq-area .tab .tabs-item:first-child {
+  display: block;
+}
+
+.faq-area .faq-accordion .accordion {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  border: none !important;
+}
+.faq-area .faq-accordion .accordion .accordion-item {
+  border-radius: 5px;
+  display: block;
+  box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
+  background: #ffffff;
+  margin-bottom: 15px;
+  border: none;
+}
+.faq-area .faq-accordion .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-area .faq-accordion .accordion .accordion-title {
+  padding: 20px 25px 17px 60px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  border: none !important;
+  font-size: 17px;
+  /* font-weight: 700; */
+}
+.faq-area .faq-accordion .accordion .accordion-title i {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.faq-area .faq-accordion .accordion .accordion-title.active i {
+  transform: rotate(180deg);
+}
+.faq-area .faq-accordion .accordion .accordion-content {
+  display: none;
+  position: relative;
+  margin-top: -5px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+  padding-left: 60px;
+}
+.faq-area .faq-accordion .accordion .accordion-content p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.faq-area .faq-accordion .accordion .accordion-content.show {
+  display: block;
+}
+.faq-area .faq-accordion .accordion .accordion-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.faq-area .faq-accordion .accordion .accordion-content ul li {
+  color: #777777;
+  position: relative;
+  margin-bottom: 12px;
+  line-height: 25px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+
+/*  */
+.newsletter-page {
+  overflow: hidden;
+}
+
+.newsletter-page .hero {
+
+  margin-bottom: 3rem;
+}
+
+.newsletter-page .hero-text h1 {
+  font-size: 2.5rem;
+  color: #d81324;
+  margin-bottom: 1rem;
+}
+
+.newsletter-page .hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.newsletter-page .hero-image{
+  text-align: center;
+}
+.newsletter-page .hero-image img {
+  width: 100%;
+  max-width: 400px;
+  animation: carSlideIn 1s ease-in-out;
+}
+
+@keyframes carSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.newsletter-page .benefits {
+  margin-bottom: 3rem;
+}
+
+.newsletter-page .benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-page .benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.newsletter-page .benefits li {
+  background: #f0f0f0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid #d81324;
+  font-size: 1rem;
+}
+
+.newsletter-page .form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-page .newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter-page .newsletter-form input {
+  padding: 0.75rem;
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-page .newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #d81324;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newsletter-page .privacy-note {
+  font-size: 0.9rem;
+  color: #777;
+}
+.newsletter-page .privacy-note a {
+  color: #d81324;
+  text-decoration: none;
+}
 
 
 
