@@ -1,7 +1,35 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-
+import {
+  FaTags,            // Discounts
+  FaCalendarCheck,   // Reminders
+  FaRocket,          // Early Access
+  FaTools,           // Car Care Tips
+  FaBell             // Notifications / New Services
+} from "react-icons/fa";
+const features = [
+  {
+    icon: <FaTags style={{ fontSize: "35px", color: "#d81324" }} />,
+    title: "Exclusive Discounts on Car Services",
+  },
+  {
+    icon: <FaCalendarCheck style={{ fontSize: "35px", color: "#d81324" }} />,
+    title: "Maintenance Reminders",
+  },
+  {
+    icon: <FaRocket style={{ fontSize: "35px", color: "#d81324" }} />,
+    title: "Early Access to New Offers",
+  },
+  {
+    icon: <FaTools style={{ fontSize: "35px", color: "#d81324" }} />,
+    title: "Car Care Tips & Guides",
+  },
+  {
+    icon: <FaBell style={{ fontSize: "35px", color: "#d81324" }} />,
+    title: "Be the First to Know About New Services",
+  },
+];
 export default function Newsletter() {
   return (
     <div>
@@ -52,17 +80,17 @@ export default function Newsletter() {
   
 
       {/* Subscription Form */}
-      <section className="form-section " style={{background:'#f6f8fc'}}>
+      <section className="form-section pt-5 pb-5  wow fadeInUp" data-wow-delay="0.1s" style={{background:'#f6f8fc'}}>
   <div className="container">
      <div className="row">
-       <div className="col-6">
+       <div className="col-md-6">
           <h2>Join Our Newsletter</h2>
         <form className="newsletter-form">
          <div className="row">
-             <div className="col-6">
+             <div className="col-md-6 mb-1">
             <input type="text" placeholder="Your Name" required />
           </div>
-          <div className="col-6">
+          <div className="col-md-6 mb-1">
             <input type="email" placeholder="Email Address" required />
           </div>
          </div>
@@ -81,29 +109,29 @@ export default function Newsletter() {
         </p>
       </div>
 
-         <div className="col-6 hero-image">
+         <div className="col-md-6 hero-image">
           <img src="/assets/img/abc.png" alt="Car Newsletter" />
         </div>
    </div>
   </div>
       </section>
 
-
-    {/* Benefits Section */}
-      <div className='mt-5'>
-        <div className="container">
-        <section className="benefits">
-        <h2>Why Subscribe?</h2>
-        <ul>
-          <li>🔧 Exclusive Discounts on Car Services</li>
-          <li>🚘 Maintenance Reminders</li>
-          <li>📅 Early Access to New Offers</li>
-          <li>🛠️ Car Care Tips & Guides</li>
-          <li>🚙 Be the First to Know About New Services</li>
-        </ul>
+  <section className="outer-wrapperes wow fadeInUp" data-wow-delay="0.1s">
+        <div className="features-cardes">
+          
+            <h5 className="section-titless hover-underline animate-heading">Why Subscribe?</h5>
+          <div className="features-grides">
+            {features.map((feature, idx) => (
+              <div className="feature-item-stripees " key={idx}>
+                <div className="icon-outliness ">{feature.icon}</div>
+                <h4>{feature.title}</h4>
+                
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
-      </div>
-      </div>
+ 
 
     </div>
       <Footer />

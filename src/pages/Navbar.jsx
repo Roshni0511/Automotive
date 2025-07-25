@@ -8,18 +8,18 @@ export default function Navbar() {
         <div className="row gx-0 d-none d-lg-flex">
           <div className="col-lg-7 px-5 text-start">
             <div className="h-100 d-inline-flex align-items-center py-3 me-4">
-              <small className="fa fa-map-marker-alt text-primary me-2"></small>
-              <small>123 Street, New York, USA</small>
+              <small className="fa fa-envelope text-primary me-2"></small>
+              <small>automotive2002@gmail.com</small>
             </div>
             <div className="h-100 d-inline-flex align-items-center py-3">
               <small className="far fa-clock text-primary me-2"></small>
-              <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+              <small>9:00 AM to 6:30 PM</small>
             </div>
           </div>
           <div className="col-lg-5 px-5 text-end">
             <div className="h-100 d-inline-flex align-items-center py-3 me-4">
               <small className="fa fa-phone-alt text-primary me-2"></small>
-              <small>+012 345 6789</small>
+              <small>0261 266 2999</small>
             </div>
             <div className="h-100 d-inline-flex align-items-center">
               <a

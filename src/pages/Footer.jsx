@@ -9,7 +9,7 @@ export default function Footer() {
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Surat, Gujarat</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 972 709 9000</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0261 266 2999</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>automotive2002@gmail.com</p>

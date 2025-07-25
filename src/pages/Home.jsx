@@ -454,7 +454,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a className="dedcription-btn" href="/Services">
+                         <a className="dedcription-btn" href="/MechanicalService">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -492,7 +492,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a className="dedcription-btn" href="/Services">
+                         <a className="dedcription-btn" href="/Bodyshopservice">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -530,7 +530,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a className="dedcription-btn" href="/Services">
+                         <a className="dedcription-btn" href="/Tyreservice">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -568,7 +568,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                        <a className="dedcription-btn" href="/Services">
+                        <a className="dedcription-btn" href="/Insurancerenewal">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -607,7 +607,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                        <a className="dedcription-btn" href="/Services">
+                        <a className="dedcription-btn" href="/Caraccessories">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -646,7 +646,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                        <a className="dedcription-btn" href="/Services">
+                        <a className="dedcription-btn" href="/Carcustomization">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>
@@ -685,7 +685,7 @@ export default function Home() {
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                        <a className="dedcription-btn" href="/Services">
+                        <a className="dedcription-btn" href="/Cardetailing">
                           <span className="name-descripeion"> Read More</span>
                           <div className="btn-icon heart">
                             <i className="fas fa-car"></i>

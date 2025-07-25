@@ -48,8 +48,13 @@ Get an Estimate For Your Service
     </div>
   </div>
   <div style={{margin:'10px 0px 0px 50px'}}>
-    <a href="/Services" class="btn btn-primary">Discover More</a>
-    
+    {/* <a href="/Services" class="btn btn-primary">Discover More</a> */}
+     <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion">Discover More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
+                          </div>
+                        </a>
   </div>
 </div>
 </div>

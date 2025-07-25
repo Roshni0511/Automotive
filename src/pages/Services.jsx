@@ -58,7 +58,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/MechanicalService" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -74,7 +74,7 @@ const Services = () => {
                     class="card-title text-white text-truncate"
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Mechanical Service
+                   <a href="/MechanicalService" className="text-white"> Mechanical Service</a>
                   </h6>
                 </div>
                 <div class="card-footer">
@@ -96,7 +96,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/Bodyshopservice" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -114,7 +114,7 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Body Shop Service
+                    <a href="/Bodyshopservice" className="text-white">Body Shop Service</a>
                   </h6>
                 </div>
                 <div class="card-footer">
@@ -137,7 +137,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/Tyreservice" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -153,7 +153,8 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Tyre Service
+                    <a href="/Tyreservice" className="text-white">Tyre Service</a>
+                    
                   </h6>
                 </div>
                 <div class="card-footer">
@@ -175,7 +176,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/Insurancerenewal" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -194,7 +195,9 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Insurance Renewal
+                  <a href="/Insurancerenewal" className="text-white">Insurance Renewal</a>
+
+                    
                   </h6>
                 </div>
                 <div class="card-footer">
@@ -216,7 +219,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/Caraccessories" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -232,7 +235,8 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Car Accessories
+                    <a href="/Caraccessories" className="text-white">Car Accessories</a>
+                    
                   </h6>
                 </div>
                 <div class="card-footer">
@@ -255,7 +259,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="#/Carcustomization" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -272,7 +276,8 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Car Customize
+                    <a href="/Carcustomization" className="text-white">Car Customize</a>
+                    
                   </h6>
                 </div>
 
@@ -297,7 +302,7 @@ const Services = () => {
 
                   {/* <!-- 👇 Overlay should be inside team-item and controlled via CSS --> */}
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">
+                    <a href="/Cardetailing" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
@@ -317,7 +322,8 @@ const Services = () => {
                     class="card-title text-white text-truncate "
                     style={{ marginLeft: "15px", marginBottom: "0px" }}
                   >
-                    Car Detailing
+                    <a href="/Cardetailing" className="text-white">Car Detailing</a>
+                    
                   </h6>
                 </div>
 
