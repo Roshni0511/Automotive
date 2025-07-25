@@ -157,7 +157,7 @@ export default function About() {
      <div className="container pt-5 wow fadeInUp" data-wow-delay="0.1s">
   <div className="row">
     <div className="col-lg-5 mb-5 wow zoomIn" data-wow-delay="0.6s">
-      <h5 className="text-primary mb-3">Why Automotive?</h5>
+      <h5 className="text-primary mb-3">// Why Automotive? //</h5>
       <h4>Mechanic’s Special Services</h4>
       <img
         className="img-thumbnail mb-4 p-3"

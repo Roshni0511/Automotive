@@ -337,7 +337,7 @@ export default function Home() {
                     type="button"
                   >
                     <i className="fa fa-car-side fa-2x me-3"></i>
-                    <h5 className="m-0">Diagnostic Test</h5>
+                    <h5 className="m-0">Mechanical Service</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
@@ -346,7 +346,7 @@ export default function Home() {
                     type="button"
                   >
                     <i className="fa fa-car fa-2x me-3"></i>
-                    <h5 className="m-0">Engine Servicing</h5>
+                    <h5 className="m-0">Body Shop Service</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
@@ -355,7 +355,7 @@ export default function Home() {
                     type="button"
                   >
                     <i className="fa fa-cog fa-2x me-3"></i>
-                    <h5 className="m-0">Tires Replacement</h5>
+                    <h5 className="m-0">Tyre Service</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
@@ -363,8 +363,8 @@ export default function Home() {
                     data-bs-target="#tab-pane-4"
                     type="button"
                   >
-                    <i className="fa fa-oil-can fa-2x me-3"></i>
-                    <h5 className="m-0">Oil Changing</h5>
+                    <i className="fa fa-shield-alt fa-2x me-3"></i>
+                    <h5 className="m-0">Insurance Renewal</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
@@ -372,8 +372,8 @@ export default function Home() {
                     data-bs-target="#tab-pane-5"
                     type="button"
                   >
-                    <i className="fa fa-oil-can fa-2x me-3"></i>
-                    <h5 className="m-0">Oil Changing</h5>
+                    <i className="fa fa-tools fa-2x me-3"></i>
+                    <h5 className="m-0">Car Accessories</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
@@ -381,8 +381,8 @@ export default function Home() {
                     data-bs-target="#tab-pane-6"
                     type="button"
                   >
-                    <i className="fa fa-oil-can fa-2x me-3"></i>
-                    <h5 className="m-0">Oil Changing</h5>
+                  <i className="fa fa-cogs fa-2x me-3"></i>
+                    <h5 className="m-0">Car Customize</h5>
                   </button>
                   <button
                     className="nav-link w-100 d-flex align-items-center text-start p-3 mb-0"
@@ -390,8 +390,8 @@ export default function Home() {
                     data-bs-target="#tab-pane-7"
                     type="button"
                   >
-                    <i className="fa fa-oil-can fa-2x me-3"></i>
-                    <h5 className="m-0">Oil Changing</h5>
+                    <i className="fa fa-broom fa-2x me-3"></i>
+                    <h5 className="m-0">Car Detailing</h5>
                   </button>
                 </div>
               </div>
@@ -611,7 +611,7 @@ export default function Home() {
         <div className="container pt-5 wow fadeInUp" data-wow-delay="0.1s">
           <div className="row">
             <div className="col-lg-5 mb-5 wow zoomIn" data-wow-delay="0.6s">
-              <h5 className="text-primary mb-3">Why Automotive?</h5>
+              <h5 className="text-primary mb-3">// Why Automotive? //</h5>
               <h4>Mechanic’s Special Services</h4>
               <img
                 className="img-thumbnail mb-4 p-3"

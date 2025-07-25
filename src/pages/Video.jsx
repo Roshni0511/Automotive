@@ -55,12 +55,14 @@ export default function Video() {
 
       {/* Video Gallery */}
       <div className="yt-gallery container">
-  <h3 className="yt-title text-center my-4 wow fadeIn"  data-wow-delay="0.1s">Videos Gallery</h3>
+  
+   <h5 className="text-primary mb-3">// Videos Gallery //</h5>
+      <h4 className='mb-4'>Our Automotive Videos Gallery</h4>
   <div className="row wow fadeIn" data-wow-delay="0.1s">
     {videos.map((video, index) => {
       const videoId = extractVideoId(video.url);
       return (
-        <div className="col-md-3 mb-3  " key={index} onClick={() => openModal(video.url)}  >
+        <div className="col-xl-3  col-lg-4 col-md-6 col-12 mb-3  " key={index} onClick={() => openModal(video.url)}  >
           <div className="yt-card">
             <img
               src={`https://img.youtube.com/vi/${videoId}/mqdefault.jpg`}
