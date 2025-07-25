@@ -10,6 +10,12 @@ import { FaFileInvoiceDollar, FaCheckCircle } from 'react-icons/fa';
 import { BsClipboardCheck, BsBarChart, BsCartPlus } from 'react-icons/bs';
 import { RiGalleryLine, RiStore2Line } from 'react-icons/ri';
 import { FaRegBuilding } from 'react-icons/fa6';
+import { GiAutoRepair } from "react-icons/gi";
+import { GiCarWheel } from "react-icons/gi";
+import { MdOutlinePrecisionManufacturing } from "react-icons/md";
+import { FaBus } from "react-icons/fa";
+import { FaMotorcycle } from "react-icons/fa";
+import Company_logo from "./Company_logo";
 
 const tagItems = [
   "Auto Diagnostic Service", "ABS Service", "Mechatronic Service", "A/C Service", "Wiper Motor Service", "Wheel Bearing Service",
@@ -18,12 +24,12 @@ const tagItems = [
 
 
 const features = [
-  { icon: <GiSteeringWheel style={{ fontSize: "35px", color: "#D81324" }} />, title: 'Alloy Wheels', },
-  { icon: <MdInventory2 />, title: 'Wheel Alignment',  },
-  { icon: <FaFileInvoiceDollar />, title: 'Wheel Balancing', },
-  { icon: <MdShoppingBasket />, title: 'Alloy Wheels Thru', },
-  { icon: <MdQrCodeScanner />, title: 'Passenger Car Tyre',  },
-  { icon: <BsClipboardCheck />, title: '2 Wheeler Tyre', },
+  { icon: <GiSteeringWheel style={{ fontSize: "35px",}} />, title: 'Alloy Wheels', },
+  { icon: <GiAutoRepair style={{ fontSize: "35px", }} />, title: 'Wheel Alignment',  },
+  { icon:<GiCarWheel style={{ fontSize: "35px", }} />, title: 'Wheel Balancing', },
+  { icon: <MdOutlinePrecisionManufacturing style={{ fontSize: "35px",  }} />, title: 'Alloy Wheels Thru', },
+  { icon: <FaBus style={{ fontSize: "35px", }} />, title: 'Passenger Car Tyre',  },
+  { icon: <FaMotorcycle style={{ fontSize: "35px", }} />, title: '2 Wheeler Tyre', },
 
 ];
 
@@ -60,7 +66,7 @@ const Tyreservice = () => {
         <div className="container-fluid page-header-inner py-5">
           <div className="container text-center">
             <h1 className="display-3 text-white mb-3 animated slideInDown">
-              Mechanical Service
+              Tyre Service
             </h1>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center text-uppercase">
@@ -72,7 +78,7 @@ const Tyreservice = () => {
                   className="breadcrumb-item text-white active"
                   aria-current="page"
                 >
-                  Mechanical Service
+                  Tyre Service
                 </li>
               </ol>
             </nav>
@@ -94,7 +100,7 @@ const Tyreservice = () => {
                 <div class="widget">
                   <ul class="widget-category list-unstyled">
                      <li>
-                      <a href="">
+                      <a href="/MechanicalService">
                         Mechanical Service
                         <span>
                           <img src="assets/img/arrow_up.svg" alt="" />
@@ -102,7 +108,23 @@ const Tyreservice = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="/Caraccessories">
+                        Car Accessories
+                        <span>
+                          <img src="assets/img/arrow_up.svg" alt="" />
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/Cardetailing">
+                        Car Detailing{" "}
+                        <span>
+                          <img src="assets/img/arrow_up.svg" alt="" />
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/Bodyshopservice">
                         Body Shop Service
                         <span>
                           <img src="assets/img/arrow_up.svg" alt="" />
@@ -111,32 +133,17 @@ const Tyreservice = () => {
                     </li>
                    
                     <li>
-                      <a href="">
+                      <a href="/Insurancerenewal">
                         Insurance Renewal{" "}
                         <span>
                           <img src="assets/img/arrow_up.svg" alt="" />
                         </span>
                       </a>
                     </li>
+                   
                     <li>
-                      <a href="">
-                        Car Accessories
-                        <span>
-                          <img src="assets/img/arrow_up.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
+                      <a href="/Carcustomization">
                         Car Customize{" "}
-                        <span>
-                          <img src="assets/img/arrow_up.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        Car Detailing{" "}
                         <span>
                           <img src="assets/img/arrow_up.svg" alt="" />
                         </span>
@@ -180,20 +187,25 @@ const Tyreservice = () => {
 
 
      {/* FEATURES SECTION */}
-      <section className="outer-wrapper">
-        <div className="features-card">
-          <h2 className="section-title hover-underline animate-heading">Features</h2>
-          <div className="features-grid">
+     
+      <section className="outer-wrapperes  " >
+        <div className="features-cardes">
+          
+            <h5 className="section-titless hover-underline animate-heading">Tyre Services We Provide:</h5>
+          <div className="features-grides">
             {features.map((feature, idx) => (
-              <div className="feature-item-stripe" key={idx}>
-                <div className="icon-outline">{feature.icon}</div>
+              <div className="feature-item-stripees " key={idx}>
+                <div className="icon-outliness ">{feature.icon}</div>
                 <h4>{feature.title}</h4>
-                <p>{feature.text}</p>
+                
               </div>
             ))}
           </div>
         </div>
       </section>
+
+          <h5 className="section-titless hover-underline animate-heading">We offer tyre from my brands, Here is few preferred brands:</h5>
+<Company_logo />
 
            <Carservices />
               </div>
@@ -202,7 +214,6 @@ const Tyreservice = () => {
         </div>
       </section>
       {/* <!-- coaching single end --> */}
-
 
 
 <Discovermore />

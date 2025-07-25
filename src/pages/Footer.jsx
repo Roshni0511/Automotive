@@ -45,12 +45,12 @@ export default function Footer() {
                       <h4 class="text-light mb-4">Our Services</h4>
                     <a class="btn btn-link" href="/MechanicalService">Mechanical Service</a>
                     <a class="btn btn-link" href="/Tyreservice">Tyre Service</a>
-                    <a class="btn btn-link" href="">Car Accessories</a>
+                    <a class="btn btn-link" href="/Caraccessories">Car Accessories</a>
                    
-                    <a class="btn btn-link" href="">Car Detailing</a>
-                    <a class="btn btn-link" href="">Body Shop Service</a>
-                    <a class="btn btn-link" href="">Insurance Renewal</a>
-                    <a class="btn btn-link" href="">Car Customize</a>
+                    <a class="btn btn-link" href="/Cardetailing">Car Detailing</a>
+                    <a class="btn btn-link" href="/Bodyshopservice">Body Shop Service</a>
+                    <a class="btn btn-link" href="/Insurancerenewal">Insurance Renewal</a>
+                    <a class="btn btn-link" href="/Carcustomization">Car Customize</a>
              
                 </div>
 
