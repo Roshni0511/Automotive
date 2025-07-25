@@ -145,18 +145,34 @@ const Carcustomization = () => {
                   </ul>
                 </div>
 
-                <div
-                  class="widget widget-banner text-center bg_img"
-                  data-background="assets/img/bg/b_bg.jpg"
-                >
-                  <img class="mb-40" src="assets/img/icon/b_icon.png" alt="" />
-                  <h4>
-                    Assured Approval – <br /> Guaranteed
-                  </h4>
-                  <a class="thm-btn" href="/Contact">
-                    Get in Touch
-                  </a>
-                </div>
+    <div
+  style={{
+    backgroundImage: "url('/assets/img/BACK.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: ' 37px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+  
+  }}
+>
+  <img className="mb-40" src="/assets/img/logo-white.png" alt="" />
+  
+  <h4 style={{ paddingBottom: '20px', paddingTop: '20px', color: '#fff' }}>
+    Need Help? We Are Here To Help You
+  </h4>
+
+  <a
+    className="thm-btn"
+    href="/Contact"
+    style={{ padding: '10px 20px', background: '#D81324', color: '#fff', textDecoration: 'none', borderRadius: '4px' }}
+  >
+    Get in Touch
+  </a>
+</div>
               </div>
             </div>
             <div class="col-lg-8">
@@ -171,7 +187,7 @@ const Carcustomization = () => {
 
                 <div class="single-img mt-35 mb-70 mt-4">
                   <img
-                    src="https://automotivesurat.com/assets/img/service/automotive-tyre-services.jpg"
+                    src="/assets/img/servicess7.jpg"
                     alt=""
                     style={{ border: "1px solid #dee2e6", padding: "10px" ,maxWidth:'-webkit-fill-available'}}
                   />
