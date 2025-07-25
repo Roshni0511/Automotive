@@ -113,7 +113,7 @@ export default function Navbar() {
                   <a href="/MechanicalService" className="dropdown-item">
                     <i className="fas fa-tools"></i> Mechanical Service
                   </a>
-                  <a href="/" className="dropdown-item">
+                  <a href="/Tyreservice" className="dropdown-item">
                     <i class="fas fa-cogs"></i>
                     <span>Tyre Service</span>
                   </a>

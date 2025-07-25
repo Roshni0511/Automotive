@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
-import {  FaCheckCircle } from 'react-icons/fa';
-
+// import {  FaCheckCircle } from 'react-icons/fa';
 import Discovermore from "./Discovermore";
 import Carservices from "./Carservices";
-
-
+import { GiSteeringWheel } from 'react-icons/gi';
+import { MdInventory2, MdQrCodeScanner, MdShoppingBasket, MdLocationOn } from 'react-icons/md';
+import { FaFileInvoiceDollar, FaCheckCircle } from 'react-icons/fa';
+import { BsClipboardCheck, BsBarChart, BsCartPlus } from 'react-icons/bs';
+import { RiGalleryLine, RiStore2Line } from 'react-icons/ri';
+import { FaRegBuilding } from 'react-icons/fa6';
 
 const tagItems = [
   "Auto Diagnostic Service", "ABS Service", "Mechatronic Service", "A/C Service", "Wiper Motor Service", "Wheel Bearing Service",
@@ -15,29 +17,38 @@ const tagItems = [
 ];
 
 
-const MechanicalService = () => {
-    const sliderRef = useRef(null);
+const features = [
+  { icon: <GiSteeringWheel style={{ fontSize: "35px", color: "#D81324" }} />, title: 'Alloy Wheels', },
+  { icon: <MdInventory2 />, title: 'Wheel Alignment',  },
+  { icon: <FaFileInvoiceDollar />, title: 'Wheel Balancing', },
+  { icon: <MdShoppingBasket />, title: 'Alloy Wheels Thru', },
+  { icon: <MdQrCodeScanner />, title: 'Passenger Car Tyre',  },
+  { icon: <BsClipboardCheck />, title: '2 Wheeler Tyre', },
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        sliderRef.current.scrollBy({
-          left: 100,
-          behavior: 'smooth'
-        });
+];
 
-        if (
-          sliderRef.current.scrollLeft + sliderRef.current.clientWidth >=
-          sliderRef.current.scrollWidth - 5
-        ) {
-          sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
-        }
-      }
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+const Tyreservice = () => {
+        const sliderRef = useRef(null);
+    
+      useEffect(() => {
+        const interval = setInterval(() => {
+          if (sliderRef.current) {
+            sliderRef.current.scrollBy({
+              left: 100,
+              behavior: 'smooth'
+            });
+    
+            if (
+              sliderRef.current.scrollLeft + sliderRef.current.clientWidth >=
+              sliderRef.current.scrollWidth - 5
+            ) {
+              sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+            }
+          }
+        }, 2000);
+    
+        return () => clearInterval(interval);
+      }, []);
   return (
     <>
       <Navbar />
@@ -82,6 +93,14 @@ const MechanicalService = () => {
               <div class="sidebar-widget">
                 <div class="widget">
                   <ul class="widget-category list-unstyled">
+                     <li>
+                      <a href="">
+                        Mechanical Service
+                        <span>
+                          <img src="assets/img/arrow_up.svg" alt="" />
+                        </span>
+                      </a>
+                    </li>
                     <li>
                       <a href="">
                         Body Shop Service
@@ -90,14 +109,7 @@ const MechanicalService = () => {
                         </span>
                       </a>
                     </li>
-                    <li>
-                      <a href="">
-                        Tyre Service
-                        <span>
-                          <img src="assets/img/arrow_up.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
+                   
                     <li>
                       <a href="">
                         Insurance Renewal{" "}
@@ -150,23 +162,16 @@ const MechanicalService = () => {
             <div class="col-lg-8">
               <div class="single-content">
                 <h5 className="text-primary mb-3">
-                  // About Mechanical Service //
+                  // About Tyre Service //
                 </h5>
-                <h4>Say Goodbye to Overpriced & Underwhelming Car Services</h4>
+                <h4>Drive Safe with Our Professional Tyre Services</h4>
                 <p>
-                  Many car service providers claim to offer best-in-class care
-                  services , but most of them are costly, so we can't rely on
-                  them. You can see a lot of commitment by car service
-                  providers, but it's ended up with below par service. As a car
-                  user, if you don't have the idea about car service and their
-                  spares and ended up trusting anyone. Where you can get the
-                  best car service is still a mind-boggling thing, there is
-                  Automotive, which offers best in class car services across ..
+                An unbalanced wheel causes poor handling & effects your car's life too. Tyre services will make your ride smoother and handling safer, also extends the life of your tyres, saving you time and money in the long run. To protect your tires and get maximum performance delivery from your car's tyres. Visit a Automotive service station for wheel alignment.
                 </p>
 
                 <div class="single-img mt-35 mb-70 mt-4">
                   <img
-                    src="	https://automotivesurat.com/assets/img/service/automotive-mechanical-services.jpg"
+                    src="https://automotivesurat.com/assets/img/service/automotive-tyre-services.jpg"
                     alt=""
                     style={{ border: "1px solid #dee2e6", padding: "10px" ,maxWidth:'-webkit-fill-available'}}
                   />
@@ -174,26 +179,20 @@ const MechanicalService = () => {
 
 
 
-                 {/* HERO SECTION */}
-      <section className="hero-section">
-        <div className="hero-left">
-        
-<h3 className="mb-4">Mechanical Services We Provide:  </h3>
-         
-
-          <div className="hero-features" ref={sliderRef}>
-            {tagItems.map((tag, index) => (
-              
-              <span
-                className="animated-tag hover-glow"
-                style={{ animationDelay:`${index * 0.2}s`}} key={index} >
-                <FaCheckCircle /> {tag}
-              </span>
+     {/* FEATURES SECTION */}
+      <section className="outer-wrapper">
+        <div className="features-card">
+          <h2 className="section-title hover-underline animate-heading">Features</h2>
+          <div className="features-grid">
+            {features.map((feature, idx) => (
+              <div className="feature-item-stripe" key={idx}>
+                <div className="icon-outline">{feature.icon}</div>
+                <h4>{feature.title}</h4>
+                <p>{feature.text}</p>
+              </div>
             ))}
           </div>
         </div>
-
-      
       </section>
 
            <Carservices />
@@ -204,12 +203,16 @@ const MechanicalService = () => {
       </section>
       {/* <!-- coaching single end --> */}
 
-<Discovermore />
-     
 
+
+<Discovermore />
+
+
+
+  
       <Footer />
     </>
   );
-};
+}
 
-export default MechanicalService;
+export default Tyreservice
