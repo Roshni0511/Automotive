@@ -16,6 +16,7 @@ import Daily_Activity from "./pages/Daily_Activity";
 import Testimonial_page from "./pages/Testimonial_page";
 
 import MechanicalService from "./pages/MechanicalService";
+import Tyreservice from "./pages/Tyreservice";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
   <Route path="/Contact" element={<Contact/>}/>
   <Route path="/Testimonial_page" element={<Testimonial_page/>}/>
     <Route path="/MechanicalService" element={<MechanicalService/>}/>
+    <Route path="/Tyreservice" element={<Tyreservice />} />
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
