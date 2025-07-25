@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -9,13 +10,9 @@ import Carservices from "./Carservices";
 
 
 
-const tagItems = [
-  "Auto Diagnostic Service", "ABS Service", "Mechatronic Service", "A/C Service", "Wiper Motor Service", "Wheel Bearing Service",
-  "Break Service", "Alternator Service", "Engine Overhauling", "Periodic Maintenance Service (PMS)", "Auto Electrical Service", "Radiator Service", "Head Repair","Power Steering Service","ECM Coding","Clutch Service","Timing Service","Suspension Service","Throttle Body Service","Injection Service"
-];
 
 
-const MechanicalService = () => {
+const Insurancerenewal = () => {
     const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -49,7 +46,8 @@ const MechanicalService = () => {
         <div className="container-fluid page-header-inner py-5">
           <div className="container text-center">
             <h1 className="display-3 text-white mb-3 animated slideInDown">
-              Mechanical Service
+              Insurance Renewal
+
             </h1>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb justify-content-center text-uppercase">
@@ -61,7 +59,8 @@ const MechanicalService = () => {
                   className="breadcrumb-item text-white active"
                   aria-current="page"
                 >
-                  Mechanical Service
+                 Insurance Renewal
+
                 </li>
               </ol>
             </nav>
@@ -78,6 +77,14 @@ const MechanicalService = () => {
               <div class="sidebar-widget">
                 <div class="widget">
                   <ul class="widget-category list-unstyled">
+                     <li>
+                      <a href="/MechanicalService">
+                        Mechanical Service
+                        <span>
+                          <img src="assets/img/arrow_up.svg" alt="" />
+                        </span>
+                      </a>
+                    </li>
                     <li>
                       <a href="/Tyreservice">
                         Tyre Service
@@ -94,7 +101,7 @@ const MechanicalService = () => {
                         </span>
                       </a>
                     </li>
-                    <li>
+                         <li>
                       <a href="/Cardetailing">
                         Car Detailing{" "}
                         <span>
@@ -110,15 +117,8 @@ const MechanicalService = () => {
                         </span>
                       </a>
                     </li>
-                    <li>
-                      <a href="/Insurancerenewal">
-                        Insurance Renewal{" "}
-                        <span>
-                          <img src="assets/img/arrow_up.svg" alt="" />
-                        </span>
-                      </a>
-                    </li>
-                    
+                   
+                 
                     <li>
                       <a href="/Carcustomization">
                         Car Customize{" "}
@@ -127,6 +127,7 @@ const MechanicalService = () => {
                         </span>
                       </a>
                     </li>
+                    
                   </ul>
                 </div>
 
@@ -147,18 +148,11 @@ const MechanicalService = () => {
             <div class="col-lg-8">
               <div class="single-content">
                 <h5 className="text-primary mb-3">
-                  // About Mechanical Service //
+                  // About Insurance Renewal //
                 </h5>
-                <h4>Say Goodbye to Overpriced & Underwhelming Car Services</h4>
+                <h4>Protect Your Drive – Fast Insurance Renewal Solutions</h4>
                 <p>
-                  Many car service providers claim to offer best-in-class care
-                  services , but most of them are costly, so we can't rely on
-                  them. You can see a lot of commitment by car service
-                  providers, but it's ended up with below par service. As a car
-                  user, if you don't have the idea about car service and their
-                  spares and ended up trusting anyone. Where you can get the
-                  best car service is still a mind-boggling thing, there is
-                  Automotive, which offers best in class car services across ..
+              You can buy or renew car insurance policy with your home comfort in few easy steps. With Automotive, you will get a comprehensive coverage that not only covers your car against the mandatory third party liability, but also against the losses caused to your car due to fire, theft, explosion, burglary, riots, strikes, earthquakes, flood, cyclones, accidents, malicious acts & terrorist activities. Besides above, having car Insurance, you can avail the enhanced protections through unique car insurance add on covers.
                 </p>
 
                 <div class="single-img mt-35 mb-70 mt-4">
@@ -171,29 +165,9 @@ const MechanicalService = () => {
 
 
 
-                 {/* HERO SECTION */}
-      <section className="hero-sectionss">
-        <div className="hero-leftes">
-        
-<h3 className="section-titless hover-underline animate-heading">Mechanical Services We Provide:  </h3>
+          
+
          
-
-          <div className="hero-featuresss" ref={sliderRef}>
-            {tagItems.map((tag, index) => (
-              
-              <span
-                className="animated-tages hover-glow"
-                style={{ animationDelay:`${index * 0.2}s`}} key={index} >
-                <FaCheckCircle /> {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-      
-      </section>
-
-           <Carservices />
               </div>
             </div>
           </div>
@@ -209,4 +183,4 @@ const MechanicalService = () => {
   );
 };
 
-export default MechanicalService;
+export default Insurancerenewal;

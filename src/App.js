@@ -17,6 +17,11 @@ import Testimonial_page from "./pages/Testimonial_page";
 
 import MechanicalService from "./pages/MechanicalService";
 import Tyreservice from "./pages/Tyreservice";
+import Caraccessories from "./pages/Caraccessories";
+import Cardetailing from "./pages/Cardetailing";
+import Bodyshopservice from "./pages/Bodyshopservice";
+import Insurancerenewal from "./pages/Insurancerenewal";
+import Carcustomization from "./pages/Carcustomization";
 
 
 function App() {
@@ -41,6 +46,11 @@ function App() {
   <Route path="/Testimonial_page" element={<Testimonial_page/>}/>
     <Route path="/MechanicalService" element={<MechanicalService/>}/>
     <Route path="/Tyreservice" element={<Tyreservice />} />
+    <Route path="/Caraccessories" element={<Caraccessories />} />
+    <Route path="/Cardetailing" element={<Cardetailing />} />
+    <Route path="/Bodyshopservice" element={<Bodyshopservice />} />
+    <Route path="/Insurancerenewal" element={<Insurancerenewal />} />
+    <Route path="/Carcustomization" element={<Carcustomization />} />
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

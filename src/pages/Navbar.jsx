@@ -118,19 +118,19 @@ export default function Navbar() {
                     <span>Tyre Service</span>
                   </a>
 
-                  <a href="" className="dropdown-item">
+                  <a href="/Caraccessories" className="dropdown-item">
                     <i className="fas fa-car"></i> Car Accessories
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Cardetailing" className="dropdown-item">
                     <i className="fas fa-spray-can"></i> Car Detailing
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Bodyshopservice" className="dropdown-item">
                     <i className="fas fa-car-crash"></i> Body Shop Service
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Insurancerenewal" className="dropdown-item">
                     <i className="fas fa-file-invoice"></i> Insurance Renewal
                   </a>
-                  <a href="" className="dropdown-item">
+                  <a href="/Carcustomization" className="dropdown-item">
                     <i className="fas fa-paint-brush"></i> Car Customize
                   </a>
                 </div>
