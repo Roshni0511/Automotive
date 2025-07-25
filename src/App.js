@@ -17,6 +17,11 @@ import Testimonial_page from "./pages/Testimonial_page";
 
 import MechanicalService from "./pages/MechanicalService";
 import Tyreservice from "./pages/Tyreservice";
+import Faq from "./pages/Faq";
+import Privacy_Policy from "./pages/Privacy_Policy";
+import TermsConditions from "./pages/Terms&Conditions";
+import Newsletter from "./pages/Newsletter";
+import LatestEvents from "./pages/LatestEvents";
 
 
 function App() {
@@ -39,8 +44,13 @@ function App() {
   <Route path="/Daily_Activity" element={<Daily_Activity/>}/>
   <Route path="/Contact" element={<Contact/>}/>
   <Route path="/Testimonial_page" element={<Testimonial_page/>}/>
-    <Route path="/MechanicalService" element={<MechanicalService/>}/>
-    <Route path="/Tyreservice" element={<Tyreservice />} />
+  <Route path="/MechanicalService" element={<MechanicalService/>}/>
+  <Route path="/Tyreservice" element={<Tyreservice />} />
+  <Route path="/Faq" element={<Faq />} />
+  <Route path="/Privacy_Policy" element={<Privacy_Policy />} />
+  <Route path="/Terms&Conditions" element={<TermsConditions />} />
+  <Route path="/Newsletter" element={<Newsletter />} />
+  <Route path="/LatestEvents" element={<LatestEvents />} />
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

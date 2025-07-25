@@ -10,8 +10,9 @@ export default function Footer() {
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 972 709 9000</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0261 266 2999</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>automotive2002@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -31,18 +32,19 @@ export default function Footer() {
                     <a class="btn btn-link" href="/">Home</a>
                     <a class="btn btn-link" href="/About">About Us</a>
                     <a class="btn btn-link" href="/Services">Services</a>
-                    <a class="btn btn-link" href="">Latest Events</a>
-                    <a class="btn btn-link" href="/Blog">Blog</a>
-                    <a class="btn btn-link" href="/Gallery">Gallery</a>
                     <a class="btn btn-link" href="/Faq">Faq</a>
                     <a class="btn btn-link" href="/Testimonial_page">Testimonials</a>
+                    <a class="btn btn-link" href="/LatestEvents">Latest Events</a>
+                    <a class="btn btn-link" href="/Gallery">Gallery</a>
+                    <a class="btn btn-link" href="/Blog">Blog</a>
+                    <a class="btn btn-link" href="/Newsletter">News Letters</a>
                     <a class="btn btn-link" href="/Contact">Contact</a>
-                    <a class="btn btn-link" href="">News Letters</a>
                 </div>
-                   <div class="col-lg-3 col-md-6">
+
+                <div class="col-lg-3 col-md-6">
                       <h4 class="text-light mb-4">Our Services</h4>
-                    <a class="btn btn-link" href="">Mechanical Service</a>
-                    <a class="btn btn-link" href="">Tyre Service</a>
+                    <a class="btn btn-link" href="/MechanicalService">Mechanical Service</a>
+                    <a class="btn btn-link" href="/Tyreservice">Tyre Service</a>
                     <a class="btn btn-link" href="">Car Accessories</a>
                    
                     <a class="btn btn-link" href="">Car Detailing</a>
@@ -51,14 +53,21 @@ export default function Footer() {
                     <a class="btn btn-link" href="">Car Customize</a>
              
                 </div>
-                <div class="col-lg-3 col-md-6">
+
+                 <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Our Policies</h4>
+                    <a class="btn btn-link" href="/Privacy_Policy">Privacy Policy</a>
+                    <a class="btn btn-link" href="/Terms&Conditions">Terms and Conditions</a>
+                </div>
+
+                {/* <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style={{maxWidth: "400px"}}>
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         <div class="container">
