@@ -3,32 +3,33 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Blog() {
-    const blogData = [
-    {
-      img: "/assets/img/service-1.jpg",
-      alt: "Hydraulic Systems",
-      title: "Introduction to Hydraulic Systems",
-      folder: "Mechanical",
-      comments: 12,
-      desc: "Learn the basics of hydraulic systems, their components, and real-world applications in industrial machines.",
-    },
-    {
-      img: "/assets/img/service-1.jpg",
-      alt: "Preventive Maintenance",
-      title: "Importance of Preventive Maintenance",
-      folder: "Maintenance",
-      comments: 8,
-      desc: "Discover how preventive maintenance can reduce downtime, improve safety, and extend equipment life.",
-    },
-    {
-      img: "/assets/img/service-1.jpg",
-      alt: "CNC Machine Tips",
-      title: "CNC Machine Setup Tips",
-      folder: "CNC",
-      comments: 10,
-      desc: "Improve precision and speed with our step-by-step CNC machine setup guide for beginners and pros.",
-    },
-  ];
+   const blogData = [
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Engine Diagnostics",
+    title: "Understanding Engine Diagnostic Tools",
+    folder: "Mechanical",
+    comments: 14,
+    desc: "Explore how modern diagnostic tools help detect issues early, improve vehicle performance, and reduce repair costs.",
+  },
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Paint & Body Repair",
+    title: "Top 5 Body Repair Mistakes to Avoid",
+    folder: "Body Shop",
+    comments: 9,
+    desc: "From mismatched paint to improper dent repairs, learn the common mistakes in bodywork and how professionals fix them.",
+  },
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Tyre Maintenance",
+    title: "How to Choose the Right Tyres",
+    folder: "Tyre Service",
+    comments: 11,
+    desc: "Choosing the correct tyres ensures better grip, mileage, and safety. Here’s a complete guide based on your car type.",
+  },
+ 
+];
   return (
     <div>
       <Navbar />

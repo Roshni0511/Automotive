@@ -6,6 +6,35 @@ import Counter from "./Counter";
 import Booking from "./Booking";
 import Discovermore from "./Discovermore";
 import Testimonial from "./Testimonial";
+import Process from "./Process";
+import Company_logo from "./Company_logo";
+const blogData = [
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Engine Diagnostics",
+    title: "Understanding Engine Diagnostic Tools",
+    folder: "Mechanical",
+    comments: 14,
+    desc: "Explore how modern diagnostic tools help detect issues early, improve vehicle performance, and reduce repair costs.",
+  },
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Paint & Body Repair",
+    title: "Top 5 Body Repair Mistakes to Avoid",
+    folder: "Body Shop",
+    comments: 9,
+    desc: "From mismatched paint to improper dent repairs, learn the common mistakes in bodywork and how professionals fix them.",
+  },
+  {
+    img: "/assets/img/service-1.jpg",
+    alt: "Tyre Maintenance",
+    title: "How to Choose the Right Tyres",
+    folder: "Tyre Service",
+    comments: 11,
+    desc: "Choosing the correct tyres ensures better grip, mileage, and safety. Here’s a complete guide based on your car type.",
+  },
+ 
+];
 
 export default function Home() {
 
@@ -13,7 +42,7 @@ export default function Home() {
     <>
       <div>
         <Navbar />
-
+        
         {/* <!-- Carousel Start --> */}
         <div className="container-fluid p-0 mb-5">
           <div
@@ -302,10 +331,10 @@ export default function Home() {
                 {/* <a href="/About" className="btn btn-primary py-3 px-5">
                   Read More<i className="fa fa-arrow-right ms-3"></i>
                 </a> */}
-                 <a class="dedcription-btn" href="/About">
-                          <span class="name-descripeion"> Read More</span>
-                          <div class="btn-icon heart">
-                            <i class="fas fa-car"></i>
+                 <a className="dedcription-btn" href="/About">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
                           </div>
                         </a>
               </div>
@@ -403,7 +432,7 @@ export default function Home() {
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
-                            src="/assets/img/service.jpg"
+                            src="/assets/img/benchman-fixing.avif"
                             style={{ objectFit: "cover" }}
                             alt=""
                           />
@@ -411,36 +440,24 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <h3 className="mb-3">
-                          Comprehensive Vehicle Diagnostic Testing
+                         Expert Mechanical Repair & Maintenance
                         </h3>
                         <p className="mb-4">
-                          Our diagnostic test services utilize state-of-the-art
-                          tools to identify engine, brake, and electrical issues
-                          with precision. Early diagnosis ensures your vehicle
-                          stays reliable and safe on the road.
+                          Our mechanical services are designed to keep your car running smoothly and safely on the road. From complete engine diagnostics to brake, clutch, and suspension repairs, we use advanced tools and genuine parts to ensure your vehicle performs at its best. Whether it's a minor issue or a major overhaul, our certified mechanics are equipped to handle it all with precision and care.
                         </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>
-                          Advanced Diagnostic Equipment
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Quick
-                          Problem Identification
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>
-                          Detailed Error Reports
-                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Certified Technicians</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Engine & Transmission Repairs</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Brake & Suspension Services</p>
                         {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a class="dedcription-btn" href="/Services">
-                          <span class="name-descripeion"> Read More</span>
-                          <div class="btn-icon heart">
-                            <i class="fas fa-car"></i>
+                         <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
                           </div>
                         </a>
                       </div>
@@ -453,7 +470,7 @@ export default function Home() {
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
-                            src="assets/img/service-2.jpg"
+                            src="/assets/img/man-polish.avif"
                             style={{ objectFit: "cover" }}
                             alt=""
                           />
@@ -461,36 +478,24 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <h3 className="mb-3">
-                          Reliable Engine Servicing & Tune-Up
+                          Complete Auto Body Restoration
                         </h3>
                         <p className="mb-4">
-                          Ensure optimal engine performance with our expert
-                          servicing, which includes oil changes, spark plug
-                          replacements, and system checks. We keep your engine
-                          running smoothly and efficiently.
+                           Our body shop services specialize in restoring your car to its original factory look and finish. We handle everything from collision repairs, dent removal, and scratch corrections to full repainting using the latest color-matching technology. Whether you need minor touch-ups or extensive bodywork, our team ensures a flawless result that enhances your vehicle’s appearance and resale value.
                         </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Full
-                          Engine Inspection
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>
-                          Performance Optimization
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Fuel
-                          Efficiency Improvements
-                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Top Tyre Brands Available</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Wheel Alignment & Balancing</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Puncture Repair & Valve Check</p>
                         {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a class="dedcription-btn" href="/Services">
-                          <span class="name-descripeion"> Read More</span>
-                          <div class="btn-icon heart">
-                            <i class="fas fa-car"></i>
+                         <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
                           </div>
                         </a>
                       </div>
@@ -503,7 +508,7 @@ export default function Home() {
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
-                            src="assets/img/service-3.jpg"
+                            src="/assets/img/section-c-img.png"
                             style={{ objectFit: "cover" }}
                             alt=""
                           />
@@ -511,36 +516,24 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <h3 className="mb-3">
-                          Professional Tires Replacement Service
+                          Tyre Fitting, Alignment & Balancing
                         </h3>
                         <p className="mb-4">
-                          Stay safe on the road with our fast and affordable
-                          tire replacement service. We offer balancing,
-                          alignment, and premium tire options to match your
-                          driving needs.
+                           Proper tyres are critical for safety and fuel efficiency. Our tyre service offers a wide selection of branded tyres, along with professional fitting, wheel alignment, and balancing. We ensure that your tyres provide optimum grip, handling, and performance in all driving conditions. Our experts also inspect tread wear and provide honest advice on replacements or rotations as needed.
                         </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>All
-                          Brands & Sizes Available
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Wheel
-                          Balancing & Alignment
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Quick
-                          Installation
-                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Top Tyre Brands Available</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Wheel Alignment & Balancing</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Puncture Repair & Valve Check</p>
                         {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                         <a class="dedcription-btn" href="/Services">
-                          <span class="name-descripeion"> Read More</span>
-                          <div class="btn-icon heart">
-                            <i class="fas fa-car"></i>
+                         <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
                           </div>
                         </a>
                       </div>
@@ -553,7 +546,7 @@ export default function Home() {
                         <div className="position-relative h-100">
                           <img
                             className="position-absolute img-fluid w-100 h-100"
-                            src="assets/img/service-4.jpg"
+                            src="/assets/img/car-calculator.jpg"
                             style={{ objectFit: "cover" }}
                             alt=""
                           />
@@ -561,41 +554,148 @@ export default function Home() {
                       </div>
                       <div className="col-md-6">
                         <h3 className="mb-3">
-                          Efficient Oil Changing Services
+                         Hassle-Free Car Insurance Renewal
                         </h3>
                         <p className="mb-4">
-                          Regular oil changes are vital to extend engine life
-                          and ensure smooth operation. We use high-grade oils
-                          and filters to keep your vehicle in peak condition.
+                           Renewing your car insurance has never been easier. Our streamlined insurance renewal service helps you compare multiple policy options from top providers, ensuring you get maximum coverage at competitive rates. From third-party to comprehensive plans, we take care of all documentation and guide you through the process without any hassle or hidden charges.
                         </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>
-                          Top-Quality Engine Oils
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>
-                          Filter Replacement Included
-                        </p>
-                        <p>
-                          <i className="fa fa-check text-success me-3"></i>Fast
-                          & Hassle-Free Service
-                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Instant Online Renewal</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Multiple Insurance Providers</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Zero Paperwork Assistance</p>
                         {/* <a
                           href="/Services"
                           className="btn btn-primary py-3 px-5 mt-3"
                         >
                           Read More<i className="fa fa-arrow-right ms-3"></i>
                         </a> */}
-                        <a class="dedcription-btn" href="/Services">
-                          <span class="name-descripeion"> Read More</span>
-                          <div class="btn-icon heart">
-                            <i class="fas fa-car"></i>
+                        <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
                           </div>
                         </a>
 
                       </div>
                     </div>
                   </div>
+
+                  <div className="tab-pane fade" id="tab-pane-5">
+                    <div className="row g-4">
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
+                        <div className="position-relative h-100">
+                          <img
+                            className="position-absolute img-fluid w-100 h-100"
+                            src="/assets/img/car-accessories.jpg"
+                            style={{ objectFit: "cover" }}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <h3 className="mb-3">
+                         Wide Range of Car Accessories
+                        </h3>
+                        <p className="mb-4">
+                            Give your vehicle a personal touch with our premium car accessories. We offer everything from seat covers, steering grips, and floor mats to high-end infotainment systems, reverse cameras, and ambient lighting. Whether you’re looking to upgrade aesthetics or add functionality, our wide selection and expert installation services ensure a perfect fit and finish every time.
+                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Premium Seat Covers</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Latest Car Audio & Video</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Interior & Exterior Styling</p>
+                        {/* <a
+                          href="/Services"
+                          className="btn btn-primary py-3 px-5 mt-3"
+                        >
+                          Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                        <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
+                          </div>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="tab-pane fade" id="tab-pane-6">
+                    <div className="row g-4">
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
+                        <div className="position-relative h-100">
+                          <img
+                            className="position-absolute img-fluid w-100 h-100"
+                            src="/assets/img/service-car.jpg"
+                            style={{ objectFit: "cover" }}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <h3 className="mb-3">
+                        Personalized Car Customization
+                        </h3>
+                        <p className="mb-4">
+                           Want to make your car truly unique? Our customization services are designed for automotive enthusiasts who love standing out. We offer full-body kits, custom paint jobs, vinyl wraps, performance upgrades, interior mods, and more. Whether you're aiming for sporty, luxurious, or off-road looks, our customization experts bring your vision to life with precision craftsmanship.
+                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Custom Wraps & Paint Jobs</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Performance Tuning</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Body Kits & Alloy Wheels</p>
+                        {/* <a
+                          href="/Services"
+                          className="btn btn-primary py-3 px-5 mt-3"
+                        >
+                          Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                        <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
+                          </div>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                   <div className="tab-pane fade" id="tab-pane-7">
+                    <div className="row g-4">
+                      <div className="col-md-6" style={{ minHeight: "500px" }}>
+                        <div className="position-relative h-100">
+                          <img
+                            className="position-absolute img-fluid w-100 h-100"
+                            src="/assets/img/car-detail.jpg"
+                            style={{ objectFit: "cover" }}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div className="col-md-6">
+                        <h3 className="mb-3">
+                        Professional Car Detailing
+                        </h3>
+                        <p className="mb-4">
+                            Restore your car’s beauty inside and out with our professional detailing services. We go beyond a basic wash to offer deep interior cleaning, upholstery shampooing, dashboard conditioning, and exterior polishing. Our ceramic coating and paint protection options add long-lasting shine and shield your vehicle against dirt, scratches, and UV damage — keeping it looking brand new.
+                        </p>
+                        <p><i className="fa fa-check text-success me-3"></i>Interior Shampoo & Vacuum</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Exterior Polishing & Waxing</p>
+                        <p><i className="fa fa-check text-success me-3"></i>Ceramic Coating Available</p>
+                        {/* <a
+                          href="/Services"
+                          className="btn btn-primary py-3 px-5 mt-3"
+                        >
+                          Read More<i className="fa fa-arrow-right ms-3"></i>
+                        </a> */}
+                        <a className="dedcription-btn" href="/Services">
+                          <span className="name-descripeion"> Read More</span>
+                          <div className="btn-icon heart">
+                            <i className="fas fa-car"></i>
+                          </div>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -606,7 +706,7 @@ export default function Home() {
         {/* <!-- Booking Start --> */}
         <Booking />
         {/* <!-- Booking End --> */}
-
+        <Company_logo />
         {/* <!-- Features Start --> */}
         <div className="container pt-5 wow fadeInUp" data-wow-delay="0.1s">
           <div className="row">
@@ -626,10 +726,10 @@ export default function Home() {
               {/* <a href="#" className="btn btn-primary py-3 px-5">
                 Learn More
               </a> */}
-              <a class="dedcription-btn" href="#">
-                <span class="name-descripeion"> Learn More</span>
-                <div class="btn-icon heart">
-                  <i class="fas fa-car"></i>
+              <a className="dedcription-btn" href="#">
+                <span className="name-descripeion"> Learn More</span>
+                <div className="btn-icon heart">
+                  <i className="fas fa-car"></i>
                 </div>
               </a>
             </div>
@@ -693,7 +793,7 @@ export default function Home() {
                           marginRight: "10px",
                         }}
                       >
-                        <i class="fas fa-hand-holding-usd"></i>
+                        <i className="fas fa-hand-holding-usd"></i>
                       </div>
                       <h6 className="m-0">Affordable Price Upto 2 Years</h6>
                     </div>
@@ -765,7 +865,7 @@ export default function Home() {
                           marginRight: "10px",
                         }}
                       >
-                        <i class="fas fa-car"></i>
+                        <i className="fas fa-car"></i>
                       </div>
                       <h6 className="m-0">Expert in All Brand Services</h6>
                     </div>
@@ -781,7 +881,7 @@ export default function Home() {
 
         {/* <!-- Features End --> */}
 
-<Discovermore />
+        <Discovermore />
 
         {/* <!-- Team Start --> */}
         <div className="container-xxl py-5">
@@ -929,8 +1029,52 @@ export default function Home() {
           </div>
         </div>
         {/* <!-- Team End --> */}
+          <Process />
+          <Testimonial />
 
-<Testimonial />
+         {/* <!-- Blog Start --> */}
+    <div className="container pt-5">
+        <div className="d-flex flex-column text-center mb-5">
+             <h6 className="text-primary text-uppercase">
+                // Recent Blog //
+              </h6>
+              <h1 className="mb-1">Latest From Our Blog</h1>
+        </div>
+         <div className="row pb-3 wow fadeInUp" data-wow-delay="0.3s">
+        {blogData.map((blog, index) => (
+          <div className="col-lg-4 mb-4" key={index}>
+            <div className="card mb-2 p-3">
+              <a href="/Blog"><img className="card-img-top" src={blog.img} alt={blog.alt} /></a>
+              <div className="card-body bg-secondary d-flex justify-content-between align-items-center p-0">
+                <h6 className="card-title text-white text-truncate m-0 ml-3 ps-3"><a href="/Blog" className="text-white">{blog.title}</a></h6>
+                <a
+                  href="#"
+                  className="fa fa-link d-flex flex-shrink-0 align-items-center justify-content-center bg-primary text-white text-decoration-none m-0 ml-auto"
+                  style={{ width: "45px", height: "45px" }}
+                ></a>
+              </div>
+              <div className="card-footer py-3 px-4">
+                <div className="d-flex justify-content-between mb-2">
+                  <small className="mr-3">
+                    <i className="fa fa-user text-primary"></i> Admin
+                  </small>
+                  <small className="mr-3">
+                    <i className="fa fa-folder text-primary"></i> {blog.folder}
+                  </small>
+                  <small className="mr-3">
+                    <i className="fa fa-comments text-primary"></i> {blog.comments}
+                  </small>
+                </div>
+                <p className="m-0">{blog.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+
+       
+      </div>
+    </div>
+    {/* <!-- Blog End --> */}
 
         <Footer />
       </div>
