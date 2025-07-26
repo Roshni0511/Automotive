@@ -71,10 +71,18 @@ export default function Home() {
                           From Us
                         </h1>
                         <a
-                          href=""
-                          className="btn btn-primary py-3 px-5 animated slideInDown"
+                          href="/About"
+                          className="btn btn-primary  animated slideInDown"
+                          style={{marginRight:'20px',padding:'10px 30px'}}
                         >
-                          Learn More<i className="fa fa-arrow-right ms-3"></i>
+                          About Us<i className="fa fa-arrow-right ms-3"></i>
+                        </a>
+                          <a
+                          href="/Gallery"
+                          className="btn   animated slideInDown newbutton"
+                            style={{marginRight:'20px',padding:'10px 30px'}}
+                        >
+                         Work Gallery<i className="fa fa-arrow-right ms-3"></i>
                         </a>
                       </div>
                       <div className="col-lg-5 d-none d-lg-flex animated zoomIn">
@@ -108,10 +116,18 @@ export default function Home() {
                           We Provide Expert Service
                         </h1>
                         <a
-                          href=""
-                          className="btn btn-primary py-3 px-5 animated slideInDown"
+                          href="/About"
+                          className="btn btn-primary  animated slideInDown"
+                           style={{marginRight:'20px',padding:'10px 30px'}}
                         >
-                          Learn More<i className="fa fa-arrow-right ms-3"></i>
+                          About Us<i className="fa fa-arrow-right ms-3"></i>
+                        </a>
+                          <a
+                          href="/Services"
+                          className="btn   animated slideInDown newbutton"
+                            style={{marginRight:'20px',padding:'10px 30px'}}
+                        >
+                         Our Services<i className="fa fa-arrow-right ms-3"></i>
                         </a>
                       </div>
                       <div className="col-lg-5 d-none d-lg-flex animated zoomIn">

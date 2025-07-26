@@ -2192,3 +2192,10 @@ FAQ CSS
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
+.newbutton{
+  background-color: #fff;
+}
+.newbutton:hover{
+  background-color: #D81324;
+  color: #fff;
+}
