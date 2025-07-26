@@ -8,7 +8,7 @@ const events = [
     date: "August 12, 2025",
     location: "Surat International Convention Center",
     description:
-      "Experience cutting-edge vehicle technology, workshops, and guest speakers from top automotive brands.",
+      "Experience cutting-edge vehicle technology, and guest speakers from top automotive brands.",
     image: "/assets/img/latestevent1.png",
   },
   {

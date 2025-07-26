@@ -49,7 +49,7 @@ export default function EventsDetail() {
                   <img
                     src="/assets/img/latestevent1.png"
                     alt=""
-                    style={{ border: "1px solid #dee2e6", padding: "10px" ,maxWidth:'-webkit-fill-available'}}
+                    style={{ border: "1px solid #dee2e6", padding: "10px" ,width:'100%',height:'600px'}}
                   />
                 </div>
 
