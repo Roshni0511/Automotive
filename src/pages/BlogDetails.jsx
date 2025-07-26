@@ -49,17 +49,17 @@ export default function BlogDetails() {
                     </div>
                 </div>
                 <div class="mb-5 wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-thumbnail mb-4 p-3" src="assets/img/carousel-1.jpg" alt="Image" />
+                    <img class="img-thumbnail mb-4 p-3" src="/assets/img/servicess1.jpg" alt="Image" />
                     <p className="wow fadeIn" data-wow-delay="0.3s"> Hydraulic systems have become the backbone of modern industrial and automotive applications due to their unmatched ability to generate and control large amounts of force with high precision. These systems operate by transmitting energy through incompressible fluids, usually specialized hydraulic oils, which allows machines to perform heavy-duty tasks with minimal mechanical complexity. From pressing metals in manufacturing plants to lifting entire vehicles in service stations, hydraulic technology ensures reliability, consistency, and speed. In fact, many advanced machines—from construction excavators to airplane landing gear—rely heavily on hydraulics for their core functionality. What makes these systems particularly valuable is their flexibility; the same core principles can be applied to devices ranging from small handheld tools to massive industrial equipment.  </p>
   
                    
                     <h2 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Applications in the Automotive Industry</h2>
-                    <img class="img-thumbnail p-3 w-50 float-left mr-4 mb-3" src="assets/img/blog-1.jpg" alt="Image" />
+                    <img class="img-thumbnail p-3 w-50 float-left mr-4 mb-3" src="/assets/img/gallery-13.jpg" alt="Image" />
                     <p className="wow fadeIn" data-wow-delay="0.3s">   In the automotive sector, hydraulic systems play a vital role in ensuring vehicle performance, safety, and comfort. One of the most common and critical applications is in the braking system, where hydraulic brake fluid is used to transfer force from the brake pedal to the brake calipers, allowing for smooth and responsive stopping power. This ensures that drivers can effectively control the vehicle even in emergency situations. Additionally, power steering systems utilize hydraulic pressure to assist the driver in turning the steering wheel, especially at low speeds or while maneuvering in tight spaces. This not only makes driving easier but also reduces strain and fatigue on the driver during long journeys or while navigating through congested urban environments.  Moreover, hydraulic suspension systems are designed to absorb shocks and vibrations caused by uneven road surfaces, providing a smoother and more comfortable ride for passengers. These systems adjust dynamically to road conditions and driving behavior, enhancing both handling and ride quality. In high-performance and luxury vehicles, advanced hydraulic suspension technologies allow the car to adapt its height and stiffness, improving aerodynamics, cornering stability, and overall driving experience. 
     </p>
 
                     <h3 class="mb-4 wow fadeIn" data-wow-delay="0.3s">Maintenance Tips for Hydraulic Systems</h3>
-                    <img class="img-thumbnail p-3 w-50 float-right ml-4 mb-3" src="assets/img/blog-1.jpg" alt="Image" />
+                    <img class="img-thumbnail p-3 w-50 float-right ml-4 mb-3" src="/assets/img/service-car.jpg" alt="Image" />
                     <p className="wow fadeIn" data-wow-delay="0.3s"> Regular maintenance of hydraulic systems is essential to ensure their long-term performance, reliability, and safety. This includes routine inspections, monitoring fluid levels, checking for signs of wear or damage, and timely replacement of hydraulic filters. Hydraulic fluid serves not only as a medium for power transmission but also for lubrication and heat dissipation. Therefore, keeping the fluid clean and at the correct level is crucial. Contaminated or degraded fluid can lead to poor system performance, component damage, and even complete system failure.
   It is important to inspect hoses, seals, and connections for any signs of leaks, cracks, or corrosion. Even a small leak can reduce system efficiency and lead to a gradual loss of power or control. Overheating is another common issue that can result from poor fluid quality, blocked filters, or excessive system load. If left unaddressed, overheating can damage internal components and significantly shorten the system’s lifespan.
 </p>
@@ -172,7 +172,7 @@ export default function BlogDetails() {
   </div>
 
   <div className="mb-5">
-    <img src="assets/img/blog-1.jpg" alt="Maintenance Tips" className="img-thumbnail p-3" />
+    <img src="/assets/img/gallery-19.jpg" alt="Maintenance Tips" className="img-thumbnail p-3" />
   </div>
 
   <div className="mb-5">
@@ -180,7 +180,7 @@ export default function BlogDetails() {
 
     {[1, 2, 3, 4, 5].map((_, index) => (
       <div className="d-flex align-items-center border-bottom mb-3 pb-3" key={index}>
-        <img className="img-thumbnail p-2" src="assets/img/blog-1.jpg" style={{ width: "80px", height: "80px" }} alt="Recent Post" />
+        <img className="img-thumbnail p-2" src="/assets/img/gallery-1.jpg" style={{ width: "80px", height: "80px" }} alt="Recent Post" />
         <div className="d-flex flex-column pl-3">
           <a className="font-weight-bold text-secondary mb-2" href="">
             5 Key Things Every Car Owner Should Know About Maintenance
@@ -196,7 +196,7 @@ export default function BlogDetails() {
   </div>
 
   <div className="mb-5">
-    <img src="assets/img/blog-1.jpg" alt="Workshop" className="img-thumbnail p-3" />
+    <img src="/assets/img/gallery-16.jpg" alt="Workshop" className="img-thumbnail p-3" />
   </div>
 
   <div className="mb-5">
@@ -212,7 +212,7 @@ export default function BlogDetails() {
   </div>
 
   <div className="mb-5">
-    <img src="assets/img/blog-1.jpg" alt="Garage Tools" className="img-thumbnail p-3" />
+    <img src="/assets/img/gallery-6.jpg" alt="Garage Tools" className="img-thumbnail p-3" />
   </div>
 
   <div>

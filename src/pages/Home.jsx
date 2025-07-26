@@ -8,9 +8,9 @@ import Discovermore from "./Discovermore";
 import Testimonial from "./Testimonial";
 import Process from "./Process";
 import Company_logo from "./Company_logo";
-const blogData = [
+   const blogData = [
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-19.jpg",
     alt: "Engine Diagnostics",
     title: "Understanding Engine Diagnostic Tools",
     folder: "Mechanical",
@@ -18,7 +18,7 @@ const blogData = [
     desc: "Explore how modern diagnostic tools help detect issues early, improve vehicle performance, and reduce repair costs.",
   },
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-3.jpg",
     alt: "Paint & Body Repair",
     title: "Top 5 Body Repair Mistakes to Avoid",
     folder: "Body Shop",
@@ -26,7 +26,7 @@ const blogData = [
     desc: "From mismatched paint to improper dent repairs, learn the common mistakes in bodywork and how professionals fix them.",
   },
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-6.jpg",
     alt: "Tyre Maintenance",
     title: "How to Choose the Right Tyres",
     folder: "Tyre Service",
@@ -907,6 +907,7 @@ export default function Home() {
                     <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.facebook.com/"
                       >
                         <i className="fab fa-facebook-f"></i>
@@ -914,6 +915,7 @@ export default function Home() {
 
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.instagram.com/"
                       >
                         <i className="fab fa-instagram"></i>
@@ -940,6 +942,7 @@ export default function Home() {
                     <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.facebook.com/"
                       >
                         <i className="fab fa-facebook-f"></i>
@@ -947,6 +950,7 @@ export default function Home() {
 
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.instagram.com/"
                       >
                         <i className="fab fa-instagram"></i>
@@ -967,6 +971,7 @@ export default function Home() {
                   <div className="position-relative overflow-hidden">
                     <img
                       className="img-fluid"
+                      
                       src="assets/img/team-3.jpg"
                       alt=""
                     />
@@ -974,6 +979,7 @@ export default function Home() {
                       <a
                         className="btn btn-square mx-1"
                         href="https://www.facebook.com/"
+                        target="_blank"
                       >
                         <i className="fab fa-facebook-f"></i>
                       </a>
@@ -981,6 +987,7 @@ export default function Home() {
                       <a
                         className="btn btn-square mx-1"
                         href="https://www.instagram.com/"
+                        target="_blank"
                       >
                         <i className="fab fa-instagram"></i>
                       </a>
@@ -1006,6 +1013,7 @@ export default function Home() {
                     <div className="team-overlay position-absolute start-0 top-0 w-100 h-100">
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.facebook.com/"
                       >
                         <i className="fab fa-facebook-f"></i>
@@ -1013,6 +1021,7 @@ export default function Home() {
 
                       <a
                         className="btn btn-square mx-1"
+                        target="_blank"
                         href="https://www.instagram.com/"
                       >
                         <i className="fab fa-instagram"></i>

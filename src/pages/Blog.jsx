@@ -5,7 +5,7 @@ import Footer from "./Footer";
 export default function Blog() {
    const blogData = [
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-19.jpg",
     alt: "Engine Diagnostics",
     title: "Understanding Engine Diagnostic Tools",
     folder: "Mechanical",
@@ -13,7 +13,7 @@ export default function Blog() {
     desc: "Explore how modern diagnostic tools help detect issues early, improve vehicle performance, and reduce repair costs.",
   },
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-3.jpg",
     alt: "Paint & Body Repair",
     title: "Top 5 Body Repair Mistakes to Avoid",
     folder: "Body Shop",
@@ -21,7 +21,7 @@ export default function Blog() {
     desc: "From mismatched paint to improper dent repairs, learn the common mistakes in bodywork and how professionals fix them.",
   },
   {
-    img: "/assets/img/service-1.jpg",
+    img: "/assets/img/gallery-6.jpg",
     alt: "Tyre Maintenance",
     title: "How to Choose the Right Tyres",
     folder: "Tyre Service",

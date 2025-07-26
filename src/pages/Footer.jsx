@@ -9,15 +9,43 @@ export default function Footer() {
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Surat, Gujarat</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 972 709 9000</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0261 266 2999</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>automotive2002@gmail.com</p>
+                  <p class="mb-2">
+  <i class="fa fa-map-marker-alt me-3"></i>
+  Surat, Gujarat
+</p>
+
+<p class="mb-2">
+  <i class="fa fa-phone-alt me-3"></i>
+  <a href="tel:+919727099000" class="text-decoration-none text-white">+91 972 709 9000</a>
+</p>
+
+<p class="mb-2">
+  <i class="fa fa-phone-alt me-3"></i>
+  <a href="tel:02612662999" class="text-decoration-none text-white">0261 266 2999</a>
+</p>
+
+<p class="mb-2">
+  <i class="fa fa-envelope me-3"></i>
+  <a href="mailto:automotive2002@gmail.com" class="text-decoration-none text-white">automotive2002@gmail.com</a>
+</p>
+
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                      <a class="btn btn-outline-light btn-social" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-twitter"></i>
+</a>
+
+<a class="btn btn-outline-light btn-social" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+<a class="btn btn-outline-light btn-social" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-youtube"></i>
+</a>
+
+<a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-linkedin-in"></i>
+</a>
+
                     </div>
                     <div style={{marginTop:"22px"}}>
                       <h4 class="text-light mb-3">Opening Hours</h4>
@@ -74,7 +102,7 @@ export default function Footer() {
             <div class="copyright">
                 <div class="row" style={{justifyContent:'center'}}>
                     <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#"> 2022 - 2032 Automotive</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="/"> 2022 - 2032 Automotive</a>, All Right Reserved.
 
                      
                         Designed By <a class="border-bottom" href="https://successinnovativetechnologiespvtltd.com/">Success Innovative Technologies Private Limited</a>
