@@ -141,7 +141,7 @@ const MechanicalService = () => {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-  
+    marginBottom:'40px',
   }}
 >
   <img className="mb-40" src="/assets/img/logo-white.png" alt="" />
@@ -189,6 +189,7 @@ const MechanicalService = () => {
 
 
                  {/* HERO SECTION */}
+                 
       <section className="hero-sectionss">
         <div className="hero-leftes">
         
@@ -196,15 +197,16 @@ const MechanicalService = () => {
          
 
           <div className="hero-featuresss" ref={sliderRef}>
-            {tagItems.map((tag, index) => (
-              
-              <span
-                className="animated-tages hover-glow"
-                style={{ animationDelay:`${index * 0.2}s`}} key={index} >
-                <FaCheckCircle /> {tag}
-              </span>
-            ))}
-          </div>
+    {tagItems.map((tag, index) => (
+      <span
+        className="animated-tages hover-glow"
+        style={{ animationDelay: `${index * 0.2}s` }}
+        key={index}
+      >
+        <FaCheckCircle /> {tag}
+      </span>
+    ))}
+  </div>
         </div>
 
       

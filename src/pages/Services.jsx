@@ -259,7 +259,7 @@ const Services = () => {
                     alt=""
                   />
                   <div class="team-overlay position-absolute start-0 top-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="#/Carcustomization" class="btn btn-primary">
+                    <a href="/Carcustomization" class="btn btn-primary">
                       <i class="fas fa-eye me-2"></i>View More
                     </a>
                   </div>
