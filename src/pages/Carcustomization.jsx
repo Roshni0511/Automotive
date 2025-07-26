@@ -156,7 +156,7 @@ const Carcustomization = () => {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-  
+      marginBottom:'40px',
   }}
 >
   <img className="mb-40" src="/assets/img/logo-white.png" alt="" />
