@@ -2130,30 +2130,65 @@ FAQ CSS
 }
 
 
+/*  */
 
 
+.latest-events .event-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
 
+.latest-events .event-card:hover {
+  transform: translateY(-5px);
+}
 
+.latest-events .event-img-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
 
+.latest-events .event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: 0.3s ease-in-out;
+}
 
+.latest-events .event-card:hover .event-img {
+  transform: scale(1.1);
+}
 
+.latest-events .event-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(216 19 36 / 62%);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+}
 
+.latest-events .event-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+}
 
+.latest-events .event-description {
+  color: #555;
+  font-size: 0.95rem;
+}
 
+/*  */
 
+.event-details ul {
+  padding-left: 1.2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.event-details ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}

@@ -27,6 +27,8 @@ import Cardetailing from "./pages/Cardetailing";
 import Bodyshopservice from "./pages/Bodyshopservice";
 import Insurancerenewal from "./pages/Insurancerenewal";
 import Carcustomization from "./pages/Carcustomization";
+import EventsDetail from "./pages/EventsDetail";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -61,6 +63,8 @@ function App() {
     <Route path="/Bodyshopservice" element={<Bodyshopservice />} />
     <Route path="/Insurancerenewal" element={<Insurancerenewal />} />
     <Route path="/Carcustomization" element={<Carcustomization />} />
+    <Route path="/EventsDetail" element={<EventsDetail />} />
+    <Route path="/Register" element={<Register />} />
 </Routes>
 
   <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
