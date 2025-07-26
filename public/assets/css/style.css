@@ -1329,7 +1329,7 @@ background-image: url("../img/test.jpg");
   }
   .yt-gallery {
   padding: 40px 20px;
-  background: #f8fafc;
+  /* background: #f8fafc; */
   text-align: center;
 }
 

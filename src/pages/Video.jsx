@@ -24,13 +24,13 @@ export default function Video() {
 
   // ✅ Now using YouTube links instead of just video IDs
   const videos = [
-    { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi',},
+    { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi', },
     { url: 'https://youtu.be/r0O6hv8sApY?si=qrK2-yGft0R1VdsY', },
     { url: 'https://youtu.be/SdvqmxzZkDg?si=COpbKrwZqvU6tg8S', },
-        { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi', },
+    { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi', },
     { url: 'https://youtu.be/r0O6hv8sApY?si=qrK2-yGft0R1VdsY', },
-    { url: 'https://youtu.be/SdvqmxzZkDg?si=COpbKrwZqvU6tg8S' },
-       { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi',},
+    { url: 'https://youtu.be/SdvqmxzZkDg?si=COpbKrwZqvU6tg8S', },
+    { url: 'https://youtu.be/eMBlkjCA298?si=QFn-q6GOKbEtlqWi', },
     { url: 'https://youtu.be/r0O6hv8sApY?si=qrK2-yGft0R1VdsY', },
   ];
 
