@@ -29,6 +29,8 @@ import Carcustomization from "./pages/Carcustomization";
 import EventsDetail from "./pages/EventsDetail";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import My_Account from "./pages/My_Account";
+import User from "./pages/User";
 
 
 function App() {
@@ -66,6 +68,8 @@ function App() {
         <Route path="/EventsDetail" element={<EventsDetail />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Login" element={<Login/>}/>
+        <Route path="/My_Account" element={<My_Account/>}/>
+        <Route path="/User" element={<User/>}/>
       </Routes>
 
       <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">

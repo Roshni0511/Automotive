@@ -86,6 +86,10 @@ export default function Footer() {
                     <h4 class="text-light mb-4">Our Policies</h4>
                     <a class="btn btn-link" href="/Privacy_Policy">Privacy Policy</a>
                     <a class="btn btn-link" href="/Terms&Conditions">Terms and Conditions</a>
+                    <br />
+                    <h4 class="text-light mb-4">Company</h4>
+                    <a class="btn btn-link" href="/My_Account">My Account</a>
+                    <a class="btn btn-link" href="/User">User</a>
                 </div>
 
                 {/* <div class="col-lg-3 col-md-6">

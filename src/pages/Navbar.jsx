@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaRightToBracket } from "react-icons/fa6";
 export default function Navbar() {
   return (
     <div>
@@ -191,7 +191,7 @@ export default function Navbar() {
             </a>
           </div>
           <a href="/Contact" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
-            Login<i className="fa fa-arrow-right ms-3"></i>
+            Login  <FaRightToBracket />
           </a>
         </div>
       </nav>
