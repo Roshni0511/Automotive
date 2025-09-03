@@ -19,6 +19,7 @@ const UserPage = () => {
   const [bookedServices, setBookedServices] = useState([
     { id: 1, service: "Oil Change", date: "2024-05-01" },
     { id: 2, service: "Tire Rotation", date: "2024-06-15" },
+    { id: 3, service: "Battery Check", date: "2024-07-20" },
   ]);
 
   const [newService, setNewService] = useState("");
@@ -50,8 +51,9 @@ const UserPage = () => {
           <h4>Welcome, {user.name}</h4>
         </header>
 
+        <div class="row">
         {/* Profile */}
-        {/* Profile */}
+        <div className="col-12">
         <section className="profile-card">
           <h2>
             <FaUserCircle className="section-icon" /> Your Profile
@@ -83,8 +85,9 @@ const UserPage = () => {
             </div>
           </div>
         </section>
-
+        </div>
         {/* Booked Services */}
+         <div className="col-md-6">
         <section className="services-card">
           <h2>
             <FaCar className="section-icon" /> Your Booked Services
@@ -96,7 +99,7 @@ const UserPage = () => {
               {bookedServices.map(({ id, service, date }) => (
                 <li key={id} className="service-item">
                   <FaCar className="car-icon" />
-                  <span className="service-name">{service}</span>
+                  <span className="service-name" style={{fontSize:'15px'}}>{service}</span>
                   <span className="service-date">
                     <FaCalendarAlt /> {date}
                   </span>
@@ -105,8 +108,9 @@ const UserPage = () => {
             </ul>
           )}
         </section>
-
+</div>
         {/* Booking Form */}
+        <div className="col-md-6">
         <section className="booking-card">
           <h2>
             <FaPlusCircle className="section-icon" /> Book a New Service
@@ -149,6 +153,8 @@ const UserPage = () => {
             </button>
           </form>
         </section>
+        </div>
+        </div>
       </div>
       <Footer />
     </>

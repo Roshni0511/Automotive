@@ -189,6 +189,9 @@ export default function Navbar() {
             <a href="/Contact" className="nav-item nav-link">
               Contact
             </a>
+            <a href="/My_Account" className="nav-item nav-link">
+              My Account
+            </a>
           </div>
           <a href="/Login" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
             Login  <FaRightToBracket />

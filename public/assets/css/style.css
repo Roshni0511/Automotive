@@ -2500,12 +2500,13 @@ FAQ CSS
 }
 
 
-/*  *//* Main Container */
+/*  */
+
 .user-page-container {
-  max-width: 850px;
+  max-width: 1140px;
   margin: 40px auto;
   padding: 25px 35px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   background: linear-gradient(135deg, #eef3f8, #ffffff);
   border-radius: 18px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
@@ -2531,7 +2532,7 @@ FAQ CSS
 .user-page-container .booking-card {
   background: white;
   border-radius: 14px;
-  padding: 25px 30px;
+  padding: 15px 20px;
   margin-bottom: 25px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -2566,7 +2567,7 @@ FAQ CSS
 }
 .user-page-container .profile-item span {
   color: #34495e;
-  font-size: 1.05rem;
+  font-size: 15px;
 }
 
 /* Status Badge */
@@ -2616,7 +2617,7 @@ FAQ CSS
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 9px 12px;
+  padding: 6px 12px;
   border-radius: 10px;
   margin-bottom: 10px;
   background: #f8faff;
@@ -2673,8 +2674,8 @@ FAQ CSS
 
 /* Button */
 .user-page-container .btn-book {
-  width: 200px;
-  padding: 14px 0;
+  width: 170px;
+  padding: 10px 0;
   font-size: 1.15rem;
   font-weight: 700;
   color: white;
