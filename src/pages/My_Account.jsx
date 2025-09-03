@@ -53,6 +53,10 @@ export default function My_Account() {
       {/* <!-- Page Header End --> */}
 
         <div className="container">
+           <div className=" mb-5 wow zoomIn " style={{textAlign:'center'}} data-wow-delay="0.6s">
+          <h5 className="text-primary mb-3">// Profile Information //</h5>
+            <h4>Manage your personal details and keep them up to date.</h4>
+        </div>
              <div className="account-container">
       {/* Sidebar */}
       <div className="sidebar">
