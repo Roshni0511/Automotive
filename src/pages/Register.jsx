@@ -10,19 +10,17 @@ const Register = () => {
        <div className={`contented ${isActive ? "active" : ""}`} id="container">
       {/* Sign Up Form */}
       <div className="form-container sign-up">
-        <form action="#">
+         <form action="#">
           <h1>Create Account</h1>
-          <div className="social-icons">
-            <a href="#" className="icon"><FaGoogle /></a>
-            <a href="#" className="icon"><FaFacebookF /></a>
-            <a href="#" className="icon"><FaYoutube /></a>
-            <a href="#" className="icon"><FaXTwitter /></a>
-          </div>
-          <span>or use your email for register</span>
-          <input type="text" placeholder="Full Name" />
+      
+            <input type="name" placeholder="Full Name" />
+            
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <input type="password" placeholder="Confirm Password" />
+
+      
+          <button>Register</button>
         </form>
       </div>
 
@@ -32,6 +30,7 @@ const Register = () => {
           <h1>Create Account</h1>
       
             <input type="name" placeholder="Full Name" />
+            
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
