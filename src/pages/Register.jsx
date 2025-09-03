@@ -7,7 +7,7 @@ const Register = () => {
     <>
     <div className='mainbody'>
 
-       <div className={`container ${isActive ? "active" : ""}`} id="container">
+       <div className={`contented ${isActive ? "active" : ""}`} id="container">
       {/* Sign Up Form */}
       <div className="form-container sign-up">
         <form action="#">

@@ -36,7 +36,7 @@ const Login = () => {
           <button type="submit">Login</button>
           
           {/* <!-- Forgot password link --> */}
-          <a href="">Forgot Password?</a>
+          <a href="/Register" >Create Account</a>
 
           {/* <!-- Social login options --> */}
           {/* <p>or login with social platforms</p> */}
