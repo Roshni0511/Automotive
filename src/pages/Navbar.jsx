@@ -190,7 +190,7 @@ export default function Navbar() {
               Contact
             </a>
           </div>
-          <a href="/Contact" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
+          <a href="/Login" className="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style={{borderRadius:'50px 0px 0px 50px'}}>
             Login<i className="fa fa-arrow-right ms-3"></i>
           </a>
         </div>
