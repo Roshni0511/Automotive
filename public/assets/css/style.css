@@ -2204,11 +2204,7 @@ FAQ CSS
 
 .backguondes {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(201, 214, 255, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, #f9d2d5 100%);
   height: 100vh; /* Ensuring the body fills the viewport */
 }
 
@@ -2226,7 +2222,7 @@ FAQ CSS
 
 /* Styling the left part of the form to create a visually appealing section */
 .leftsides {
-  background-color: #7494ec; /* Setting a blue background for the left part */
+background: linear-gradient(135deg, #000000, #d81324);
   width: 50%; /* Setting the width to half of the form */
   height: inherit; /* Inheriting the height from the form */
   border-radius: 30px 30% 30% 30px; /* Creating a unique rounded corner effect */
@@ -2340,7 +2336,7 @@ FAQ CSS
 
 .rightsides  div button {
   /* Styling the submit button on the right side to match the design */
-  background-color: #7494ec; /* Setting a blue background */
+  background-color: #d81324; /* Setting a blue background */
   width: 100%; /* Setting the button width to full */
   height: 48px; /* Setting the button height */
   /* margin: 20px 0 20px 0; */ /* Optional margin for spacing */

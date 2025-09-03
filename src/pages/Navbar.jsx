@@ -2,6 +2,7 @@ import React from "react";
 import { FaRightToBracket } from "react-icons/fa6";
 export default function Navbar() {
   return (
+    <>
     <div>
       {/* <!-- Topbar Start --> */}
       <div className="container-fluid bg-light p-0">
@@ -195,7 +196,17 @@ export default function Navbar() {
           </a>
         </div>
       </nav>
+
       {/* <!-- Navbar End --> */}
     </div>
+    
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+      </a>
+
+      <a href="https://wa.me/02612662999" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+      </a>
+      </>
   );
 }
