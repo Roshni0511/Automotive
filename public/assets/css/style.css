@@ -2210,8 +2210,9 @@ FAQ CSS
 
 /* Styling the form container to be centered and visually appealing */
 .formes {
-  width: 850px; /* Setting the form width */
-  height: 550px; /* Setting the form height */
+  width: 768px; /* Setting the form width */
+  max-width: 100%;
+  height: 480px; /* Setting the form height */
   background-color: #fff; /* Setting a white background for the form */
   border-radius: 30px; /* Adding a rounded corner effect */
   position: absolute; /* Positioning the form absolutely */
