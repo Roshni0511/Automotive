@@ -28,6 +28,7 @@ import Insurancerenewal from "./pages/Insurancerenewal";
 import Carcustomization from "./pages/Carcustomization";
 import EventsDetail from "./pages/EventsDetail";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
         <Route path="/Carcustomization" element={<Carcustomization />} />
         <Route path="/EventsDetail" element={<EventsDetail />} />
         <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login/>}/>
       </Routes>
 
       <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
