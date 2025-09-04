@@ -1,49 +1,104 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Swal from "sweetalert2";
 
 const Login = () => {
+  const [mobile, setMobile] = useState('');
+  const [otp, setOtp] = useState('');
+  const [generatedOtp, setGeneratedOtp] = useState('');
+  const [otpSent, setOtpSent] = useState(false);
+  const navigate = useNavigate();
+
+  // Send OTP (dummy simulation)
+  const handleSendOtp = (e) => {
+    e.preventDefault();
+    if (mobile.length === 10) {
+      const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+      setGeneratedOtp(newOtp);
+      setOtpSent(true);
+
+      Swal.fire({
+        icon: "info",
+        title: "OTP Sent",
+        text: `Your OTP is: ${newOtp}`, // demo only
+        confirmButtonColor: "#3085d6",
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Invalid Number",
+        text: "Please enter a valid 10-digit mobile number",
+      });
+    }
+  };
+
+  // Verify OTP
+  const handleVerifyOtp = (e) => {
+    e.preventDefault();
+    if (otp === generatedOtp && otp !== '') {
+      Swal.fire({
+        icon: "success",
+        title: "Login Successful",
+        showConfirmButton: false,
+        timer: 1500,
+      }).then(() => {
+        navigate("/"); // Redirect after success
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Invalid OTP",
+        text: "Please enter the correct OTP",
+      });
+    }
+  };
+
   return (
-    <>
-       <div className='backguondes'>
-        
-    <form action="" method="post" id="Login" className='formes'>
-      <div class="leftsides">
-        <div className='underdiv'>
-          <p>Hello, Welcome!</p>
-          <a href="">Don't have an account? </a>
+    <div className="backguondes">
+      <form id="Login" className="formes">
+        <div className="leftsides">
+          <div className="underdiv">
+            <p>Hello, Welcome!</p>
+            <a href="">Don't have an account?</a>
+          </div>
         </div>
-      </div>
 
-      <div class="rightsides ">
-        <div>
-          <h1>Login</h1>
+        <div className="rightsides">
+          <div>
+            <h1>Login with OTP</h1>
 
-          <input type="text" name="Username" id="" placeholder="Username" />
-          <span class="material-symbols-outlined person">  </span>
+            {/* Mobile Input */}
+            <input
+              type="text"
+              name="mobile"
+              placeholder="Enter Mobile Number"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
+            />
 
-          <input type="password" name="Password" id="" placeholder="Password" />
-          <span class="material-symbols-outlined lock">  </span>
+            {/* Send OTP */}
+            {!otpSent && (
+              <button onClick={handleSendOtp}>Send OTP</button>
+            )}
 
-
-          <button type="submit">Login</button>
-          
-          <a href="/Register" style={{textDecoration:"underline"}}>Create Account</a>
-
-          {/* <!-- Social login options --> */}
-          {/* <p>or login with social platforms</p> */}
-          {/* <div>
-          
-            <a href=""><i class="fa-brands fa-google fa-align-center"></i> </a>
-            <a href=""><i class="fa-brands fa-facebook-f fa-align-center"></i></a>
-            <a href=""><i class="fa-brands fa-github fa-align-center"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in fa-align-center"></i></a>
-          </div> */}
+            {/* OTP Input */}
+            {otpSent && (
+              <>
+                <input
+                  type="text"
+                  name="otp"
+                  placeholder="Enter OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                />
+                <button onClick={handleVerifyOtp}>Verify OTP</button>
+              </>
+            )}
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
+  );
+};
 
-       </div>
-    </>
-  )
-}
-
-export default Login
+export default Login;
