@@ -73,14 +73,14 @@ export default function Home() {
                         <a
                           href="/About"
                           className="btn btn-primary  animated slideInDown"
-                          style={{marginRight:'20px',padding:'10px 30px'}}
+                          style={{marginRight:'20px',padding:'10px 30px',marginBottom:'10px'}}
                         >
                           About Us<i className="fa fa-arrow-right ms-3"></i>
                         </a>
                           <a
                           href="/Gallery"
                           className="btn   animated slideInDown newbutton"
-                            style={{marginRight:'20px',padding:'10px 30px'}}
+                            style={{marginRight:'20px',padding:'10px 30px',marginBottom:'10px'}}
                         >
                          Work Gallery<i className="fa fa-arrow-right ms-3"></i>
                         </a>
@@ -118,14 +118,14 @@ export default function Home() {
                         <a
                           href="/About"
                           className="btn btn-primary  animated slideInDown"
-                           style={{marginRight:'20px',padding:'10px 30px'}}
+                           style={{marginRight:'20px',padding:'10px 30px',marginBottom:'10px'}}
                         >
                           About Us<i className="fa fa-arrow-right ms-3"></i>
                         </a>
                           <a
                           href="/Services"
                           className="btn   animated slideInDown newbutton"
-                            style={{marginRight:'20px',padding:'10px 30px'}}
+                            style={{marginRight:'20px',padding:'10px 30px',marginBottom:'10px'}}
                         >
                          Our Services<i className="fa fa-arrow-right ms-3"></i>
                         </a>

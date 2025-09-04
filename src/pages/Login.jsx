@@ -18,10 +18,10 @@ const Login = () => {
           <h1>Login</h1>
 
           <input type="text" name="Username" id="" placeholder="Username" />
-          <span class="material-symbols-outlined person"> <i class="fa-solid fa-user"></i> </span>
+          <span class="material-symbols-outlined person">  </span>
 
           <input type="password" name="Password" id="" placeholder="Password" />
-          <span class="material-symbols-outlined lock"> <i class="fa-solid fa-lock"></i> </span>
+          <span class="material-symbols-outlined lock">  </span>
 
 
           <button type="submit">Login</button>
