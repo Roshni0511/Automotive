@@ -92,10 +92,10 @@ export default function LatestEvents() {
                   <h5 className="event-title">{event.title}</h5>
                   <p className="event-description">{event.description}</p>
                  
-                      <a class="dedcription-btn" href="/EventsDetail">
-                <span class="name-descripeion"> Read More</span>
-                <div class="btn-icon heart">
-                  <i class="fas fa-car"></i>
+                      <a className="dedcription-btn" href="/EventsDetail">
+                <span className="name-descripeion"> Read More</span>
+                <div className="btn-icon heart">
+                  <i className="fas fa-car"></i>
                 </div>
               </a>
                 </div>

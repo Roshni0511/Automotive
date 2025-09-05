@@ -84,7 +84,7 @@ const Testimonial = () => {
                     a lot..!!”
                   </p>
                 </div>
-              </div>
+              </div> 
               <div className="testimonial-item text-center">
                 <img
                   className="bg-light rounded-circle p-2 mx-auto mb-3"

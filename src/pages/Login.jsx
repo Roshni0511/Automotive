@@ -9,7 +9,7 @@ const Login = () => {
   const [otpSent, setOtpSent] = useState(false);
   const navigate = useNavigate();
 
-  // Send OTP (dummy simulation)
+
   const handleSendOtp = (e) => {
     e.preventDefault();
     if (mobile.length === 10) {
@@ -20,7 +20,7 @@ const Login = () => {
       Swal.fire({
         icon: "info",
         title: "OTP Sent",
-        text: `Your OTP is: ${newOtp}`, // demo only
+        text: `Your OTP is: ${newOtp}`, 
         confirmButtonColor: "#3085d6",
       });
     } else {
@@ -42,7 +42,7 @@ const Login = () => {
         showConfirmButton: false,
         timer: 1500,
       }).then(() => {
-        navigate("/"); // Redirect after success
+        navigate("/"); 
       });
     } else {
       Swal.fire({

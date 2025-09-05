@@ -70,13 +70,13 @@ const Insurancerenewal = () => {
       {/* <!-- Page Header End --> */}
 
       {/* <!-- coaching single start --> */}
-      <section class="coaching-single " style={{ padding: "60px 0px" }}>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="sidebar-widget">
-                <div class="widget">
-                  <ul class="widget-category list-unstyled">
+      <section className="coaching-single " style={{ padding: "60px 0px" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="sidebar-widget">
+                <div className="widget">
+                  <ul className="widget-category list-unstyled">
                      <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -162,8 +162,8 @@ const Insurancerenewal = () => {
 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="single-content">
+            <div className="col-lg-8">
+              <div className="single-content">
                 <h5 className="text-primary mb-3">
                   // About Insurance Renewal //
                 </h5>
@@ -172,7 +172,7 @@ const Insurancerenewal = () => {
               You can buy or renew car insurance policy with your home comfort in few easy steps. With Automotive, you will get a comprehensive coverage that not only covers your car against the mandatory third party liability, but also against the losses caused to your car due to fire, theft, explosion, burglary, riots, strikes, earthquakes, flood, cyclones, accidents, malicious acts & terrorist activities. Besides above, having car Insurance, you can avail the enhanced protections through unique car insurance add on covers.
                 </p>
 
-                <div class="single-img mt-35 mb-70 mt-4">
+                <div className="single-img mt-35 mb-70 mt-4">
                   <img
                     src="/assets/img/servicess6.jpg"
                     alt=""

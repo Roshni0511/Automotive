@@ -51,13 +51,13 @@ export default function Video() {
             </nav>
           </div>
         </div>
-      </div>
+      </div> 
 
       {/* Video Gallery */}
       <div className="yt-gallery container">
   
    <h5 className="text-primary mb-3">// Videos Gallery //</h5>
-      <h4 className='mb-4'>Our Automotive Videos Gallery</h4>
+    <h4 className='mb-4'>Our Automotive Videos Gallery</h4>
   <div className="row wow fadeIn" data-wow-delay="0.1s">
     {videos.map((video, index) => {
       const videoId = extractVideoId(video.url);

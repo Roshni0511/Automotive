@@ -132,7 +132,6 @@ export default function My_Account() {
   ))}
 </div>
 
-
         {/* --- Table Content --- */}
         <div className="table-responsive">
           {activeSlide === 0 && (

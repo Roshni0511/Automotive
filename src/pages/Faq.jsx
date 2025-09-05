@@ -72,19 +72,19 @@ export default function Faq() {
 
       {/* <!-- Page Header Start --> */}
       <div
-        class="container-fluid page-header mb-5 p-0"
+        className="container-fluid page-header mb-5 p-0"
         style={{ backgroundImage: "url(assets/img/carousel-bg-1.jpg)" }}
       >
-        <div class="container-fluid page-header-inner py-5">
-          <div class="container text-center">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">FAQ</h1>
+        <div className="container-fluid page-header-inner py-5">
+          <div className="container text-center">
+            <h1 className="display-3 text-white mb-3 animated slideInDown">FAQ</h1>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item">
+              <ol className="breadcrumb justify-content-center text-uppercase">
+                <li className="breadcrumb-item">
                   <a href="/">Home</a>
                 </li>
                 <li
-                  class="breadcrumb-item text-white active"
+                  className="breadcrumb-item text-white active"
                   aria-current="page"
                 >
                   FAQ
@@ -98,9 +98,9 @@ export default function Faq() {
 
       <section className="faq-area ptb-100">
         <div className="container">
-               <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// FAQ //</h6>
-                <h1 class="mb-5">Frequently Asked Question</h1>
+               <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 className="text-primary text-uppercase">// FAQ //</h6>
+                <h1 className="mb-5">Frequently Asked Question</h1>
             </div>
           <div className="tab faq-accordion-tab wow fadeInUp" data-wow-delay="0.1s">
       <div className="tab-content">

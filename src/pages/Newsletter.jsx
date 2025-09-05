@@ -96,10 +96,10 @@ export default function Newsletter() {
          </div>
           {/* <button >Subscribe Now</button> */}
           <div>
-             <a class="dedcription-btn m-0" href="#" type="submit">
-                <span class="name-descripeion">Subscribe Now</span>
-                <div class="btn-icon heart">
-                  <i class="fas fa-car"></i>
+             <a className="dedcription-btn m-0" href="#" type="submit">
+                <span className="name-descripeion">Subscribe Now</span>
+                <div className="btn-icon heart">
+                  <i className="fas fa-car"></i>
                 </div>
               </a>
           </div>

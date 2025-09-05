@@ -82,13 +82,13 @@ const Bodyshopservice = () => {
       
 
       {/* <!-- coaching single start --> */}
-      <section class="coaching-single " style={{ padding: "60px 0px" }}>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="sidebar-widget">
-                <div class="widget">
-                  <ul class="widget-category list-unstyled">
+      <section className="coaching-single " style={{ padding: "60px 0px" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="sidebar-widget">
+                <div className="widget">
+                  <ul className="widget-category list-unstyled">
                      <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -173,8 +173,8 @@ const Bodyshopservice = () => {
 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="single-content">
+            <div className="col-lg-8">
+              <div className="single-content">
                 <h5 className="text-primary mb-3">
                   // About Body Shop Service//
                 </h5>
@@ -183,7 +183,7 @@ const Bodyshopservice = () => {
            The complete car body is inspected for dents and rust areas. All dents are removed of the panels, all panels are thoroughly primed and painted to bring back the factory finish of the car. Dust-free paint booths are used to paint the car panels, ensuring no dust particles ingress into the different coats of paint hence delivering unmatched quality.
                 </p>
 
-                <div class="single-img mt-35 mb-70 mt-4">
+                <div className="single-img mt-35 mb-70 mt-4">
                   <img
                     src="/assets/img/servicess5.jpg"
                     alt=""

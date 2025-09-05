@@ -12,14 +12,10 @@ const Register = () => {
       <div className="form-container sign-up">
          <form action="#">
           <h1>Create Account</h1>
-      
-            <input type="name" placeholder="Full Name" />
-            
+          <input type="name" placeholder="Full Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
-
-      
           <button>Register</button>
         </form>
       </div>
@@ -28,14 +24,10 @@ const Register = () => {
       <div className="form-container sign-in">
         <form action="#">
           <h1>Create Account</h1>
-      
-            <input type="name" placeholder="Full Name" />
-            
+          <input type="name" placeholder="Full Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <input type="password" placeholder="Confirm Password" />
-
-      
           <button>Register</button>
         </form>
       </div>
@@ -54,7 +46,6 @@ const Register = () => {
           <div className="toggle-panel toggle-right">
             <h1 style={{color:'#fff'}}>Hello, Subscriber!</h1>
             <p>Register with your personal details to use all of site features.</p>
-            
           </div>
         </div>
       </div>

@@ -83,13 +83,13 @@ const Carcustomization = () => {
       
 
       {/* <!-- coaching single start --> */}
-      <section class="coaching-single " style={{ padding: "60px 0px" }}>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="sidebar-widget">
-                <div class="widget">
-                  <ul class="widget-category list-unstyled">
+      <section className="coaching-single " style={{ padding: "60px 0px" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="sidebar-widget">
+                <div className="widget">
+                  <ul className="widget-category list-unstyled">
                      <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -175,8 +175,8 @@ const Carcustomization = () => {
 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="single-content">
+            <div className="col-lg-8">
+              <div className="single-content">
                 <h5 className="text-primary mb-3">
                   // About Car Customization //
                 </h5>
@@ -185,7 +185,7 @@ const Carcustomization = () => {
                 Automotive is the best-in-class automobile personalization, designing and custom remoulding company. We expertise in vehicle customization for personal choice, businesses & automobile enthusiasts. With our highly experienced team of experts, we build and innovate vehicles of superior design, backed with cutting-edge technology.
                 </p>
 
-                <div class="single-img mt-35 mb-70 mt-4">
+                <div className="single-img mt-35 mb-70 mt-4">
                   <img
                     src="/assets/img/servicess7.jpg"
                     alt=""

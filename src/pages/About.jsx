@@ -10,21 +10,21 @@ export default function About() {
 
       {/* <!-- Page Header Start --> */}
       <div
-        class="container-fluid page-header mb-5 p-0"
+        className="container-fluid page-header mb-5 p-0"
         style={{ backgroundImage: "url(assets/img/carousel-bg-1.jpg)" }}
       >
-        <div class="container-fluid page-header-inner py-5">
-          <div class="container text-center">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">
+        <div className="container-fluid page-header-inner py-5">
+          <div className="container text-center">
+            <h1 className="display-3 text-white mb-3 animated slideInDown">
               About Us
             </h1>
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb justify-content-center text-uppercase">
-                <li class="breadcrumb-item">
+              <ol className="breadcrumb justify-content-center text-uppercase">
+                <li className="breadcrumb-item">
                   <a href="/">Home</a>
                 </li>
                 <li
-                  class="breadcrumb-item text-white active"
+                  className="breadcrumb-item text-white active"
                   aria-current="page"
                 >
                   About
@@ -171,10 +171,10 @@ export default function About() {
       {/* <a href="#" className="btn btn-primary py-3 px-5">
         Learn More
       </a> */}
-        <a class="dedcription-btn" href="#">
-                <span class="name-descripeion"> Learn More</span>
-                <div class="btn-icon heart">
-                  <i class="fas fa-car"></i>
+        <a className="dedcription-btn" href="#">
+                <span className="name-descripeion"> Learn More</span>
+                <div className="btn-icon heart">
+                  <i className="fas fa-car"></i>
                 </div>
               </a>
     </div>
@@ -224,7 +224,7 @@ export default function About() {
                 className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
                 style={{ width: "40px", height: "40px", borderRadius: "50%" , marginRight: "10px",}}
               >
-               <i class="fas fa-hand-holding-usd"></i>
+               <i className="fas fa-hand-holding-usd"></i>
               </div>
               <h6 className="m-0">Affordable Price Upto 2 Years</h6>
             </div>
@@ -278,7 +278,7 @@ export default function About() {
                 className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
                 style={{ width: "40px", height: "40px", borderRadius: "50%" , marginRight: "10px",}}
               >
-                <i class="fas fa-car"></i>
+                <i className="fas fa-car"></i>
 
               </div>
               <h6 className="m-0">Expert in All Brand Services</h6>

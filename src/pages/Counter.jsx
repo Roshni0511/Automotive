@@ -11,7 +11,7 @@ export default function Counter() {
         });
       }, []);
   return (
-    <div>
+    <div> 
        <div className="container-fluid fact bg-dark my-5 py-5">
       <div className="container">
         <div className="row g-4">

@@ -80,16 +80,15 @@ const Cardetailing = () => {
 
 
 
-      
 
       {/* <!-- coaching single start --> */}
-      <section class="coaching-single " style={{ padding: "60px 0px" }}>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="sidebar-widget">
-                <div class="widget">
-                  <ul class="widget-category list-unstyled">
+      <section className="coaching-single " style={{ padding: "60px 0px" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="sidebar-widget">
+                <div className="widget">
+                  <ul className="widget-category list-unstyled">
                      <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -174,8 +173,8 @@ const Cardetailing = () => {
 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="single-content">
+            <div className="col-lg-8">
+              <div className="single-content">
                 <h5 className="text-primary mb-3">
                   // About Car Detailing //
                 </h5>
@@ -184,7 +183,7 @@ const Cardetailing = () => {
                At Automotive, we are determined in getting the car to look like, ‘what you thought was Good’ to ‘Is this really my Car?’ We do not compromise on quality and offer our professional opinion to what the customer should get. Just drop off your car at our outlet and wait for our trained technicians to perform the Magic. Our trained staff takes care of every tiny detail and does away with all the minute scars to give that stunning look to your vehicle.
                 </p>
 
-                <div class="single-img mt-35 mb-70 mt-4">
+                <div className="single-img mt-35 mb-70 mt-4">
                   <img
                     src="/assets/img/servicess4.jpg"
                     alt=""

@@ -69,13 +69,13 @@ const Caraccessories = () => {
       </div>
       {/* <!-- Page Header End --> */}
             {/* <!-- coaching single start --> */}
-            <section class="coaching-single " style={{ padding: "60px 0px" }}>
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="sidebar-widget">
-                      <div class="widget">
-                        <ul class="widget-category list-unstyled">
+            <section className="coaching-single " style={{ padding: "60px 0px" }}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-4">
+                    <div className="sidebar-widget">
+                      <div className="widget">
+                        <ul className="widget-category list-unstyled">
                                <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -159,8 +159,8 @@ const Caraccessories = () => {
 </div>
                     </div>
                   </div>
-                  <div class="col-lg-8">
-                    <div class="single-content">
+                  <div className="col-lg-8">
+                    <div className="single-content">
                       <h5 className="text-primary mb-3">
                         // About Car Accessories //
                       </h5>
@@ -169,7 +169,7 @@ const Caraccessories = () => {
                        Car accessories can play a major role in amping up the comfort of your car. The car accessories you select can really tie up the interiors of your luxury car. Depending on your preference, our skilled technicians can assemble your car with the most elegant accessories. We can provide high quality accessories that can upgrade your car experience.
                       </p>
       
-                      <div class="single-img mt-35 mb-70 mt-4">
+                      <div className="single-img mt-35 mb-70 mt-4">
                         <img
                           src="/assets/img/servicess3.jpg"
                           alt=""

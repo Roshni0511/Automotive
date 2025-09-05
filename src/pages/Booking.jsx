@@ -22,7 +22,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                             <div className="row g-3">
                                 <div className="col-12 col-sm-6">
                                     <input type="text" className="form-control border-0" placeholder="Your Name" style={{height: "55px"}} />
-                                </div>
+                                </div>   
                                 <div className="col-12 col-sm-6">
                                     <input type="email" className="form-control border-0" placeholder="Your Email" style={{height: "55px"}} />
                                 </div>

@@ -101,7 +101,7 @@ export default function Home() {
                   className="w-100"
                   src="/assets/img/slider-4-1.jpg"
                   alt="Image"
-                />
+                /> 
                 <div className="carousel-caption d-flex align-items-center">
                   <div className="container">
                     <div className="row align-items-center justify-content-center justify-content-lg-start">

@@ -92,13 +92,13 @@ const Tyreservice = () => {
       
 
       {/* <!-- coaching single start --> */}
-      <section class="coaching-single " style={{ padding: "60px 0px" }}>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="sidebar-widget">
-                <div class="widget">
-                  <ul class="widget-category list-unstyled">
+      <section className="coaching-single " style={{ padding: "60px 0px" }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="sidebar-widget">
+                <div className="widget">
+                  <ul className="widget-category list-unstyled">
                      <li>
                       <a href="/MechanicalService">
                         Mechanical Service
@@ -183,8 +183,8 @@ const Tyreservice = () => {
 </div>
               </div>
             </div>
-            <div class="col-lg-8">
-              <div class="single-content">
+            <div className="col-lg-8">
+              <div className="single-content">
                 <h5 className="text-primary mb-3">
                   // About Tyre Service //
                 </h5>
@@ -193,7 +193,7 @@ const Tyreservice = () => {
                 An unbalanced wheel causes poor handling & effects your car's life too. Tyre services will make your ride smoother and handling safer, also extends the life of your tyres, saving you time and money in the long run. To protect your tires and get maximum performance delivery from your car's tyres. Visit a Automotive service station for wheel alignment.
                 </p>
 
-                <div class="single-img mt-35 mb-70 mt-4">
+                <div className="single-img mt-35 mb-70 mt-4">
                   <img
                     src="/assets/img/servicess2.jpg"
                     alt=""

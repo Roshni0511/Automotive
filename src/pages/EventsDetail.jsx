@@ -45,7 +45,7 @@ export default function EventsDetail() {
      
 
       
-       <div class="single-img mt-4 mb-4">
+       <div className="single-img mt-4 mb-4">
                   <img
                     src="/assets/img/latestevent1.png"
                     alt=""
@@ -115,10 +115,10 @@ export default function EventsDetail() {
           or call <a href="tel:02612662999">0261 266 2999</a>.
         </p>
         {/* <a href="/Register" className="btn btn-primary mt-2">Register Now</a> */}
-             <a class="dedcription-btn" href="/Register">
-                <span class="name-descripeion">Register Now</span>
-                <div class="btn-icon heart">
-                  <i class="fas fa-car"></i>
+             <a className="dedcription-btn" href="/Register">
+                <span className="name-descripeion">Register Now</span>
+                <div className="btn-icon heart">
+                  <i className="fas fa-car"></i>
                 </div>
               </a>
       </div>

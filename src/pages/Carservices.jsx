@@ -21,7 +21,7 @@ const Carservices = () => {
           flex: 1 1 calc(50% - 15px);
         }
       }
-
+  
       .xb-item--inner {
         display: flex;
         flex-direction: row;

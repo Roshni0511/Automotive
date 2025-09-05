@@ -38,7 +38,6 @@ const UserPage = () => {
           <FaUserCircle className="user-icon" />
           <h4>Welcome, {user.name}</h4>
         </header>
-
         <div className="row">
           <div className="col-12">
             <section className="profile-card">

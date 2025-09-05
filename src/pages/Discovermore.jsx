@@ -6,29 +6,29 @@ const Discovermore = () => {
     <>
       <div className="call-banner">
       <div className="call-banner-content container">
-         <div class="car-road" >
-  <div class="car">
-    <div class="car-top">
-      <div class="window">
+         <div className="car-road" >
+  <div className="car">
+    <div className="car-top">
+      <div className="window">
       </div>  
     </div>  
-    <div class="car-base">
+    <div className="car-base">
     </div>
-    <div class="wheel-left wheel">
-       <div class="wheel-spike">
+    <div className="wheel-left wheel">
+       <div className="wheel-spike">
        </div> 
-       <div class="wheel-center">
+       <div className="wheel-center">
        </div>
     </div>
-    <div class="wheel-right wheel">
-       <div class="wheel-spike">
+    <div className="wheel-right wheel">
+       <div className="wheel-spike">
        </div> 
-      <div class="wheel-center">
+      <div className="wheel-center">
        </div>
     </div>
-    <div class="head-light"></div>
+    <div className="head-light"></div>
   </div> 
-  <div class="road">
+  <div className="road">
   </div>
 </div>  
         <div className="right-section animated-phone">
@@ -48,7 +48,7 @@ Get an Estimate For Your Service
     </div>
   </div>
   <div style={{margin:'10px 0px 0px 50px'}}>
-    {/* <a href="/Services" class="btn btn-primary">Discover More</a> */}
+    {/* <a href="/Services" className="btn btn-primary">Discover More</a> */}
      <a className="dedcription-btn" href="/Services">
                           <span className="name-descripeion">Discover More</span>
                           <div className="btn-icon heart">

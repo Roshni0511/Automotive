@@ -18,28 +18,24 @@ export default function Process() {
                 <div className="single-process first text-center">
                   <i className="fas fa-search"></i>
                   <h4>Diagnose</h4>
-                  {/* <p>We begin with a full inspection and computer diagnostics to find any issues.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="single-process second text-center">
                   <i className="fas fa-tools"></i>
                   <h4>Repair & Service</h4>
-                  {/* <p>Our team repairs or services your car using high-quality tools and parts.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="single-process thard text-center">
                   <i className="fas fa-shield-alt"></i>
                   <h4>Quality Check</h4>
-                  {/* <p>Each vehicle is thoroughly inspected to ensure everything runs perfectly.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="single-process last text-center">
                   <i className="fas fa-car-side"></i>
                   <h4>Delivery</h4>
-                  {/* <p>Your car is cleaned, polished, and delivered on time — ready for the road.</p> */}
                 </div>
               </div>
             </div>
