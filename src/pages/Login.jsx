@@ -59,7 +59,7 @@ const Login = () => {
         <div className="leftsides">
           <div className="underdiv">
             <p>Hello, Welcome!</p>
-            <a href="">Don't have an account?</a>
+            <span class="text-white" >Don't have an account?</span>
           </div>
         </div>
 

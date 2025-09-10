@@ -186,9 +186,9 @@ export default function Home() {
                       Our team includes certified experts trained to service all
                       makes and models efficiently.
                     </p>
-                    <a className="text-secondary border-bottom" href="">
+                    {/* <a className="text-secondary border-bottom" href="">
                       Read More
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -205,9 +205,9 @@ export default function Home() {
                       Experienced mechanics providing reliable, fast, and
                       transparent service every time.
                     </p>
-                    <a className="text-secondary border-bottom" href="">
+                    {/* <a className="text-secondary border-bottom" href="">
                       Read More
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -224,9 +224,9 @@ export default function Home() {
                       We use the latest diagnostic and repair tools for accurate
                       and efficient solutions.
                     </p>
-                    <a className="text-secondary border-bottom" href="">
+                    {/* <a className="text-secondary border-bottom" href="">
                       Read More
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

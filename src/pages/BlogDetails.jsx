@@ -44,7 +44,7 @@ export default function BlogDetails() {
                     <h1 className="mb-4">Understanding the Role of Hydraulic Systems in Modern Machinery</h1>
                     <div className="d-index-flex mb-2">
                         <span className="mr-3"><i className="fa fa-user text-primary"></i> Admin</span>
-                        <span className="mr-3"><i className="fa fa-folder text-primary"></i>Mechanical Engineering</span>
+                        <span className="mr-3"><i className="fa fa-folder text-primary"></i> Mechanical Engineering</span>
                         <span className="mr-3"><i className="fa fa-comments text-primary"></i> 15</span>
                     </div>
                 </div>
@@ -55,8 +55,7 @@ export default function BlogDetails() {
                    
                     <h2 className="mb-4 wow fadeIn" data-wow-delay="0.3s">Applications in the Automotive Industry</h2>
                     <img className="img-thumbnail p-3 w-50 float-left mr-4 mb-3" src="/assets/img/gallery-13.jpg" alt="Image" />
-                    <p className="wow fadeIn" data-wow-delay="0.3s">   In the automotive sector, hydraulic systems play a vital role in ensuring vehicle performance, safety, and comfort. One of the most common and critical applications is in the braking system, where hydraulic brake fluid is used to transfer force from the brake pedal to the brake calipers, allowing for smooth and responsive stopping power. This ensures that drivers can effectively control the vehicle even in emergency situations. Additionally, power steering systems utilize hydraulic pressure to assist the driver in turning the steering wheel, especially at low speeds or while maneuvering in tight spaces. This not only makes driving easier but also reduces strain and fatigue on the driver during long journeys or while navigating through congested urban environments.  Moreover, hydraulic suspension systems are designed to absorb shocks and vibrations caused by uneven road surfaces, providing a smoother and more comfortable ride for passengers. These systems adjust dynamically to road conditions and driving behavior, enhancing both handling and ride quality. In high-performance and luxury vehicles, advanced hydraulic suspension technologies allow the car to adapt its height and stiffness, improving aerodynamics, cornering stability, and overall driving experience. 
-    </p>
+                    <p className="wow fadeIn" data-wow-delay="0.3s">   In the automotive sector, hydraulic systems play a vital role in ensuring vehicle performance, safety, and comfort. One of the most common and critical applications is in the braking system, where hydraulic brake fluid is used to transfer force from the brake pedal to the brake calipers, allowing for smooth and responsive stopping power. This ensures that drivers can effectively control the vehicle even in emergency situations. Additionally, power steering systems utilize hydraulic pressure to assist the driver in turning the steering wheel, especially at low speeds or while maneuvering in tight spaces. This not only makes driving easier but also reduces strain and fatigue on the driver during long journeys or while navigating through congested urban environments.  Moreover, hydraulic suspension systems are designed to absorb shocks and vibrations caused by uneven road surfaces, providing a smoother and more comfortable ride for passengers. These systems adjust dynamically to road conditions and driving behavior, enhancing both handling and ride quality. In high-performance and luxury vehicles, advanced hydraulic suspension technologies allow the car to adapt its height and stiffness, improving aerodynamics, cornering stability, and overall driving experience. </p>
 
                     <h3 className="mb-4 wow fadeIn" data-wow-delay="0.3s">Maintenance Tips for Hydraulic Systems</h3>
                     <img className="img-thumbnail p-3 w-50 float-right ml-4 mb-3" src="/assets/img/service-car.jpg" alt="Image" />
@@ -65,13 +64,13 @@ export default function BlogDetails() {
 </p>
                 </div>
                 
-                <div className="media bg-primary text-white mb-5 p-4 p-md-5 d-flex wow fadeIn" data-wow-delay="0.3s">
+                {/* <div className="media bg-primary text-white mb-5 p-4 p-md-5 d-flex wow fadeIn" data-wow-delay="0.3s">
                     <img src="assets/img/user.jpg" alt="Image" className="img-thumbnail p-3 mr-4 mt-1 bg-primary" style={{width:"100px"}} />
                     <div className="media-body">
                         <h5 className="mb-3">John Engineer</h5>
                         <p className="m-0">With over 15 years in mechanical engineering, John shares deep insights on hydraulic systems, their evolution, and applications in modern machinery and vehicles.</p>
                     </div>
-                </div>
+                </div> */}
 
                <div className="mb-5">
     <h4 className="mb-4">3 Comments</h4>
@@ -106,23 +105,23 @@ export default function BlogDetails() {
 
                 <div style={{padding: "30px", background: "#f6f6f6"}} className="wow fadeIn" data-wow-delay="0.3s">
                     <h4 className="mb-4">Leave a comment</h4>
-                    <form>
-                        <div className="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" className="form-control" id="name" />
+                    <form class="row">
+                        <div className="form-group col-md-6">
+                            <label for="name">Name <span class="text-danger">*</span></label>
+                            <input type="text" className="form-control" id="name" placeholder='Enter Name' />
                         </div>
-                        <div className="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" className="form-control" id="email" />
+                        <div className="form-group col-md-6">
+                            <label for="email">Email <span class="text-danger">*</span></label>
+                            <input type="email" className="form-control" id="email" placeholder='Enter Email ID' />
                         </div>
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <label for="website">Website</label>
                             <input type="url" className="form-control" id="website" /> 
-                        </div>
+                        </div> */}
 
                         <div className="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" cols="30" rows="5" className="form-control"></textarea>
+                            <label for="message">Message <span class="text-danger">*</span></label>
+                            <textarea id="message" cols="30" rows="5" className="form-control" placeholder='Enter Message'></textarea>
                         </div>
                         <div className="form-group mb-0">
                             <input type="submit" value="Leave Comment" className="btn btn-primary px-3" />
@@ -199,7 +198,7 @@ export default function BlogDetails() {
     <img src="/assets/img/gallery-16.jpg" alt="Workshop" className="img-thumbnail p-3" />
   </div>
 
-  <div className="mb-5">
+  {/* <div className="mb-5">
     <h4 className="mb-4">Tag Cloud</h4>
     <div className="d-flex flex-wrap m-n1">
       <a href="" className="btn btn-outline-primary m-1">Hydraulics</a>
@@ -209,11 +208,8 @@ export default function BlogDetails() {
       <a href="" className="btn btn-outline-primary m-1">Servicing</a>
       <a href="" className="btn btn-outline-primary m-1">Automotive</a>
     </div>
-  </div>
+  </div> */}
 
-  <div className="mb-5">
-    <img src="/assets/img/gallery-6.jpg" alt="Garage Tools" className="img-thumbnail p-3" />
-  </div>
 
   <div>
     <h4 className="mb-4">Plain Text</h4>
@@ -221,8 +217,12 @@ export default function BlogDetails() {
       Keeping your vehicle in top shape goes beyond just oil changes. Routine inspections, component checks, and performance diagnostics all contribute to a reliable and safe driving experience. From brake performance to fluid efficiency, understanding your car's needs ensures longevity and peace of mind on the road. Trust expert care and regular service to keep your machine running like new.
     </p>
   </div>
+  <div className="mb-5">
+    <img src="/assets/img/gallery-6.jpg" alt="Garage Tools" className="img-thumbnail p-3" />
+  </div>
 </div>
 
+  
         </div>
     </div>
  

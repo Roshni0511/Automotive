@@ -48,7 +48,7 @@ export default function My_Account() {
       <div className="container mt-5 text-center">
         <div className="mb-5 wow zoomIn" style={{ textAlign: "center" }} data-wow-delay="0.2s">
           <h5 className="text-primary mb-3">// Profile Information //</h5>
-          <h4>Manage your personal details and keep them up to date.</h4>
+          <h4>Manage your cars and monitor their service status easily.</h4>
         </div>
 
         {/* --- Carousel --- */}

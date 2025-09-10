@@ -55,10 +55,11 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                    <iframe className="position-relative rounded w-100 h-100"
+                    {/* <iframe className="position-relative rounded w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143096.74446616173!2d72.73988488361283!3d21.15934029873395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat%2C%20India!5e1!3m2!1sen!2sbd!4v1753176776029!5m2!1sen!2sbd"
                         frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                        tabindex="0"></iframe> */}
+                        <iframe className="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.330275347386!2d72.807158!3d21.168986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e0a2ca31433%3A0xcc42510d4777d2b!2sAutomotive%20Car%20Service%20%7C%7C%20Best%20Car%20service%20in%20surat%20%7C%20Best%20Car%20workshop%20in%20surat!5e1!3m2!1sen!2sin!4v1757487504620!5m2!1sen!2sin" style={{minHeight: "350px", border:"0"}}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
 

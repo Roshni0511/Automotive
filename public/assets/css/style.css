@@ -632,8 +632,8 @@ background-image: url("../img/test.jpg");
   content: '';
   width: 42px;
   height: 42px;
-  top: 5px;
-  left: 5px;
+  top: 6px;
+  left: 6px;
   border-radius: 50%;
   background: white;
   position: absolute;
@@ -781,10 +781,10 @@ background-image: url("../img/test.jpg");
   }
 
   .wheel::before {
-    width: 32px;
-    height: 32px;
-    top: 10px;
-    left: 10px;
+    width: 30px;
+    height: 30px;
+    top: 6px;
+    left: 6px;
   }
 
   .wheel:after {
@@ -881,10 +881,10 @@ background-image: url("../img/test.jpg");
   }
 
   .wheel::before {
-    width: 24px;
-    height: 24px;
-    top: 8px;
-    left: 8px;
+    width: 23px;
+    height: 23px;
+    top:5px;
+    left: 5px;
   }
 
   .wheel:after {
@@ -1518,7 +1518,7 @@ background-image: url("../img/test.jpg");
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   overflow: hidden;
   border-radius: 0.75rem;
-  width: 250px;
+  width: 220px;
 }
 
 .feature-item-stripees::before {
