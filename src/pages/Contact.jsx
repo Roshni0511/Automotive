@@ -56,7 +56,7 @@ export default function Contact() {
                 </div>
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143096.74446616173!2d72.73988488361283!3d21.15934029873395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat%2C%20India!5e1!3m2!1sen!2sbd!4v1753176776029!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.7138560255644!2d72.80692431574784!3d21.168652256111564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e0a2c7fd12b%3A0x8dab2c6146bbb7f6!2sauto%20motive%20PLUS!5e0!3m2!1sen!2sin!4v1763638200057!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                         frameborder="0" style={{minHeight: "350px", border:"0"}} allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
