@@ -62,10 +62,10 @@ export default function Footer() {
                     <a class="btn btn-link" href="/Services">Services</a>
                     <a class="btn btn-link" href="/Faq">Faq</a>
                     <a class="btn btn-link" href="/Testimonial_page">Testimonials</a>
-                    <a class="btn btn-link" href="/LatestEvents">Latest Events</a>
+                    {/* <a class="btn btn-link" href="/LatestEvents">Latest Events</a> */}
                     <a class="btn btn-link" href="/Gallery">Gallery</a>
                     <a class="btn btn-link" href="/Blog">Blog</a>
-                    <a class="btn btn-link" href="/Newsletter">News Letters</a>
+                    {/* <a class="btn btn-link" href="/Newsletter">News Letters</a> */}
                     <a class="btn btn-link" href="/Contact">Contact</a>
                 </div>
 
