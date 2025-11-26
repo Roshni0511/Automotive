@@ -1361,7 +1361,7 @@ const NewHome = () => {
 
 
 {/* FEATURES SECTION STARTS */}
-<section style={{paddingTop:'50px'}}>
+<section style={{paddingTop:'100px', paddingBottom:'100px'}}>
    <div className="container pt-5 wow fadeInUp" data-wow-delay="0.1s">
           <div className="row">
             <div className="col-lg-5 mb-5 wow zoomIn" data-wow-delay="0.6s">
@@ -1548,53 +1548,129 @@ const NewHome = () => {
 
 {/* OUR WORK PROCESS STARTS */}
 
-<section>
-    <div className='process-content'>
-      <section className="work-porcess-area section">
-        <div className="container">
-          <div className="section-header  wow fadeInUp" data-wow-delay="0.1s">
-          
-             <h6 className="text-primary text-uppercase ">
-                // Our Work Process //
-              </h6>
-              <h1 className="mb-5">How we handle your vehicle from check-in to handover.</h1>
-          </div>
-          <div className="process-info wow fadeInUp" data-wow-delay="0.1s">
-            <div className="row">
-              <div className="col-md-3">
-                <div className="single-process first text-center" style={{color:'white', background:'#7662f4'}}>
-                  <i className="fas fa-search"></i>
-                  <h4>Diagnose</h4>
-                  {/* <p>We begin with a full inspection and computer diagnostics to find any issues.</p> */}
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="single-process second text-center" style={{color:'#7662f4'}}>
-                  <i className="fas fa-tools"></i>
-                  <h4>Repair & Service</h4>
-                  {/* <p>Our team repairs or services your car using high-quality tools and parts.</p> */}
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="single-process thard text-center" style={{color:'white', background:'#7662f4'}}>
-                  <i className="fas fa-shield-alt"></i>
-                  <h4>Quality Check</h4>
-                  {/* <p>Each vehicle is thoroughly inspected to ensure everything runs perfectly.</p> */}
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="single-process last text-center"  style={{color:'#7662f4'}}>
-                  <i className="fas fa-car-side"></i>
-                  <h4>Delivery</h4>
-                  {/* <p>Your car is cleaned, polished, and delivered on time — ready for the road.</p> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="work-process-timeline py-5">
+  <div className="container">
+    {/* Section Header */}
+    <div className="section-header text-center mb-5">
+      <h6 className="text-primary text-uppercase">// Our Work Process //</h6>
+      <h1 className="fw-bold">How we handle your vehicle from check-in to handover</h1>
     </div>
+
+    {/* Timeline */}
+    <div className="timeline">
+
+      {/* Step 1 */}
+      <div className="timeline-step">
+        <div className="step-icon bg-primary text-white">
+          <i className="fas fa-search"></i>
+        </div>
+        <h5 className="mt-3 text-center">Diagnose</h5>
+        <p className="small text-center">Full inspection and computer diagnostics to find any issues.</p>
+      </div>
+
+      <div className="timeline-arrow vertical-arrow d-md-none">
+        <i className="fas fa-arrow-down text-secondary"></i>
+      </div>
+
+      {/* Step 2 */}
+      <div className="timeline-step">
+        <div className="step-icon border border-primary text-primary">
+          <i className="fas fa-tools"></i>
+        </div>
+        <h5 className="mt-3 text-center">Repair & Service</h5>
+        <p className="small text-center">Repairs or services with high-quality tools and parts.</p>
+      </div>
+
+      <div className="timeline-arrow vertical-arrow d-md-none">
+        <i className="fas fa-arrow-down text-secondary"></i>
+      </div>
+
+      {/* Step 3 */}
+      <div className="timeline-step">
+        <div className="step-icon bg-primary text-white">
+          <i className="fas fa-shield-alt"></i>
+        </div>
+        <h5 className="mt-3 text-center">Quality Check</h5>
+        <p className="small text-center">Each vehicle is thoroughly inspected to ensure everything runs perfectly.</p>
+      </div>
+
+      <div className="timeline-arrow vertical-arrow d-md-none">
+        <i className="fas fa-arrow-down text-secondary"></i>
+      </div>
+
+      {/* Step 4 */}
+      <div className="timeline-step">
+        <div className="step-icon border border-primary text-primary">
+          <i className="fas fa-car-side"></i>
+        </div>
+        <h5 className="mt-3 text-center">Delivery</h5>
+        <p className="small text-center">Your car is cleaned, polished, and delivered on time — ready for the road.</p>
+      </div>
+
+    </div>
+  </div>
+
+  {/* CSS */}
+  <style jsx>{`
+    /* Default Desktop Horizontal */
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .timeline-step {
+      flex: 0 0 200px;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      margin: 0 auto;
+    }
+
+    .timeline-arrow {
+      flex: 0 0 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Vertical Mobile Styles */
+    @media (max-width: 767px) {
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        padding-left: 20px;
+      }
+
+      .step-icon {
+        position: relative;
+        z-index: 2;
+      }
+
+      .vertical-arrow {
+        text-align: center;
+        margin: -1rem 0;
+      }
+
+      .timeline-arrow {
+        display: none;
+      }
+    }
+  `}</style>
 </section>
+
 
 {/* OUR WORK PROCESS ENDS */}
 
@@ -1614,84 +1690,273 @@ const NewHome = () => {
 
 {/* TESTIMONIALS SECTION STARTS */}
 
- <section style={{ backgroundColor: '#f8f9fa' }}>
- <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-  <div className="container">
-    <div className="text-center">
-      <h6 className="text-primary text-uppercase" style={{ color: '#6c757d' }}>// Testimonial //</h6>
-      <h1 className="mb-5" style={{ color: '#1c1c1c' }}>Our Clients Say!</h1>
-    </div>
-    <div className="owl-carousel testimonial-carousel position-relative">
-      
-      {/* Testimonial 1 */}
-      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
-        <img
-          className="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="assets/img/testimonial-1.jpg"
-          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
-        />
-        <h5 className="mb-0" style={{ color: '#6c757d' }}>Abraham Patel</h5>
-        <p style={{ textAlign: 'center', color: '#6c757d' }}>Surat, Gujarat</p>
-        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
-          <p className="mb-0" style={{ color: '#333' }}>
-            “Very professional. I must say, very reasonably priced as well, staff is excellent, the facility is also excellent! I would highly recommend to try it! Excellent service with a transparent system. On time delivery.”
-          </p>
-        </div>
+<section style={{ background: "linear-gradient(#f8f9fa, #e9ecef)" }}>
+  <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div className="container">
+
+      <div className="text-center">
+        <h6
+          className="text-uppercase"
+          style={{ color: "#6c757d", letterSpacing: "2px", marginBottom: "8px" }}
+        >
+          // Testimonial //
+        </h6>
+
+        <h1
+          style={{
+            color: "#1c1c1c",
+            fontWeight: "800",
+            marginBottom: "40px",
+            fontSize: "38px"
+          }}
+        >
+          Our Clients Say!
+        </h1>
       </div>
 
-      {/* Testimonial 2 */}
-      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
-        <img
-          className="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="assets/img/testimonial-2.jpg"
-          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
-        />
-        <h5 className="mb-0" style={{ color: '#6c757d' }}>Divya Shah</h5>
-        <p style={{ textAlign: 'center', color: '#6c757d' }}>Navsari, Gujarat</p>
-        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
-          <p className="mb-0" style={{ color: '#333' }}>
-            “It was an wonderful experience. Automotive is a workshop of highly professional work force. They completely customized my car as per my requirement and delivered with complete ease. I recommend Automotive to all. Thanks and great job.”
-          </p>
-        </div>
-      </div>
+      <div className="owl-carousel testimonial-carousel position-relative">
 
-      {/* Testimonial 3 */}
-      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
-        <img
-          className="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="assets/img/testimonial-3.jpg"
-          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
-        />
-        <h5 className="mb-0" style={{ color: '#6c757d' }}>Kailash Patel</h5>
-        <p style={{ textAlign: 'center', color: '#6c757d' }}>Udhna, Gujarat</p>
-        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
-          <p className="mb-0" style={{ color: '#333' }}>
-            “Fantastic service, superb punctuality. Availed their service twice and truly most satisfying. The response of coordinator is prompt and she was greatly supportive. Thanks a lot..!!”
-          </p>
-        </div>
-      </div>
+        {/* Testimonial 1 */}
+        <div
+          className="testimonial-item text-center"
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "30px",
+            margin: "18px",
+            boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
+            transition: "0.3s",
+            cursor: "pointer"
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-6px)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
+        >
+          <img
+            src="assets/img/testimonial-1.jpg"
+            alt="Abraham Patel"
+            style={{
+              width: "90px",
+    height: "90px",
+    borderRadius: "50%",
+    border: "3px solid #6c757d",
+    objectFit: "cover",
+    padding: "4px",
+    marginBottom: "15px",
+    background: "#fff",
+    display: "block",
+    margin: "0 auto"
+            }}
+          />
 
-      {/* Testimonial 4 */}
-      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
-        <img
-          className="bg-light rounded-circle p-2 mx-auto mb-3"
-          src="assets/img/testimonial-4.jpg"
-          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
-        />
-        <h5 className="mb-0" style={{ color: '#6c757d' }}>Viraj Patel</h5>
-        <p style={{ textAlign: 'center', color: '#6c757d' }}>Surat, Gujarat</p>
-        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
-          <p className="mb-0" style={{ color: '#333' }}>
-            “This is my first time experience with Automotive. But, I would say the service of Automotive is much better in comparison to any authorized dealer in terms of quality, service and very reasonable charge.”
-          </p>
-        </div>
-      </div>
+          <h5 style={{ color: "#343a40", fontWeight: "700", marginBottom: "5px" }}>
+            Abraham Patel
+          </h5>
 
+          <p style={{ color: "#6c757d",
+    marginBottom: "18px",
+    fontSize: "15px",
+    textAlign: "center",
+    display: "block" }}>
+            Surat, Gujarat
+          </p>
+
+          <div
+            style={{
+              background: "#f1f3f5",
+              borderRadius: "14px",
+              padding: "22px",
+              color: "#333",
+              fontSize: "15.5px",
+              lineHeight: "1.6"
+            }}
+          >
+            “Very professional. Reasonably priced, great staff, excellent facility!
+            Highly recommended with transparent service and on-time delivery.”
+          </div>
+        </div>
+
+        {/* Testimonial 2 */}
+        <div
+          className="testimonial-item text-center"
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "30px",
+            margin: "18px",
+            boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
+            transition: "0.3s",
+            cursor: "pointer"
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-6px)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
+        >
+          <img
+            src="assets/img/testimonial-2.jpg"
+            alt="Divya Shah"
+            style={{
+              width: "90px",
+    height: "90px",
+    borderRadius: "50%",
+    border: "3px solid #6c757d",
+    objectFit: "cover",
+    padding: "4px",
+    marginBottom: "15px",
+    background: "#fff",
+    display: "block",
+    margin: "0 auto"
+            }}
+          />
+
+          <h5 style={{ color: "#343a40", fontWeight: "700", marginBottom: "5px" }}>
+            Divya Shah
+          </h5>
+
+          <p style={{ color: "#6c757d",
+    marginBottom: "18px",
+    fontSize: "15px",
+    textAlign: "center",
+    display: "block" }}>
+            Navsari, Gujarat
+          </p>
+
+          <div
+            style={{
+              background: "#f1f3f5",
+              borderRadius: "14px",
+              padding: "22px",
+              color: "#333",
+              fontSize: "15.5px",
+              lineHeight: "1.6"
+            }}
+          >
+            “Wonderful experience. Highly professional team who customized my car
+            perfectly. Smooth delivery and great service!”
+          </div>
+        </div>
+
+        {/* Testimonial 3 */}
+        <div
+          className="testimonial-item text-center"
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "30px",
+            margin: "18px",
+            boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
+            transition: "0.3s",
+            cursor: "pointer"
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-6px)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
+        >
+          <img
+            src="assets/img/testimonial-3.jpg"
+            alt="Kailash Patel"
+            style={{
+              width: "90px",
+    height: "90px",
+    borderRadius: "50%",
+    border: "3px solid #6c757d",
+    objectFit: "cover",
+    padding: "4px",
+    marginBottom: "15px",
+    background: "#fff",
+    display: "block",
+    margin: "0 auto"
+            }}
+          />
+
+          <h5 style={{ color: "#343a40", fontWeight: "700", marginBottom: "5px" }}>
+            Kailash Patel
+          </h5>
+
+          <p style={{ color: "#6c757d",
+    marginBottom: "18px",
+    fontSize: "15px",
+    textAlign: "center",
+    display: "block" }}>
+            Udhna, Gujarat
+          </p>
+
+          <div
+            style={{
+              background: "#f1f3f5",
+              borderRadius: "14px",
+              padding: "22px",
+              color: "#333",
+              fontSize: "15.5px",
+              lineHeight: "1.6"
+            }}
+          >
+            “Fantastic service & punctuality. Used twice and always satisfied.
+            Coordinator was extremely supportive. Thank you!”
+          </div>
+        </div>
+
+        {/* Testimonial 4 */}
+        <div
+          className="testimonial-item text-center"
+          style={{
+            background: "#fff",
+            borderRadius: "20px",
+            padding: "30px",
+            margin: "18px",
+            boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
+            transition: "0.3s",
+            cursor: "pointer"
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-6px)")}
+          onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0px)")}
+        >
+          <img
+            src="assets/img/testimonial-4.jpg"
+            alt="Viraj Patel"
+            style={{
+              width: "90px",
+    height: "90px",
+    borderRadius: "50%",
+    border: "3px solid #6c757d",
+    objectFit: "cover",
+    padding: "4px",
+    marginBottom: "15px",
+    background: "#fff",
+    display: "block",
+    margin: "0 auto"
+            }}
+          />
+
+          <h5 style={{ color: "#343a40", fontWeight: "700", marginBottom: "5px" }}>
+            Viraj Patel
+          </h5>
+
+          <p style={{ color: "#6c757d",
+    marginBottom: "18px",
+    fontSize: "15px",
+    textAlign: "center",
+    display: "block" }}>
+            Surat, Gujarat
+          </p>
+
+          <div
+            style={{
+              background: "#f1f3f5",
+              borderRadius: "14px",
+              padding: "22px",
+              color: "#333",
+              fontSize: "15.5px",
+              lineHeight: "1.6"
+            }}
+          >
+            “Better than any authorized dealer—excellent quality service and
+            affordable charges. Highly recommended!”
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
+</section>
 
- </section>
 
 {/* TESTIMONIALS SECTION ENDS */}
 
