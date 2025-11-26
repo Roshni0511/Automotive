@@ -310,64 +310,81 @@ const NewHome = () => {
 
 {/* WORKSHOP BENEFITS STARTS */}
 
-<section className="relative py-20 bg-gray-50">
-  {/* Animated Gradient Background */}
-  <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 rounded-full -top-20 -left-20 animate-pulse opacity-30"></div>
-    <div className="absolute w-[300px] h-[300px] bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 rounded-full -bottom-10 -right-10 animate-pulse opacity-30"></div>
-  </div>
+  <section>
+    <div className="whytele-container wow animate__animated animate__fadeInUp">
+      {/* Animated Gradient Background */}
+      <div className="whytele-background">
+        <div className="whytele-gradient-shape whytele-shape-1"></div>
+        <div className="whytele-gradient-shape whytele-shape-2"></div>
+        <div className="whytele-gradient-shape whytele-shape-3"></div>
 
-  <div className="relative max-w-7xl mx-auto px-6 text-center">
-    {/* Header */}
-    <div className="mb-16">
-      <span className="inline-block px-3 py-1 text-sm font-semibold text-purple-700 bg-purple-100 rounded-full mb-4">
-        Why Choose
-      </span>
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        Our <span className="text-purple-600">Workshop</span>
-      </h2>
-      <p className="text-gray-600 max-w-2xl mx-auto">
-        Experience top-quality automotive service with certified technicians, trusted mechanics, and advanced repair tools.
-      </p>
+        <div className="whytele-content">
+          {/* Header */}
+          <div className="whytele-header">
+            <div className="ourr-numbers-badge"> // Why Choose //</div>
+            <h1 className="whytele-main-title">
+              Our <span className="whytele-highlight">Workshop</span>
+            </h1>
+            <p className="whytele-subtitle">
+              Experience top-quality automotive service with certified technicians, trusted mechanics, and advanced repair tools.
+            </p>
+          </div>
+
+          {/* Benefits Grid */}
+          <div className="whytele-benefits-grid">
+            {/* Card 1 */}
+            <div className="whytele-benefit-card" style={{ '--delay': '0s' }}>
+              <div 
+                className="whytele-benefit-icon-wrapper" 
+                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
+              >
+                <i className="fas fa-user-cog whytele-benefit-icon"></i>
+              </div>
+              <div className="whytele-benefit-content">
+                <h3 className="whytele-benefit-title">Certified Technicians</h3>
+                <p className="whytele-benefit-description">
+                  Our team includes certified experts trained to service all makes and models efficiently.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="whytele-benefit-card" style={{ '--delay': '0.15s' }}>
+              <div 
+                className="whytele-benefit-icon-wrapper" 
+                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
+              >
+                <i className="fas fa-tools whytele-benefit-icon"></i>
+              </div>
+              <div className="whytele-benefit-content">
+                <h3 className="whytele-benefit-title">Trusted Professionals</h3>
+                <p className="whytele-benefit-description">
+                  Experienced mechanics providing reliable, fast, and transparent service every time.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="whytele-benefit-card" style={{ '--delay': '0.3s' }}>
+              <div 
+                className="whytele-benefit-icon-wrapper" 
+                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
+              >
+                <i className="fas fa-cogs whytele-benefit-icon"></i>
+              </div>
+              <div className="whytele-benefit-content">
+                <h3 className="whytele-benefit-title">Advanced Tools</h3>
+                <p className="whytele-benefit-description">
+                  We use the latest diagnostic and repair tools for accurate and efficient solutions.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-
-    {/* Benefits Grid */}
-    <div className="grid gap-10 md:grid-cols-3">
-      {/* Card 1 */}
-      <div className="bg-white p-8 rounded-2xl shadow-lg transform transition hover:scale-105 duration-300">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-2xl mb-6 mx-auto">
-          <i className="fas fa-user-cog"></i>
-        </div>
-        <h3 className="text-xl font-semibold mb-2">Certified Technicians</h3>
-        <p className="text-gray-500">
-          Our team includes certified experts trained to service all makes and models efficiently.
-        </p>
-      </div>
-
-      {/* Card 2 */}
-      <div className="bg-white p-8 rounded-2xl shadow-lg transform transition hover:scale-105 duration-300">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-2xl mb-6 mx-auto">
-          <i className="fas fa-tools"></i>
-        </div>
-        <h3 className="text-xl font-semibold mb-2">Trusted Professionals</h3>
-        <p className="text-gray-500">
-          Experienced mechanics providing reliable, fast, and transparent service every time.
-        </p>
-      </div>
-
-      {/* Card 3 */}
-      <div className="bg-white p-8 rounded-2xl shadow-lg transform transition hover:scale-105 duration-300">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white text-2xl mb-6 mx-auto">
-          <i className="fas fa-cogs"></i>
-        </div>
-        <h3 className="text-xl font-semibold mb-2">Advanced Tools</h3>
-        <p className="text-gray-500">
-          We use the latest diagnostic and repair tools for accurate and efficient solutions.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 {/* WORKSHOP BENEFITS ENDS*/}
