@@ -9,6 +9,35 @@ import Counter from "../Counter";
 
 
 const NewHome = () => {
+
+
+     const blogData = [
+  {
+    img: "/assets/img/gallery-19.jpg",
+    alt: "Engine Diagnostics",
+    title: "Understanding Engine Diagnostic Tools",
+    folder: "Mechanical",
+    comments: 14,
+    desc: "Explore how modern diagnostic tools help detect issues early, improve vehicle performance, and reduce repair costs.",
+  },
+  {
+    img: "/assets/img/gallery-3.jpg",
+    alt: "Paint & Body Repair",
+    title: "Top 5 Body Repair Mistakes to Avoid",
+    folder: "Body Shop",
+    comments: 9,
+    desc: "From mismatched paint to improper dent repairs, learn the common mistakes in bodywork and how professionals fix them.",
+  },
+  {
+    img: "/assets/img/gallery-6.jpg",
+    alt: "Tyre Maintenance",
+    title: "How to Choose the Right Tyres",
+    folder: "Tyre Service",
+    comments: 11,
+    desc: "Choosing the correct tyres ensures better grip, mileage, and safety. Here’s a complete guide based on your car type.",
+  },
+ 
+];
   useEffect(() => {
           // wait for DOM to fully render
           const interval = setInterval(() => {
@@ -710,67 +739,67 @@ const NewHome = () => {
               <div className="col-lg-4">
                 <div className="nav w-100 nav-pills me-4">
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2 active"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2 active"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-1"
                     type="button"
                   >
                     <i className="fa fa-car-side fa-2x me-3"></i>
-                    <h5 className="m-0">Mechanical Service</h5>
+                    <h5 className="serv-text">Mechanical Service</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-2"
                     type="button"
                   >
                     <i className="fa fa-car fa-2x me-3"></i>
-                    <h5 className="m-0">Body Shop Service</h5>
+                    <h5 className="serv-text">Body Shop Service</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-3"
                     type="button"
                   >
                     <i className="fa fa-cog fa-2x me-3"></i>
-                    <h5 className="m-0">Tyre Service</h5>
+                    <h5 className="serv-text">Tyre Service</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-4"
                     type="button"
                   >
                     <i className="fa fa-shield-alt fa-2x me-3"></i>
-                    <h5 className="m-0">Insurance Renewal</h5>
+                    <h5 className="serv-text">Insurance Renewal</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-5"
                     type="button"
                   >
                     <i className="fa fa-tools fa-2x me-3"></i>
-                    <h5 className="m-0">Car Accessories</h5>
+                    <h5 className="serv-text">Car Accessories</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-2"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-2"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-6"
                     type="button"
                   >
                   <i className="fa fa-cogs fa-2x me-3"></i>
-                    <h5 className="m-0">Car Customize</h5>
+                    <h5 className="serv-text">Car Customize</h5>
                   </button>
                   <button
-                    className="nav-link w-100 d-flex align-items-center text-start p-3 mb-0"
+                    className="our-serv w-100 d-flex align-items-center text-start p-3 mb-0"
                     data-bs-toggle="pill"
                     data-bs-target="#tab-pane-7"
                     type="button"
                   >
                     <i className="fa fa-broom fa-2x me-3"></i>
-                    <h5 className="m-0">Car Detailing</h5>
+                    <h5 className="serv-text">Car Detailing</h5>
                   </button>
                 </div>
               </div>
@@ -1071,71 +1100,164 @@ const NewHome = () => {
 
 {/* BOOK SERVICE FORM STARTS */}
 
-<section>
-  <div>
-       <div className="container-fluid bg-secondary booking wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container">
-            <div className="row gx-5">
-                <div className="col-lg-6 py-5">
-                    <div className="py-5">
-                        <h1 className="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                        <p className="text-white mb-0">
-We offer reliable car repairs, certified technicians, and quick service. From diagnostics to maintenance, trust us to keep your car running at its best.
-</p>
+<section className="position-relative">
+  {/* Background Pattern */}
+  <div
+    className="position-absolute w-100 h-100"
+    style={{
+      backgroundImage: 'url(https://thumbs.dreamstime.com/b/car-wheel-gears-wrenches-spring-eps-195036714.jpg)',
+      backgroundRepeat: 'repeat',
+      opacity: 0.05,
+      top: 0,
+      left: 0,
+      zIndex: 0,
+    }}
+  ></div>
 
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div className="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 className="text-white mb-4">Book For A Service</h1>
-                        <form>
-                            <div className="row g-3">
-                                <div className="col-12 col-sm-6">
-                                    <input type="text" className="form-control border-0" placeholder="Your Name" style={{height: "55px"}} />
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <input type="email" className="form-control border-0" placeholder="Your Email" style={{height: "55px"}} />
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <select className="form-select border-0" style={{height: "55px"}}>
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Mechanical Service</option>
-                                        <option value="2">Body Shop Service</option>
-                                        <option value="3">Tyre Service</option>
-                                        <option value="4">Insurance Renewal</option>
-                                        <option value="5">Car Accessories</option>
-                                        <option value="6">Car Customize</option>
-                                        <option value="7">Car Detailing</option>
-                                    </select>
-                                </div>
-                                <div className="col-12 col-sm-6">
-                                    <div className="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            className="form-control border-0 datetimepicker-input"
-                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style={{height: "55px"}} />
-                                    </div>
-                                </div>
-                                <div className="col-12">
-                                    <textarea className="form-control border-0" placeholder="Special Request"></textarea>
-                                </div>
-                                <div className="col-12">
-                                  <div
-                                    className="g-recaptcha"
-                                    data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
-                                  </div>
-                                </div>
-                                <div className="col-12">
-                                    <button className="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+  <div className="container py-5 position-relative" style={{ zIndex: 1 }}>
+    <div className="row align-items-center gx-5">
+      {/* Left Side - Hero Image */}
+      <div className="col-lg-6 mb-5 mb-lg-0">
+        <img
+          src="https://img.freepik.com/premium-photo/indian-car-mechanic-standing-working-service-station-car-specialists-examining-lifted-car-professional-repairmen-wearing-mechanic-uniform-blue-color_255667-45756.jpg"
+          alt="Car Mechanic Working"
+          className="img-fluid rounded shadow"
+        />
+      </div>
+
+      {/* Right Side - Text + Floating Booking Form */}
+      <div className="col-lg-6">
+        <div className="mb-4">
+          <h1 className="display-5 fw-bold text-primary">
+            Trusted Car Repair & Maintenance
+          </h1>
         </div>
+
+        {/* Floating Form */}
+        <div className="position-relative mt-4">
+          <div
+            className="bg-white p-4 p-lg-5 rounded-4 shadow-lg border mx-auto"
+            style={{
+              maxWidth: '550px',
+              transform: 'translateY(0)',
+              transition: '0.3s',
+            }}
+          >
+            <h3 className="text-primary mb-4 text-center fw-bold">Book Your Service</h3>
+            <form>
+              <div className="row g-3">
+                {/* Name */}
+                <div className="col-12 col-sm-6">
+                  <input
+                    type="text"
+                    className="form-control form-control-lg rounded-pill shadow-sm"
+                    placeholder="Your Name"
+                  />
+                </div>
+
+                {/* Email */}
+                <div className="col-12 col-sm-6">
+                  <input
+                    type="email"
+                    className="form-control form-control-lg rounded-pill shadow-sm"
+                    placeholder="Your Email"
+                  />
+                </div>
+
+                {/* Service Select */}
+                <div className="col-12 col-sm-6">
+                  <select
+                    className="form-select form-select-lg rounded-pill shadow-sm"
+                  >
+                    <option defaultValue>Select Service</option>
+                    <option value="1">Mechanical Service</option>
+                    <option value="2">Body Shop Service</option>
+                    <option value="3">Tyre Service</option>
+                    <option value="4">Insurance Renewal</option>
+                    <option value="5">Car Accessories</option>
+                    <option value="6">Car Customization</option>
+                    <option value="7">Car Detailing</option>
+                  </select>
+                </div>
+
+                {/* Date */}
+                <div className="col-12 col-sm-6">
+                  <input
+                    type="date"
+                    className="form-control form-control-lg rounded-pill shadow-sm"
+                  />
+                </div>
+
+                {/* Special Requests */}
+                <div className="col-12">
+                  <textarea
+                    className="form-control rounded-3 shadow-sm"
+                    placeholder="Special Requests"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                {/* reCAPTCHA */}
+                <div className="col-12 text-center mt-3">
+                  <div
+                    className="g-recaptcha"
+                    data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
+                    style={{
+                      transform: 'scale(0.85)',
+                      transformOrigin: '0 0',
+                      display: 'inline-block',
+                    }}
+                  ></div>
+                </div>
+
+                {/* Submit Button */}
+                <div className="col-12">
+                  <button
+                    className="btn btn-primary w-100 py-2 py-sm-3 rounded-pill fw-bold shadow"
+                    type="submit"
+                    style={{ fontSize: '1.1rem' }}
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    {/* Services Grid */}
+    <div className="row mt-5 gx-4">
+      {[
+        { icon: 'fas fa-cogs', title: 'Mechanical Service', desc: 'Engine repair, oil change, and full maintenance.' },
+        { icon: 'fas fa-car-crash', title: 'Body Shop Service', desc: 'Dent repair, painting, and body restoration.' },
+        { icon: 'fas fa-circle-notch', title: 'Tyre Service', desc: 'Tyre replacement, balancing, and alignment.' },
+        { icon: 'fas fa-car', title: 'Car Detailing', desc: 'Interior & exterior detailing for a fresh look.' },
+        { icon: 'fas fa-shield-alt', title: 'Insurance Renewal', desc: 'Fast insurance renewal and processing.' },
+        { icon: 'fas fa-tools', title: 'Car Customization', desc: 'Custom parts, accessories, and upgrades.' },
+      ].map((service, index) => (
+        <div key={index} className="col-md-4 mb-4">
+          <div className="card h-100 border-0 shadow-sm text-center p-3">
+            <i className={`${service.icon} fa-2x text-primary mb-3`}></i>
+            <h5 className="fw-bold">{service.title}</h5>
+            <p className="text-muted">{service.desc}</p>
+          </div>
+        </div>
+      ))}
     </div>
+  </div>
+
+  {/* Responsive floating effect */}
+  <style jsx>{`
+    @media (min-width: 992px) {
+      .position-relative.mt-4 > div {
+        transform: translateY(-50px);
+      }
+    }
+  `}</style>
 </section>
+
 
 {/* BOOK SERVICE FORM ENDS */}
 
@@ -1243,12 +1365,12 @@ We offer reliable car repairs, certified technicians, and quick service. From di
               {/* <a href="#" className="btn btn-primary py-3 px-5">
                 Learn More
               </a> */}
-              <a className="dedcription-btn" href="#">
+              {/* <a className="dedcription-btn" href="#">
                 <span className="name-descripeion"> Learn More</span>
                 <div className="btn-icon heart">
                   <i className="fas fa-car"></i>
                 </div>
-              </a>
+              </a> */}
             </div>
             <div className="col-lg-7">
               <div className="row">
@@ -1257,7 +1379,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",
@@ -1281,7 +1403,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",
@@ -1302,7 +1424,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",
@@ -1326,7 +1448,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",
@@ -1350,7 +1472,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",
@@ -1374,7 +1496,7 @@ We offer reliable car repairs, certified technicians, and quick service. From di
                   <div className="d-flex flex-column">
                     <div className="d-flex align-items-center mb-3">
                       <div
-                        className="bg-primary text-white d-flex align-items-center justify-content-center mr-3"
+                        className="why-auto text-white d-flex align-items-center justify-content-center mr-3"
                         style={{
                           width: "40px",
                           height: "40px",

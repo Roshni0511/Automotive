@@ -1653,7 +1653,7 @@
   color: white;
   border: none;
   padding: 18px;
-  border-radius: 15px;
+  border-radius: 60px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -1941,3 +1941,51 @@ color: #D81324;
 
 
 /* WHY CHOOSE US CSS ENDS */
+
+
+.why-auto{
+  background: #875df6;
+}
+.book-now {
+  border: none; /* remove border */
+  border-radius: 60px;
+  color: #fff; /* white text for contrast */
+  background: linear-gradient(135deg, #7b60f4, #5a3fd3); /* gradient */
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(123, 96, 244, 0.4); /* subtle shadow */
+}
+
+.book-now:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(123, 96, 244, 0.5);
+  background: linear-gradient(135deg, #5a3fd3, #7b60f4); /* reverse gradient on hover */
+}
+
+
+.our-serv {
+  display: inline-block;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff; /* white text */
+  background: linear-gradient(135deg, #7961f4, #5a3fd3); /* subtle gradient */
+  border: none; /* no border */
+  border-radius: 60px; /* rounded corners */
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.our-serv:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(121, 97, 244, 0.5);
+  background: linear-gradient(135deg, #5a3fd3, #7961f4); /* reverse gradient on hover */
+}
+
+.serv-text{
+  color: white;
+}
