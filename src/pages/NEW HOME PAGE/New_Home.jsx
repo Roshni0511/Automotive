@@ -1186,7 +1186,7 @@ const NewHome = () => {
 
           {/* Date */}
           <div className="col-12 col-sm-6">
-            <input type="date" className="form-control form-control-lg rounded-pill shadow-sm" required />
+            <input type="date" className="form-control form-control-lg rounded-pill shadow-sm" placeholder="Select Date" required />
           </div>
 
           {/* Special Requests */}
