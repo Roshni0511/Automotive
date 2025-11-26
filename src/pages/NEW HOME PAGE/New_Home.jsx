@@ -10,7 +10,19 @@ import Counter from "../Counter";
 
 const NewHome = () => {
 
+ const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission delay
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setShowModal(true);
+    }, 1500);
+  };
      const blogData = [
   {
     img: "/assets/img/gallery-19.jpg",
@@ -1128,9 +1140,11 @@ const NewHome = () => {
       {/* Right Side - Text + Floating Booking Form */}
       <div className="col-lg-6">
         <div className="mb-4">
-          <h1 className="display-5 fw-bold text-primary">
-            Trusted Car Repair & Maintenance
-          </h1>
+         <h1 className="display-5 fw-bold">
+  <span style={{ color: '#0b2154' }}>Trusted Car Repair</span>{' '}
+  <span style={{ color: '#43c6ac' }}>& Maintenance</span>
+</h1>
+
         </div>
 
         {/* Floating Form */}
@@ -1143,62 +1157,44 @@ const NewHome = () => {
               transition: '0.3s',
             }}
           >
-            <h3 className="text-primary mb-4 text-center fw-bold">Book Your Service</h3>
-            <form>
-              <div className="row g-3">
-                {/* Name */}
-                <div className="col-12 col-sm-6">
-                  <input
-                    type="text"
-                    className="form-control form-control-lg rounded-pill shadow-sm"
-                    placeholder="Your Name"
-                  />
-                </div>
+            <h3 className=" mb-4 text-center fw-bold" style={{color:'#0b2154'}}>Book Your Service</h3>
+            <form onSubmit={handleSubmit}>
+        <div className="row g-3">
+          {/* Name */}
+          <div className="col-12 col-sm-6">
+            <input type="text" className="form-control form-control-lg rounded-pill shadow-sm" placeholder="Your Name" required />
+          </div>
 
-                {/* Email */}
-                <div className="col-12 col-sm-6">
-                  <input
-                    type="email"
-                    className="form-control form-control-lg rounded-pill shadow-sm"
-                    placeholder="Your Email"
-                  />
-                </div>
+          {/* Email */}
+          <div className="col-12 col-sm-6">
+            <input type="email" className="form-control form-control-lg rounded-pill shadow-sm" placeholder="Your Email" required />
+          </div>
 
-                {/* Service Select */}
-                <div className="col-12 col-sm-6">
-                  <select
-                    className="form-select form-select-lg rounded-pill shadow-sm"
-                  >
-                    <option defaultValue>Select Service</option>
-                    <option value="1">Mechanical Service</option>
-                    <option value="2">Body Shop Service</option>
-                    <option value="3">Tyre Service</option>
-                    <option value="4">Insurance Renewal</option>
-                    <option value="5">Car Accessories</option>
-                    <option value="6">Car Customization</option>
-                    <option value="7">Car Detailing</option>
-                  </select>
-                </div>
+          {/* Service Select */}
+          <div className="col-12 col-sm-6">
+            <select className="form-select form-select-lg rounded-pill shadow-sm" required>
+              <option defaultValue>Select Service</option>
+              <option value="1">Mechanical Service</option>
+              <option value="2">Body Shop Service</option>
+              <option value="3">Tyre Service</option>
+              <option value="4">Insurance Renewal</option>
+              <option value="5">Car Accessories</option>
+              <option value="6">Car Customization</option>
+              <option value="7">Car Detailing</option>
+            </select>
+          </div>
 
-                {/* Date */}
-                <div className="col-12 col-sm-6">
-                  <input
-                    type="date"
-                    className="form-control form-control-lg rounded-pill shadow-sm"
-                  />
-                </div>
+          {/* Date */}
+          <div className="col-12 col-sm-6">
+            <input type="date" className="form-control form-control-lg rounded-pill shadow-sm" required />
+          </div>
 
-                {/* Special Requests */}
-                <div className="col-12">
-                  <textarea
-                    className="form-control rounded-3 shadow-sm"
-                    placeholder="Special Requests"
-                    rows="3"
-                  ></textarea>
-                </div>
+          {/* Special Requests */}
+          <div className="col-12">
+            <textarea className="form-control rounded-3 shadow-sm" placeholder="Special Requests" rows="3"></textarea>
+          </div>
 
-                {/* reCAPTCHA */}
-                <div className="col-12 text-center mt-3">
+          <div className="col-12 text-center mt-3">
                   <div
                     className="g-recaptcha"
                     data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
@@ -1208,20 +1204,39 @@ const NewHome = () => {
                       display: 'inline-block',
                     }}
                   ></div>
-                </div>
+          </div>
 
-                {/* Submit Button */}
-                <div className="col-12">
-                  <button
-                    className="btn btn-primary w-100 py-2 py-sm-3 rounded-pill fw-bold shadow"
-                    type="submit"
-                    style={{ fontSize: '1.1rem' }}
-                  >
-                    Book Now
-                  </button>
-                </div>
-              </div>
-            </form>
+
+          {/* Submit Button */}
+          <div className="col-12">
+            <button
+              className=" w-100 py-2 py-sm-3 rounded-pill fw-bold shadow"
+              type="submit" style={{color:'white', background:'#7662f4', border:'none'}}
+            >
+              {isSubmitting ? 'Submitting...' : 'Book Now'}
+            </button>
+          </div>
+        </div>
+      </form>
+
+
+       <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }}>
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Booking Submitted</h5>
+              <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+            </div>
+            <div className="modal-body">
+              <p>Your service booking has been submitted successfully!</p>
+            </div>
+            <div className="modal-footer">
+              <button className="btn btn-primary" onClick={() => setShowModal(false)}>Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
           </div>
         </div>
       </div>
@@ -1239,7 +1254,7 @@ const NewHome = () => {
       ].map((service, index) => (
         <div key={index} className="col-md-4 mb-4">
           <div className="card h-100 border-0 shadow-sm text-center p-3">
-            <i className={`${service.icon} fa-2x text-primary mb-3`}></i>
+            <i className={`${service.icon} fa-2x mb-3`} style={{color:'#7662f4'}}></i>
             <h5 className="fw-bold">{service.title}</h5>
             <p className="text-muted">{service.desc}</p>
           </div>
@@ -1547,28 +1562,28 @@ const NewHome = () => {
           <div className="process-info wow fadeInUp" data-wow-delay="0.1s">
             <div className="row">
               <div className="col-md-3">
-                <div className="single-process first text-center">
+                <div className="single-process first text-center" style={{color:'white', background:'#7662f4'}}>
                   <i className="fas fa-search"></i>
                   <h4>Diagnose</h4>
                   {/* <p>We begin with a full inspection and computer diagnostics to find any issues.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="single-process second text-center">
+                <div className="single-process second text-center" style={{color:'#7662f4'}}>
                   <i className="fas fa-tools"></i>
                   <h4>Repair & Service</h4>
                   {/* <p>Our team repairs or services your car using high-quality tools and parts.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="single-process thard text-center">
+                <div className="single-process thard text-center" style={{color:'white', background:'#7662f4'}}>
                   <i className="fas fa-shield-alt"></i>
                   <h4>Quality Check</h4>
                   {/* <p>Each vehicle is thoroughly inspected to ensure everything runs perfectly.</p> */}
                 </div>
               </div>
               <div className="col-md-3">
-                <div className="single-process last text-center">
+                <div className="single-process last text-center"  style={{color:'#7662f4'}}>
                   <i className="fas fa-car-side"></i>
                   <h4>Delivery</h4>
                   {/* <p>Your car is cleaned, polished, and delivered on time — ready for the road.</p> */}
@@ -1599,84 +1614,84 @@ const NewHome = () => {
 
 {/* TESTIMONIALS SECTION STARTS */}
 
-   <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div className="container">
-            <div className="text-center">
-              <h6 className="text-primary text-uppercase">// Testimonial //</h6>
-              <h1 className="mb-5">Our Clients Say!</h1>
-            </div>
-            <div className="owl-carousel testimonial-carousel position-relative">
-              <div className="testimonial-item text-center">
-                <img
-                  className="bg-light rounded-circle p-2 mx-auto mb-3"
-                  src="assets/img/testimonial-1.jpg"
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="mb-0">Abraham Patel</h5>
-                <p style={{textAlign:'center'}}>Surat, Gujarat</p>
-                <div className="testimonial-text bg-light text-center p-4">
-                  <p className="mb-0">
-                    “Very professional. I must say, very reasonably priced as
-                    well, staff is excellent, the facility is also excellent! I
-                    would highly recommend to try it! Excellent service with a
-                    transparent system. On time delivery.”
-                  </p>
-                </div>
-              </div>
-              <div className="testimonial-item text-center">
-                <img
-                  className="bg-light rounded-circle p-2 mx-auto mb-3"
-                  src="assets/img/testimonial-2.jpg"
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="mb-0">Divya Shah</h5>
-                <p  style={{textAlign:'center'}}>Navsari, Gujarat</p>
-                <div className="testimonial-text bg-light text-center p-4">
-                  <p className="mb-0">
-                    “It was an wonderful experience. Automotive is a workshop of
-                    highly professional work force. They completely customized
-                    my car as per my requirement and delivered with complete
-                    ease. I recommend Automotive to all. Thanks and great job.”
-                  </p>
-                </div>
-              </div>
-              <div className="testimonial-item text-center">
-                <img
-                  className="bg-light rounded-circle p-2 mx-auto mb-3"
-                  src="assets/img/testimonial-3.jpg"
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="mb-0">Kailash Patel</h5>
-                <p  style={{textAlign:'center'}}>Udhna, Gujarat</p>
-                <div className="testimonial-text bg-light text-center p-4">
-                  <p className="mb-0">
-                    “Fantastic service, superb punctuality. Availed their
-                    service twice and truly most satisfying. The response of
-                    coordinator is prompt and she was greatly supportive. Thanks
-                    a lot..!!”
-                  </p>
-                </div>
-              </div>
-              <div className="testimonial-item text-center">
-                <img
-                  className="bg-light rounded-circle p-2 mx-auto mb-3"
-                  src="assets/img/testimonial-4.jpg"
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="mb-0">Viraj Patel</h5>
-                <p  style={{textAlign:'center'}}>Surat, Gujarat</p>
-                <div className="testimonial-text bg-light text-center p-4">
-                  <p className="mb-0">
-                    “This is my first time experience with Automotive. But, I
-                    would say the service of Automotive is much better in
-                    comparison to any authorized dealer in terms of quality,
-                    service and very reasonable charge.”
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+ <section style={{ backgroundColor: '#f8f9fa' }}>
+ <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div className="container">
+    <div className="text-center">
+      <h6 className="text-primary text-uppercase" style={{ color: '#6c757d' }}>// Testimonial //</h6>
+      <h1 className="mb-5" style={{ color: '#1c1c1c' }}>Our Clients Say!</h1>
+    </div>
+    <div className="owl-carousel testimonial-carousel position-relative">
+      
+      {/* Testimonial 1 */}
+      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
+        <img
+          className="bg-light rounded-circle p-2 mx-auto mb-3"
+          src="assets/img/testimonial-1.jpg"
+          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
+        />
+        <h5 className="mb-0" style={{ color: '#6c757d' }}>Abraham Patel</h5>
+        <p style={{ textAlign: 'center', color: '#6c757d' }}>Surat, Gujarat</p>
+        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
+          <p className="mb-0" style={{ color: '#333' }}>
+            “Very professional. I must say, very reasonably priced as well, staff is excellent, the facility is also excellent! I would highly recommend to try it! Excellent service with a transparent system. On time delivery.”
+          </p>
         </div>
+      </div>
+
+      {/* Testimonial 2 */}
+      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
+        <img
+          className="bg-light rounded-circle p-2 mx-auto mb-3"
+          src="assets/img/testimonial-2.jpg"
+          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
+        />
+        <h5 className="mb-0" style={{ color: '#6c757d' }}>Divya Shah</h5>
+        <p style={{ textAlign: 'center', color: '#6c757d' }}>Navsari, Gujarat</p>
+        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
+          <p className="mb-0" style={{ color: '#333' }}>
+            “It was an wonderful experience. Automotive is a workshop of highly professional work force. They completely customized my car as per my requirement and delivered with complete ease. I recommend Automotive to all. Thanks and great job.”
+          </p>
+        </div>
+      </div>
+
+      {/* Testimonial 3 */}
+      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
+        <img
+          className="bg-light rounded-circle p-2 mx-auto mb-3"
+          src="assets/img/testimonial-3.jpg"
+          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
+        />
+        <h5 className="mb-0" style={{ color: '#6c757d' }}>Kailash Patel</h5>
+        <p style={{ textAlign: 'center', color: '#6c757d' }}>Udhna, Gujarat</p>
+        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
+          <p className="mb-0" style={{ color: '#333' }}>
+            “Fantastic service, superb punctuality. Availed their service twice and truly most satisfying. The response of coordinator is prompt and she was greatly supportive. Thanks a lot..!!”
+          </p>
+        </div>
+      </div>
+
+      {/* Testimonial 4 */}
+      <div className="testimonial-item text-center" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd', borderRadius: '15px', padding: '20px', margin: '10px' }}>
+        <img
+          className="bg-light rounded-circle p-2 mx-auto mb-3"
+          src="assets/img/testimonial-4.jpg"
+          style={{ width: "80px", height: "80px", border: '2px solid #6c757d' }}
+        />
+        <h5 className="mb-0" style={{ color: '#6c757d' }}>Viraj Patel</h5>
+        <p style={{ textAlign: 'center', color: '#6c757d' }}>Surat, Gujarat</p>
+        <div className="testimonial-text text-center p-4" style={{ backgroundColor: '#e9ecef', borderRadius: '10px' }}>
+          <p className="mb-0" style={{ color: '#333' }}>
+            “This is my first time experience with Automotive. But, I would say the service of Automotive is much better in comparison to any authorized dealer in terms of quality, service and very reasonable charge.”
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ </section>
 
 {/* TESTIMONIALS SECTION ENDS */}
 

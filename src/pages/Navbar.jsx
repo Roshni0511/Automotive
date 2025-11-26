@@ -117,12 +117,12 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav m-auto p-4 p-lg-0">
-              <a href="/NewHome" className="nav-item nav-link">
-                NEW HOME
-              </a>
               <a href="/" className="nav-item nav-link">
-                Home
+                 Home
               </a>
+              {/* <a href="/Home" className="nav-item nav-link">
+               old Home
+              </a> */}
               <div className="nav-item dropdown">
                 <a
                   href="#"
