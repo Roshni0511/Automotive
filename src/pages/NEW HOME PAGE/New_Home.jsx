@@ -634,202 +634,235 @@ const handleSubmit = (e) => {
 
 
 {/* FACT SECTION STARTS */}
-<section
-  style={{
-    /* Base Section Style - Light Theme */
-    background: '#f8f9fa',
-    padding: '60px 0',
-    fontFamily: 'Roboto, Montserrat, Arial, sans-serif',
-    color: '#212529',
-    position: 'relative',
-    overflow: 'hidden',
-  }}
->
+<section className="our-impact-section">
   {/* Background Pattern */}
-  <div
-  style={{
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundImage: 'url(assets/img/Repair-tools.jpg)',
-    backgroundRepeat: 'repeat',
-    opacity: 0.05,
-    zIndex: 0,
-  }}
-></div>
-
+  <div className="background-pattern"></div>
 
   {/* Subtle Background Shape */}
-  <div
-    style={{
-      position: 'absolute',
-      bottom: '-10%',
-      left: '-10%',
-      width: '300px',
-      height: '300px',
-      background: 'rgba(216, 19, 36, 0.05)',
-      borderRadius: '50%',
-      filter: 'blur(100px)',
-      zIndex: 0,
-    }}
-  ></div>
+  <div className="background-shape"></div>
 
-  <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 15px', position: 'relative', zIndex: 1 }}>
-
+  <div className="container">
     {/* Header Section */}
-    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-      <h6 style={{
-        fontWeight: '700',
-        color: '#d81324',
-        marginBottom: '5px',
-        letterSpacing: '3px',
-        fontSize: '0.8rem',
-        textTransform: 'uppercase',
-      }}>
-        // OUR IMPACT //
-      </h6>
-
-      <h1 style={{
-        fontSize: '2.5rem',
-        fontWeight: '900',
-        lineHeight: '1.2',
-        color: '#212529',
-        marginBottom: '10px',
-        textShadow: '1px 1px 3px rgba(0,0,0,0.05)',
-      }}>
-        <span style={{ color: '#d81324' }}>Precision</span>
-        <span style={{ color: '#212529' }}> in Numbers</span>
+    <div className="section-header">
+      <h6>// OUR IMPACT //</h6>
+      <h1>
+        <span className="highlight">Precision</span>
+        <span> in Numbers</span>
       </h1>
-
-      <p style={{
-        maxWidth: '700px',
-        margin: '0 auto',
-        color: '#6c757d',
-        fontSize: '1rem',
-        lineHeight: '1.5',
-      }}>
+      <p>
         Our milestones reflect dedication, high-quality service, and expertise in automotive care.
       </p>
     </div>
 
     {/* Content Row */}
-    <div style={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      gap: '30px',
-      alignItems: 'center',
-    }}>
-
+    <div className="content-row">
       {/* Left Image */}
-      <div style={{
-        flex: '1 1 350px',
-        maxWidth: '400px',
-        textAlign: 'center',
-      }}>
+      <div className="left-image">
         <img
           src="assets/img/Our-Numbers.jpg"
           alt="Modern Car Workshop Bay"
-          style={{
-            width: '100%',
-            height: 'auto',
-            minHeight: '300px',
-            borderRadius: '12px',
-            objectFit: 'cover',
-            boxShadow: '0 12px 25px rgba(0, 0, 0, 0.12)',
-            transition: 'transform 0.3s ease',
-          }}
-          onMouseOver={e => e.currentTarget.style.transform = 'scale(1.03)'}
-          onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
         />
       </div>
 
       {/* Right Counter Grid */}
-      <div style={{
-        flex: '1 1 450px',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gap: '20px',
-        maxWidth: '600px',
-        padding: '10px 0',
-      }}>
-        {
-          [
-            { icon: 'fa-gauge-high', counter: '20+', title: 'Years of Expertise', desc: 'Two decades of combined expertise and professionalism.' },
-            { icon: 'fa-users', counter: '990+', title: 'Satisfied Clients', desc: 'Trusted by a wide range of clients for exceptional service.' },
-            { icon: 'fa-toolbox', counter: '100+', title: 'Modern Equipment', desc: 'Equipped with advanced tools for efficient, accurate service.' },
-            { icon: 'fa-car-side', counter: '500+', title: 'Services/Month', desc: 'Timely maintenance and repairs keeping vehicles safe and smooth.' },
-          ].map((item, index) => (
-            <div
-              key={index}
-              style={{
-                background: '#ffffff',
-                padding: '20px 15px',
-                borderRadius: '12px',
-                textAlign: 'center',
-                boxShadow: '0 8px 20px rgba(0,0,0,0.08)',
-                borderLeft: '4px solid #d81324',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'flex-start',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.transform = 'translateY(-5px)';
-                e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.12)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
-              }}
-            >
-              <i style={{
-                fontSize: '1.5rem',
-                color: '#ffffff',
-                background: '#d81324',
-                padding: '12px',
-                borderRadius: '50%',
-                marginBottom: '10px',
-                transition: 'transform 0.3s ease',
-              }} className={`fa-solid ${item.icon}`}></i>
-
-              <div>
-                <h2 style={{
-                  margin: 0,
-                  fontSize: '2.5rem',
-                  color: '#d81324',
-                  fontWeight: '900',
-                  lineHeight: '1',
-                  marginBottom: '5px',
-                }}>{item.counter}</h2>
-
-                <h3 style={{
-                  margin: '0 0 5px 0',
-                  fontSize: '0.95rem',
-                  color: '#212529',
-                  fontWeight: '700',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px'
-                }}>{item.title}</h3>
-              </div>
-
-              <p style={{
-                margin: 0,
-                color: '#6c757d',
-                fontSize: '0.8rem',
-                lineHeight: '1.45'
-              }}>{item.desc}</p>
+      <div className="counter-grid">
+        {[
+          { icon: 'fa-gauge-high', counter: '20+', title: 'Years of Expertise', desc: 'Two decades of combined expertise and professionalism.' },
+          { icon: 'fa-users', counter: '990+', title: 'Satisfied Clients', desc: 'Trusted by a wide range of clients for exceptional service.' },
+          { icon: 'fa-toolbox', counter: '100+', title: 'Modern Equipment', desc: 'Equipped with advanced tools for efficient, accurate service.' },
+          { icon: 'fa-car-side', counter: '500+', title: 'Services/Month', desc: 'Timely maintenance and repairs keeping vehicles safe and smooth.' },
+        ].map((item, index) => (
+          <div key={index} className="counter-card">
+            <i className={`fa-solid ${item.icon}`}></i>
+            <div className="counter-text">
+              <h2>{item.counter}</h2>
+              <h3>{item.title}</h3>
             </div>
-          ))
-        }
+            <p>{item.desc}</p>
+          </div>
+        ))}
       </div>
-
     </div>
   </div>
+
+  {/* CSS */}
+  <style jsx>{`
+    .our-impact-section {
+      position: relative;
+      overflow: hidden;
+      background: #f8f9fa;
+      padding: 60px 0;
+      font-family: 'Roboto, Montserrat, Arial, sans-serif';
+      color: #212529;
+    }
+
+    .background-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(assets/img/Repair-tools.jpg);
+      background-repeat: repeat;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .background-shape {
+      position: absolute;
+      bottom: -10%;
+      left: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba(216, 19, 36, 0.05);
+      border-radius: 50%;
+      filter: blur(100px);
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 15px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h6 {
+      font-weight: 700;
+      color: #d81324;
+      margin-bottom: 5px;
+      letter-spacing: 3px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+
+    .section-header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1.2;
+      color: #212529;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .section-header .highlight {
+      color: #d81324;
+    }
+
+    .section-header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: #6c757d;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .content-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .left-image {
+      flex: 1 1 350px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .left-image img {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .left-image img:hover {
+      transform: scale(1.03);
+    }
+
+    .counter-grid {
+      flex: 1 1 450px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 600px;
+      padding: 10px 0;
+    }
+
+    .counter-card {
+      background: #ffffff;
+      padding: 20px 15px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-left: 4px solid #d81324;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transition: all 0.3s ease;
+    }
+
+    .counter-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    }
+
+    .counter-card i {
+      font-size: 1.5rem;
+      color: #ffffff;
+      background: #d81324;
+      padding: 12px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .counter-text h2 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #d81324;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .counter-text h3 {
+      margin: 0 0 5px 0;
+      font-size: 0.95rem;
+      color: #212529;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .counter-card p {
+      margin: 0;
+      color: #6c757d;
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
+    /* Responsive: Mobile Screens */
+    @media (max-width: 768px) {
+      .counter-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  `}</style>
 </section>
+
 
 {/* FACT SECTION ENDS */}
 
@@ -1161,134 +1194,204 @@ const handleSubmit = (e) => {
 
 
 
-{/* BOOK SERVICE FORM STARTS */}
+{/* OUR JOURNEY FORM STARTS */}
 
-<section className="position-relative py-5 bg-light">
-  {/* Background Pattern */}
-  <div
+<section
+  className="position-relative py-5"
   style={{
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    backgroundImage: 'url(assets/img/car-gear.jpg)',
-    backgroundRepeat: 'repeat',
-    opacity: 0.05,
-    zIndex: 0,
+    background: '#f8f9fa', // fallback color
+    fontFamily: 'Roboto, Montserrat, Arial, sans-serif',
+    color: '#212529',
+    position: 'relative',
+    overflow: 'hidden',
   }}
-></div>
+>
+  {/* Background Image */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundImage: 'url(assets/img/Repair-tools.jpg)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      opacity: 0.05,
+      zIndex: 0,
+    }}
+  ></div>
 
+  {/* Subtle Background Shape */}
+  <div
+    style={{
+      position: 'absolute',
+      bottom: '-10%',
+      left: '-10%',
+      width: '300px',
+      height: '300px',
+      background: 'rgba(216, 19, 36, 0.05)',
+      borderRadius: '50%',
+      filter: 'blur(100px)',
+      zIndex: 0,
+    }}
+  ></div>
 
-  <div className="container position-relative" style={{ zIndex: 1 }}>
-    {/* Section Header */}
-    <div className="text-center mb-5">
-      <h1 className="display-5 fw-bold">
-        <span style={{ color: '#0b2154' }}>Our</span>{' '}
-        <span style={{ color: '#43c6ac' }}>Journey</span>
-      </h1>
-      <p className="text-muted">Milestones that shaped our path to becoming trusted car care experts.</p>
-    </div>
-
-    {/* Timeline */}
-    <div className="position-relative">
-      {/* Vertical Line */}
-      <div
-        className="position-absolute top-0 start-50 translate-middle-x d-none d-md-block"
-        style={{
-          width: '4px',
-          height: '100%',
-          backgroundColor: '#7662f4',
-          opacity: 0.1,
-          zIndex: 0,
-        }}
-      ></div>
-
-      {[
-        {
-          year: '2010',
-          title: 'Humble Beginnings',
-          desc: 'Started with a small team of passionate mechanics and a single garage.',
-          img: 'assets/img/Automotive-journey.jpg',
-        },
-        {
-          year: '2013',
-          title: 'Expanding Services',
-          desc: 'Added body shop, tyre service, and maintenance to serve more customers.',
-          img: 'assets/img/expanding-service.jpg',
-        },
-        {
-          year: '2016',
-          title: 'Modernization',
-          desc: 'Upgraded to advanced diagnostic tools and modern equipment for efficiency.',
-          img: 'assets/img/upgrade-tools.jpg',
-        },
-        {
-          year: '2019',
-          title: 'Customer Focused',
-          desc: 'Introduced online booking and priority customer support for convenience.',
-          img: 'assets/img/online-book.jpg',
-        },
-        {
-          year: '2023',
-          title: 'Trusted Experts',
-          desc: 'Serving thousands of happy customers with high-quality car services.',
-          img: 'assets/img/Happy-cus.jpg',
-        },
-      ].map((step, index) => (
-        <div
-          key={index}
-          className={`row align-items-center mb-5 flex-column flex-md-row ${index % 2 !== 0 ? 'flex-md-row-reverse' : ''}`}
-        >
-          {/* Image */}
-          <div className="col-md-6 mb-3 mb-md-0 position-relative d-flex justify-content-center">
-            <img
-              src={step.img}
-              alt={step.title}
-              className="img-fluid rounded shadow-lg"
-              style={{ border: '5px solid #43c6ac', maxHeight: '300px', objectFit: 'cover' }}
-            />
-            <div
-              className="position-absolute top-50 translate-middle bg-primary text-white fw-bold text-center"
-              style={{
-                width: '60px',
-                height: '60px',
-                lineHeight: '60px',
-                borderRadius: '50%',
-                fontSize: '1rem',
-                left: index % 2 === 0 ? '-30px' : 'unset',
-                right: index % 2 !== 0 ? '-30px' : 'unset',
-              }}
-            >
-              {step.year}
-            </div>
-          </div>
-
-          {/* Text */}
-          <div className="col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
-            <h3 className="fw-bold" style={{ color: '#0b2154' }}>{step.title}</h3>
-            <p className="text-muted">{step.desc}</p>
-          </div>
-        </div>
-      ))}
-    </div>
+  {/* Section Content */}
+  <div className="container text-center mb-4" style={{ position: 'relative', zIndex: 1 }}>
+    <h1 className="display-6 fw-bold">
+      <span style={{ color: '#0b2154' }}>Our</span>{' '}
+      <span style={{ color: '#43c6ac' }}>Journey</span>
+    </h1>
+    <p className="text-muted" style={{textAlign:'center', alignItems:'center'}}>Milestones that shaped our path to becoming trusted car care experts.</p>
   </div>
 
-  {/* Hover Animation */}
+  <div className="container position-relative" style={{ position: 'relative', zIndex: 1 }}>
+    {/* Vertical line for desktop */}
+    <div
+      className="d-none d-md-block position-absolute top-0 start-50 translate-middle-x"
+      style={{
+        width: '4px',
+        height: '100%',
+        backgroundColor: '#43c6ac',
+        opacity: 0.2,
+        zIndex: 0,
+      }}
+    ></div>
+
+    {/* Timeline Steps */}
+    {[
+      { year: '2010', title: 'Humble Beginnings', desc: 'Started with a small team of passionate mechanics and a single garage.', icon: 'fa-solid fa-car', color: '#43c6ac' },
+      { year: '2013', title: 'Expanding Services', desc: 'Added body shop, tyre service, and maintenance to serve more customers.', icon: 'fa-solid fa-tools', color: '#7662f4' },
+      { year: '2016', title: 'Modernization', desc: 'Upgraded to advanced diagnostic tools and modern equipment for efficiency.', icon: 'fa-solid fa-cogs', color: '#f39c12' },
+      { year: '2019', title: 'Customer Focused', desc: 'Introduced online booking and priority customer support for convenience.', icon: 'fa-solid fa-handshake', color: '#e74c3c' },
+      { year: '2023', title: 'Trusted Experts', desc: 'Serving thousands of happy customers with high-quality car services.', icon: 'fa-solid fa-star', color: '#16a085' },
+    ].map((step, index) => (
+      <div key={index} className="row align-items-center mb-4 position-relative">
+        {index % 2 === 0 ? (
+          <>
+            {/* Card on left */}
+            <div className="col-md-6 d-flex justify-content-end">
+              <div
+                className="timeline-card p-3 shadow-sm rounded-3 position-relative d-inline-block"
+                style={{
+                  maxWidth: '360px',
+                  backgroundColor: '#fff',
+                  borderLeft: `4px solid ${step.color}`,
+                }}
+              >
+                <div className="d-flex align-items-center mb-2">
+                  <div
+                    className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      backgroundColor: step.color,
+                      color: '#fff',
+                      fontSize: '1.2rem',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+                    }}
+                  >
+                    <i className={step.icon}></i>
+                  </div>
+                  <div
+                    className="rounded-circle bg-primary text-white fw-bold d-flex justify-content-center align-items-center"
+                    style={{ width: '35px', height: '35px', fontSize: '0.9rem', boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}
+                  >
+                    {step.year}
+                  </div>
+                </div>
+                <h6 className="fw-bold mb-1" style={{ color: '#0b2154' }}>{step.title}</h6>
+                <p className="text-muted mb-0" style={{ fontSize: '0.9rem' }}>{step.desc}</p>
+              </div>
+            </div>
+            <div className="col-md-6 d-none d-md-block"></div>
+          </>
+        ) : (
+          <>
+            {/* Empty column left */}
+            <div className="col-md-6 d-none d-md-block"></div>
+            {/* Card on right */}
+            <div className="col-md-6 d-flex justify-content-start">
+              <div
+                className="timeline-card p-3 shadow-sm rounded-3 position-relative d-inline-block"
+                style={{
+                  maxWidth: '360px',
+                  backgroundColor: '#fff',
+                  borderLeft: `4px solid ${step.color}`,
+                }}
+              >
+                <div className="d-flex align-items-center mb-2">
+                  <div
+                    className="rounded-circle d-flex justify-content-center align-items-center me-2"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      backgroundColor: step.color,
+                      color: '#fff',
+                      fontSize: '1.2rem',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
+                    }}
+                  >
+                    <i className={step.icon}></i>
+                  </div>
+                  <div
+                    className="rounded-circle bg-primary text-white fw-bold d-flex justify-content-center align-items-center"
+                    style={{ width: '35px', height: '35px', fontSize: '0.9rem', boxShadow: '0 2px 6px rgba(0,0,0,0.15)' }}
+                  >
+                    {step.year}
+                  </div>
+                </div>
+                <h6 className="fw-bold mb-1" style={{ color: '#0b2154' }}>{step.title}</h6>
+                <p className="text-muted mb-0" style={{ fontSize: '0.9rem' }}>{step.desc}</p>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
+    ))}
+  </div>
+
   <style jsx>{`
+    /* Connect timeline dots with vertical line */
     @media (min-width: 768px) {
-      img {
-        transition: transform 0.5s ease;
+      .timeline-card::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 20px;
+        height: 4px;
+        background-color: #43c6ac;
+        z-index: 0;
       }
-      img:hover {
-        transform: scale(1.05);
+      .row:nth-child(odd) .timeline-card::before {
+        right: -20px;
+      }
+      .row:nth-child(even) .timeline-card::before {
+        left: -20px;
+      }
+    }
+
+    /* Hover effect */
+    .timeline-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      .timeline-card {
+        max-width: 90%;
+        margin: 0 auto 20px;
       }
     }
   `}</style>
 </section>
 
 
-{/* BOOK SERVICE FORM ENDS */}
+{/* OUR JOURNEY FORM ENDS */}
 
 
 
