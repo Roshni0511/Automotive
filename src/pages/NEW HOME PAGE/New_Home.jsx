@@ -4,25 +4,15 @@ import './CSS/new_home.css';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Counter from "../Counter";
+import WorkProcessTimeline from './Our Work Process/Ourwork';
 
 
 
 
 const NewHome = () => {
 
- const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate form submission delay
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setShowModal(true);
-    }, 1500);
-  };
      const blogData = [
   {
     img: "/assets/img/gallery-19.jpg",
@@ -111,6 +101,58 @@ const NewHome = () => {
     desc: `We perform over 500 vehicle services every month, ensuring timely maintenance and repairs to keep our clients’ vehicles running smoothly and safely.`,
   },
 ];
+// FORM STATES
+const [form, setForm] = useState({
+  name: "",
+  email: "",
+  service: "",
+  date: "",
+  message: "",
+});
+
+const [errors, setErrors] = useState({});
+const [isSubmitting, setIsSubmitting] = useState(false);
+const [showModal, setShowModal] = useState(false);
+
+// VALIDATION FUNCTION
+const validateForm = () => {
+  let newErrors = {};
+
+  if (!form.name.trim()) newErrors.name = "Name is required";
+  if (!form.email.trim()) newErrors.email = "Email is required";
+  else if (!/\S+@\S+\.\S+/.test(form.email))
+    newErrors.email = "Enter a valid email";
+
+  if (!form.service.trim()) newErrors.service = "Please select a service";
+  if (!form.date.trim()) newErrors.date = "Please choose a date";
+
+  setErrors(newErrors);
+
+  return Object.keys(newErrors).length === 0;
+};
+
+// FORM SUBMIT HANDLER
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (!validateForm()) return; // stop submit on errors
+
+  setIsSubmitting(true);
+
+  setTimeout(() => {
+    setIsSubmitting(false);
+    setShowModal(true);
+
+    // Reset form after success
+    setForm({
+      name: "",
+      email: "",
+      service: "",
+      date: "",
+      message: "",
+    });
+  }, 1200);
+};
 
 
   return (
@@ -222,7 +264,9 @@ const NewHome = () => {
 
 
 {/* HERO SECTION STARTS */}
-      <section className="tele-hero wow animate__animated animate__fadeInUp">
+
+<section className="tele-hero wow animate__animated animate__fadeInUp">
+
   {/* Background Elements */}
   <div className="tele-bg-elements">
     <div className="tele-grid-lines"></div>
@@ -233,16 +277,19 @@ const NewHome = () => {
     <div className="tele-floating-circle tele-circle-2"></div>
   </div>
 
-  <div className="tele-container">
+  <div className="tele-container tele-grid-3"> 
+    {/* ================= LEFT CONTENT ================= */}
     <div className="tele-content">
-      <div className="tele-badge">
+      {/* <div className="tele-badge">
         <i className="fas fa-star"></i>
         <span>Car Workshop</span>
-      </div>
+      </div> */}
 
       <h1 className="tele-title">
-        <span className="tele-title-main">Your Trusted Car Service Center</span>
-        <span className="tele-title-highlight">Your car is in safe hands—from inspection to delivery.</span>
+        <span className="tele-title-main" style={{color:'white'}}>Your Trusted Car Service Center</span>
+        <span className="tele-title-highlight">
+          Your car is in safe hands—from inspection to delivery.
+        </span>
       </h1>
 
       <div className="tele-desc">
@@ -250,149 +297,128 @@ const NewHome = () => {
           Get reliable maintenance, genuine parts, and expert technicians—all under one roof.
         </p>
       </div>
-
-      <div className="tele-cta" style={{ display: "flex", gap: "15px" }}>
-  <button className="tele-btn">
-    <span className="tele-btn-text">About Us</span>
-    <div className="tele-btn-shine"></div>
-  </button>
-
-  <button className="tele-btn">
-    <span className="tele-btn-text">Our Services</span>
-    <div className="tele-btn-shine"></div>
-  </button>
-</div>
-
     </div>
 
-    {/* RIGHT SIDE VISUAL UPDATED */}
+    {/* ================= CENTER IMAGE ================= */}
     <div className="tele-visual">
-
-      {/* Instead of dashboard → Put an image */}
       <div className="tele-dashboard">
-        <img 
-          src="assets/img/New-Car.png" 
+        <img
+          src="assets/img/New-Car.png"
           alt="Car Workshop"
           className="tele-dashboard-image"
           style={{ width: "100%", borderRadius: "12px" }}
         />
       </div>
+    </div>
 
-      {/* Updated floating icons (tyre + wrench) */}
-      {/* <div className="tele-floating-elements">
-        <div className="tele-floating-card tele-card-1">
-          <i className="fas fa-cog"></i>
-        </div>
+    {/* ================= RIGHT FORM ================= */}
+    <div className="tele-form">
+      <div
+        className="bg-white p-4 rounded-4 shadow-lg border"
+        style={{ maxWidth: "100%", transition: "0.3s", borderRadius:'16px' }}
+      >
+        <h3 className="text-center fw-bold mb-3" style={{ color: "#0b2154" }}>
+          Book Your Service
+        </h3>
 
-        <div className="tele-floating-card tele-card-2">
-          <i className="fas fa-wrench"></i>
-        </div>
-      </div> */}
+        <form onSubmit={handleSubmit} noValidate>
+          <div className="row g-3">
 
+            {/* Name */}
+            <div className="col-12">
+              <input
+                type="text"
+                className={`form-control form-control-lg rounded-pill shadow-sm ${errors.name ? "is-invalid" : ""}`}
+                placeholder="Your Name"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+              />
+              {errors.name && <small className="text-danger">{errors.name}</small>}
+            </div>
+
+            {/* Email */}
+            <div className="col-12">
+              <input
+                type="email"
+                className={`form-control form-control-lg rounded-pill shadow-sm ${errors.email ? "is-invalid" : ""}`}
+                placeholder="Your Email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+              />
+              {errors.email && <small className="text-danger">{errors.email}</small>}
+            </div>
+
+            {/* Service */}
+            <div className="col-12">
+              <select
+                className={`form-select form-select-lg rounded-pill shadow-sm ${errors.service ? "is-invalid" : ""}`}
+                value={form.service}
+                onChange={(e) => setForm({ ...form, service: e.target.value })}
+              >
+                <option value="">Select Service</option>
+                <option value="Mechanical Service">Mechanical Service</option>
+                <option value="Body Shop Service">Body Shop Service</option>
+                <option value="Tyre Service">Tyre Service</option>
+                <option value="Insurance Renewal">Insurance Renewal</option>
+                <option value="Car Accessories">Car Accessories</option>
+                <option value="Car Customization">Car Customization</option>
+                <option value="Car Detailing">Car Detailing</option>
+              </select>
+              {errors.service && <small className="text-danger">{errors.service}</small>}
+            </div>
+
+            {/* Date */}
+            <div className="col-12">
+              <input
+                type="date"
+                className={`form-control form-control-lg rounded-pill shadow-sm ${errors.date ? "is-invalid" : ""}`}
+                value={form.date}
+                onChange={(e) => setForm({ ...form, date: e.target.value })}
+              />
+              {errors.date && <small className="text-danger">{errors.date}</small>}
+            </div>
+
+            {/* Special Requests */}
+            <div className="col-12">
+              <textarea
+                className="form-control rounded-3 shadow-sm"
+                placeholder="Special Requests"
+                rows="3"
+                value={form.message}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
+              ></textarea>
+            </div>
+
+            {/* reCAPTCHA */}
+            <div className="col-12 text-center">
+              <div
+                className="g-recaptcha"
+                data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
+                style={{ transform: "scale(0.85)"}}
+              ></div>
+            </div>
+
+            {/* Button */}
+            <div className="col-12 d-flex justify-content-center">
+  <button
+    className="py-2 px-4 rounded-pill fw-bold shadow-sm book-btn"
+    type="submit"
+    disabled={isSubmitting}
+  >
+    {isSubmitting ? "Submitting..." : "Book Now"}
+  </button>
+</div>
+
+
+          </div>
+        </form>
+
+      </div>
     </div>
   </div>
 </section>
+
 {/* HERO SECTION ENDS */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* WORKSHOP BENEFITS STARTS */}
-
-  <section>
-    <div className="whytele-container wow animate__animated animate__fadeInUp">
-      {/* Animated Gradient Background */}
-      <div className="whytele-background">
-        <div className="whytele-gradient-shape whytele-shape-1"></div>
-        <div className="whytele-gradient-shape whytele-shape-2"></div>
-        <div className="whytele-gradient-shape whytele-shape-3"></div>
-
-        <div className="whytele-content">
-          {/* Header */}
-          <div className="whytele-header">
-            <div className="ourr-numbers-badge"> // Why Choose //</div>
-            <h1 className="whytele-main-title">
-              Our <span className="whytele-highlight">Workshop</span>
-            </h1>
-            <p className="whytele-subtitle">
-              Experience top-quality automotive service with certified technicians, trusted mechanics, and advanced repair tools.
-            </p>
-          </div>
-
-          {/* Benefits Grid */}
-          <div className="whytele-benefits-grid">
-            {/* Card 1 */}
-            <div className="whytele-benefit-card" style={{ '--delay': '0s' }}>
-              <div 
-                className="whytele-benefit-icon-wrapper" 
-                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
-              >
-                <i className="fas fa-user-cog whytele-benefit-icon"></i>
-              </div>
-              <div className="whytele-benefit-content">
-                <h3 className="whytele-benefit-title">Certified Technicians</h3>
-                <p className="whytele-benefit-description">
-                  Our team includes certified experts trained to service all makes and models efficiently.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="whytele-benefit-card" style={{ '--delay': '0.15s' }}>
-              <div 
-                className="whytele-benefit-icon-wrapper" 
-                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
-              >
-                <i className="fas fa-tools whytele-benefit-icon"></i>
-              </div>
-              <div className="whytele-benefit-content">
-                <h3 className="whytele-benefit-title">Trusted Professionals</h3>
-                <p className="whytele-benefit-description">
-                  Experienced mechanics providing reliable, fast, and transparent service every time.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="whytele-benefit-card" style={{ '--delay': '0.3s' }}>
-              <div 
-                className="whytele-benefit-icon-wrapper" 
-                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #4f46e5)' }}
-              >
-                <i className="fas fa-cogs whytele-benefit-icon"></i>
-              </div>
-              <div className="whytele-benefit-content">
-                <h3 className="whytele-benefit-title">Advanced Tools</h3>
-                <p className="whytele-benefit-description">
-                  We use the latest diagnostic and repair tools for accurate and efficient solutions.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-{/* WORKSHOP BENEFITS ENDS*/}
-
-
-
-
-
 
 
 
@@ -401,7 +427,11 @@ const NewHome = () => {
 
 {/* ABOUT US SECTION STARTS */}
 
-<section style={{paddingBottom:'70px' , background:'white', paddingTop:'50px'}}>
+<section style={{ 
+    paddingBottom: '70px', 
+    paddingTop: '50px', 
+    background: '#F8F9FA' 
+  }}>
    <div className="container-xxl py-5">
           <div className="container">
             <div className="row g-5">
@@ -413,12 +443,12 @@ const NewHome = () => {
                   <img
                     className="position-absolute img-fluid w-100 h-100"
                     src="assets/img/About1.jpg"
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", borderRadius:'16px' }}
                     alt=""
                   />
                   <div
                     className="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
-                    style={{ background: "rgba(0, 0, 0, .08)" }}
+                    style={{ background: "rgba(0, 0, 0, .08)", borderRadius:'16px' }}
                   >
                     <h1 className="display-4 text-white mb-0">
                       20<span className="fs-4">Years</span>
@@ -445,7 +475,12 @@ const NewHome = () => {
                     <div className="d-flex">
                       <div
                         className="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                        style={{ width: "45px", height: "45px" }}
+                        style={{ 
+    width: "45px", 
+    height: "45px", 
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)", 
+    borderRadius: "8px" 
+  }}
                       >
                         <span className="fw-bold text-secondary">01</span>
                       </div>
@@ -461,7 +496,12 @@ const NewHome = () => {
                     <div className="d-flex">
                       <div
                         className="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                        style={{ width: "45px", height: "45px" }}
+                       style={{ 
+    width: "45px", 
+    height: "45px", 
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)", 
+    borderRadius: "8px" 
+  }}
                       >
                         <span className="fw-bold text-secondary">02</span>
                       </div>
@@ -478,7 +518,12 @@ const NewHome = () => {
                     <div className="d-flex">
                       <div
                         className="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                        style={{ width: "45px", height: "45px" }}
+                        style={{ 
+    width: "45px", 
+    height: "45px", 
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)", 
+    borderRadius: "8px" 
+  }}
                       >
                         <span className="fw-bold text-secondary">03</span>
                       </div>
@@ -495,7 +540,12 @@ const NewHome = () => {
                     <div className="d-flex">
                       <div
                         className="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                        style={{ width: "45px", height: "45px" }}
+                        style={{ 
+    width: "45px", 
+    height: "45px", 
+    boxShadow: "0 4px 12px rgba(0,0,0,0.1)", 
+    borderRadius: "8px" 
+  }}
                       >
                         <span className="fw-bold text-secondary">04</span>
                       </div>
@@ -513,12 +563,57 @@ const NewHome = () => {
                   Read More<i className="fa fa-arrow-right ms-3"></i>
                 </a> */}
                  <a href="/About">
-                    <button className="about-btn">
-                      <span className="about-btn-text">Read More</span>
-                      <i className="fas fa-car"></i>
-                      <div className="about-btn-shine"></div>
-                    </button> 
-                  </a>
+  <button
+    style={{
+      backgroundColor: '#d81324',
+      color: 'white',
+      border: 'none',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease, color 0.3s ease, transform 0.2s ease',
+      whiteSpace: 'nowrap',
+      position: 'relative',
+      padding: '10px 20px',
+      fontSize: '16px',
+      display: 'inline-flex',
+      alignItems: 'center',
+      gap: '8px',
+      overflow: 'hidden',
+      borderRadius:'30px'
+    }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.backgroundColor = '#a10f1a';
+      e.currentTarget.style.color = '#ffd6d6';
+      e.currentTarget.style.transform = 'translateY(-2px)';
+      const shine = e.currentTarget.querySelector('.about-btn-shine');
+      if (shine) shine.style.left = '125%';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.backgroundColor = '#d81324';
+      e.currentTarget.style.color = 'white';
+      e.currentTarget.style.transform = 'translateY(0)';
+      const shine = e.currentTarget.querySelector('.about-btn-shine');
+      if (shine) shine.style.left = '-75%';
+    }}
+  >
+    <span>Read More</span>
+    <i className="fas fa-car"></i>
+    <div
+      className="about-btn-shine"
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: '-75%',
+        width: '50%',
+        height: '100%',
+        background: 'rgba(255, 255, 255, 0.3)',
+        transform: 'skewX(-25deg)',
+        transition: 'left 0.5s ease',
+        borderRadius:'16px'
+      }}
+    ></div>
+  </button>
+</a>
+
               </div>
             </div>
           </div>
@@ -539,88 +634,203 @@ const NewHome = () => {
 
 
 {/* FACT SECTION STARTS */}
-<section style={{background:'#f2f5ff'}}>
-<div className='texttile'>
-        <div className="missionslide wow animate__animated animate__fadeInUp">
-  <div className="container">
-           <div className="our-numbers-badge"> // Our Numbers //</div>    
-
-
- <h1
-  className="our-numbers-title wow animate__animated animate__fadeInUp"
+<section
   style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '10px', // space between texts
-    flexWrap: 'wrap', // allows wrapping on very small screens
-    textAlign: 'center',
+    /* Base Section Style - Light Theme */
+    background: '#f8f9fa',
+    padding: '60px 0',
+    fontFamily: 'Roboto, Montserrat, Arial, sans-serif',
+    color: '#212529',
+    position: 'relative',
+    overflow: 'hidden',
   }}
 >
-  <div style={{ color: '#0b2154', fontSize: '2rem' }}>Achievements</div>
-  <div style={{ color: '#43c6ac', fontSize: '2rem' }}>That Define Us</div>
-
-  <style jsx>{`
-    @media (max-width: 768px) {
-      .our-numbers-title div {
-        font-size: 1.5rem;
-      }
-    }
-    @media (max-width: 480px) {
-      .our-numbers-title div {
-        font-size: 1.2rem;
-      }
-    }
-  `}</style>
-</h1>
+  {/* Background Pattern */}
+  <div
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundImage: 'url(assets/img/Repair-tools.jpg)',
+    backgroundRepeat: 'repeat',
+    opacity: 0.05,
+    zIndex: 0,
+  }}
+></div>
 
 
-    <div className="row">
-      <div className="col-lg-6">
-        <div>
-     
-          <img src="assets/img/Number-Speaks.png" alt="" width="90%" />
-        </div>
+  {/* Subtle Background Shape */}
+  <div
+    style={{
+      position: 'absolute',
+      bottom: '-10%',
+      left: '-10%',
+      width: '300px',
+      height: '300px',
+      background: 'rgba(216, 19, 36, 0.05)',
+      borderRadius: '50%',
+      filter: 'blur(100px)',
+      zIndex: 0,
+    }}
+  ></div>
+
+  <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 15px', position: 'relative', zIndex: 1 }}>
+
+    {/* Header Section */}
+    <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+      <h6 style={{
+        fontWeight: '700',
+        color: '#d81324',
+        marginBottom: '5px',
+        letterSpacing: '3px',
+        fontSize: '0.8rem',
+        textTransform: 'uppercase',
+      }}>
+        // OUR IMPACT //
+      </h6>
+
+      <h1 style={{
+        fontSize: '2.5rem',
+        fontWeight: '900',
+        lineHeight: '1.2',
+        color: '#212529',
+        marginBottom: '10px',
+        textShadow: '1px 1px 3px rgba(0,0,0,0.05)',
+      }}>
+        <span style={{ color: '#d81324' }}>Precision</span>
+        <span style={{ color: '#212529' }}> in Numbers</span>
+      </h1>
+
+      <p style={{
+        maxWidth: '700px',
+        margin: '0 auto',
+        color: '#6c757d',
+        fontSize: '1rem',
+        lineHeight: '1.5',
+      }}>
+        Our milestones reflect dedication, high-quality service, and expertise in automotive care.
+      </p>
+    </div>
+
+    {/* Content Row */}
+    <div style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      gap: '30px',
+      alignItems: 'center',
+    }}>
+
+      {/* Left Image */}
+      <div style={{
+        flex: '1 1 350px',
+        maxWidth: '400px',
+        textAlign: 'center',
+      }}>
+        <img
+          src="assets/img/Our-Numbers.jpg"
+          alt="Modern Car Workshop Bay"
+          style={{
+            width: '100%',
+            height: 'auto',
+            minHeight: '300px',
+            borderRadius: '12px',
+            objectFit: 'cover',
+            boxShadow: '0 12px 25px rgba(0, 0, 0, 0.12)',
+            transition: 'transform 0.3s ease',
+          }}
+          onMouseOver={e => e.currentTarget.style.transform = 'scale(1.03)'}
+          onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+        />
       </div>
 
-     <div className="col-lg-6">
-  <div className="cards" ref={containerRef}>
-    {data.map((item, index) => (
-      <div className="card" key={index}>
-        <div className="card__inner">
-          <div className="card__content">
-            <div 
-              className="card__header" 
-              style={{ display: "flex", alignItems: "center", gap: "10px" }}
+      {/* Right Counter Grid */}
+      <div style={{
+        flex: '1 1 450px',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: '20px',
+        maxWidth: '600px',
+        padding: '10px 0',
+      }}>
+        {
+          [
+            { icon: 'fa-gauge-high', counter: '20+', title: 'Years of Expertise', desc: 'Two decades of combined expertise and professionalism.' },
+            { icon: 'fa-users', counter: '990+', title: 'Satisfied Clients', desc: 'Trusted by a wide range of clients for exceptional service.' },
+            { icon: 'fa-toolbox', counter: '100+', title: 'Modern Equipment', desc: 'Equipped with advanced tools for efficient, accurate service.' },
+            { icon: 'fa-car-side', counter: '500+', title: 'Services/Month', desc: 'Timely maintenance and repairs keeping vehicles safe and smooth.' },
+          ].map((item, index) => (
+            <div
+              key={index}
+              style={{
+                background: '#ffffff',
+                padding: '20px 15px',
+                borderRadius: '12px',
+                textAlign: 'center',
+                boxShadow: '0 8px 20px rgba(0,0,0,0.08)',
+                borderLeft: '4px solid #d81324',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+                transition: 'all 0.3s ease',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = 'translateY(-5px)';
+                e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.12)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
+              }}
             >
-              <i 
-                className={`fa-solid ${item.icon}`} 
-                style={{ color: "#4CAF50" }}
-              ></i>
-              <h1 className="card__title" style={{ margin: 0 }}>
-                {item.title}
-              </h1>
-              <h2 
-                className="mb-2" 
-                data-toggle="counter-up" 
-                style={{ color: "black", margin: 0 }}
-              >
-                {item.counter1}
-              </h2>
+              <i style={{
+                fontSize: '1.5rem',
+                color: '#ffffff',
+                background: '#d81324',
+                padding: '12px',
+                borderRadius: '50%',
+                marginBottom: '10px',
+                transition: 'transform 0.3s ease',
+              }} className={`fa-solid ${item.icon}`}></i>
+
+              <div>
+                <h2 style={{
+                  margin: 0,
+                  fontSize: '2.5rem',
+                  color: '#d81324',
+                  fontWeight: '900',
+                  lineHeight: '1',
+                  marginBottom: '5px',
+                }}>{item.counter}</h2>
+
+                <h3 style={{
+                  margin: '0 0 5px 0',
+                  fontSize: '0.95rem',
+                  color: '#212529',
+                  fontWeight: '700',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.5px'
+                }}>{item.title}</h3>
+              </div>
+
+              <p style={{
+                margin: 0,
+                color: '#6c757d',
+                fontSize: '0.8rem',
+                lineHeight: '1.45'
+              }}>{item.desc}</p>
             </div>
-            <p className="card__description">{item.desc}</p>
-          </div>
-        </div>
+          ))
+        }
       </div>
-    ))}
-  </div>
-</div>
 
     </div>
   </div>
-</div>
-</div>
 </section>
+
 {/* FACT SECTION ENDS */}
 
 
@@ -637,7 +847,7 @@ const NewHome = () => {
 
 {/* WHY CHOOSE SECTION STARTS */}
 
-<section class="advantages-section" style={{background:'white'}}>
+{/* <section class="advantages-section" style={{background:'white'}}>
   <div class="container">
     <p class="section-subtitle">// Why Choose Us //</p>
 
@@ -719,6 +929,210 @@ const NewHome = () => {
       </div>
     </div>
   </div>
+</section> */}
+
+<section
+  className="advantages-section position-relative d-flex align-items-center justify-content-center"
+  style={{
+    background: '#f8f9fa',
+    padding: '80px 20px',
+    overflow: 'hidden',
+    fontFamily: 'Roboto, Montserrat, Arial, sans-serif',
+    minHeight: '100vh', // centers content vertically
+  }}
+>
+  {/* Subtle diagonal stripes background */}
+  <div
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundImage:
+        'repeating-linear-gradient(45deg, rgba(67,198,172,0.03), rgba(67,198,172,0.03) 1px, transparent 1px, transparent 20px)',
+      zIndex: 0,
+    }}
+  ></div>
+
+  <div
+    className="container position-relative d-flex flex-column align-items-center"
+    style={{ zIndex: 1, maxWidth: '1200px', textAlign: 'center' }}
+  >
+    <p
+      style={{
+        fontWeight: 700,
+        color: '#d81324',
+        letterSpacing: '3px',
+        textTransform: 'uppercase',
+        fontSize: '0.85rem',
+        marginBottom: '20px',
+      }}
+    >
+      // Why Choose Us //
+    </p>
+
+    <h1
+      className="our-numbers-title mb-5"
+      style={{ lineHeight: 1.3 }}
+    >
+      <div style={{ color: '#232336', fontSize: '2rem' }}>
+        What Advantages Will You Get
+      </div>
+      <div style={{ color: '#43c6ac', fontSize: '2rem' }}>
+        When Your Car Visits Our Workshop.
+      </div>
+    </h1>
+
+    <div
+      className="advantages-content d-flex flex-wrap justify-content-center align-items-start gap-4"
+      style={{ width: '100%' }}
+    >
+      {/* Left Column */}
+      <div className="advantages-left d-flex flex-column gap-4 flex-1">
+        {[
+          {
+            icon: 'fa-star',
+            title: 'Trusted and Quality Repair Service.',
+            desc: 'Reliable, high-quality repairs under one roof.',
+          },
+          {
+            icon: 'fa-car-side',
+            title: 'Free Pick-up and Drop Facility.',
+            desc: 'Convenient car pick-up & drop, completely free!',
+          },
+          {
+            icon: 'fa-user-tie',
+            title: 'Personalized Services.',
+            desc: 'Services customized and tailored for you.',
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="advantage-item p-3 d-flex gap-3 align-items-start"
+            style={{
+              background: 'white',
+              borderRadius: '15px',
+              transition: 'all 0.3s ease',
+              cursor: 'pointer',
+              boxShadow: '0 8px 20px rgba(0,0,0,0.08)',
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.12)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
+            }}
+          >
+            <div
+              className="advantage-icon d-flex justify-content-center align-items-center"
+              style={{
+                minWidth: '55px',
+                minHeight: '55px',
+                background: 'linear-gradient(135deg, #43c6ac, #0b2154)',
+                color: '#fff',
+                borderRadius: '50%',
+                fontSize: '1.5rem',
+              }}
+            >
+              <i className={`fas ${item.icon}`}></i>
+            </div>
+            <div className="advantage-text text-start">
+              <p className="advantage-title fw-bold mb-1" style={{ color: '#232336' }}>
+                {item.title}
+              </p>
+              <p style={{ color: '#6c757d', fontSize: '0.9rem' }}>{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Center Image */}
+      <div className="advantages-center flex-1 text-center my-4">
+        <div
+          style={{
+            display: 'inline-block',
+            padding: '20px',
+            borderRadius: '20px',
+            background: 'rgba(67,198,172,0.1)',
+            transition: 'transform 0.3s ease',
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+        >
+          <img
+            src="/assets/img/workshop-equipments.png"
+            alt="Workshop Equipment"
+            className="img-fluid rounded"
+            style={{ maxWidth: '300px' }}
+          />
+        </div>
+      </div>
+
+      {/* Right Column */}
+      <div className="advantages-right d-flex flex-column gap-4 flex-1">
+        {[
+          {
+            icon: 'fa-tools',
+            title: 'Genuine Spare Parts.',
+            desc: 'High-grade OEM/OES spare parts for your car!',
+          },
+          {
+            icon: 'fa-users',
+            title: 'Dedicated Team of Experts.',
+            desc: 'Experienced professionals committed to excellence.',
+          },
+          {
+            icon: 'fa-wallet',
+            title: 'Budget-Friendly Pricing.',
+            desc: 'Plans that suit every pocket for complete value.',
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="advantage-item p-3 d-flex gap-3 align-items-start"
+            style={{
+              background: 'white',
+              borderRadius: '15px',
+              transition: 'all 0.3s ease',
+              cursor: 'pointer',
+              boxShadow: '0 8px 20px rgba(0,0,0,0.08)',
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.transform = 'translateY(-5px)';
+              e.currentTarget.style.boxShadow = '0 12px 25px rgba(0,0,0,0.12)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.08)';
+            }}
+          >
+            <div
+              className="advantage-icon d-flex justify-content-center align-items-center"
+              style={{
+                minWidth: '55px',
+                minHeight: '55px',
+                background: 'linear-gradient(135deg, #0b2154, #43c6ac)',
+                color: '#fff',
+                borderRadius: '50%',
+                fontSize: '1.5rem',
+              }}
+            >
+              <i className={`fas ${item.icon}`}></i>
+            </div>
+            <div className="advantage-text text-start">
+              <p className="advantage-title fw-bold mb-1" style={{ color: '#232336' }}>
+                {item.title}
+              </p>
+              <p style={{ color: '#6c757d', fontSize: '0.9rem' }}>{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -733,6 +1147,148 @@ const NewHome = () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* BOOK SERVICE FORM STARTS */}
+
+<section className="position-relative py-5 bg-light">
+  {/* Background Pattern */}
+  <div
+  style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundImage: 'url(assets/img/car-gear.jpg)',
+    backgroundRepeat: 'repeat',
+    opacity: 0.05,
+    zIndex: 0,
+  }}
+></div>
+
+
+  <div className="container position-relative" style={{ zIndex: 1 }}>
+    {/* Section Header */}
+    <div className="text-center mb-5">
+      <h1 className="display-5 fw-bold">
+        <span style={{ color: '#0b2154' }}>Our</span>{' '}
+        <span style={{ color: '#43c6ac' }}>Journey</span>
+      </h1>
+      <p className="text-muted">Milestones that shaped our path to becoming trusted car care experts.</p>
+    </div>
+
+    {/* Timeline */}
+    <div className="position-relative">
+      {/* Vertical Line */}
+      <div
+        className="position-absolute top-0 start-50 translate-middle-x d-none d-md-block"
+        style={{
+          width: '4px',
+          height: '100%',
+          backgroundColor: '#7662f4',
+          opacity: 0.1,
+          zIndex: 0,
+        }}
+      ></div>
+
+      {[
+        {
+          year: '2010',
+          title: 'Humble Beginnings',
+          desc: 'Started with a small team of passionate mechanics and a single garage.',
+          img: 'assets/img/Automotive-journey.jpg',
+        },
+        {
+          year: '2013',
+          title: 'Expanding Services',
+          desc: 'Added body shop, tyre service, and maintenance to serve more customers.',
+          img: 'assets/img/expanding-service.jpg',
+        },
+        {
+          year: '2016',
+          title: 'Modernization',
+          desc: 'Upgraded to advanced diagnostic tools and modern equipment for efficiency.',
+          img: 'assets/img/upgrade-tools.jpg',
+        },
+        {
+          year: '2019',
+          title: 'Customer Focused',
+          desc: 'Introduced online booking and priority customer support for convenience.',
+          img: 'assets/img/online-book.jpg',
+        },
+        {
+          year: '2023',
+          title: 'Trusted Experts',
+          desc: 'Serving thousands of happy customers with high-quality car services.',
+          img: 'assets/img/Happy-cus.jpg',
+        },
+      ].map((step, index) => (
+        <div
+          key={index}
+          className={`row align-items-center mb-5 flex-column flex-md-row ${index % 2 !== 0 ? 'flex-md-row-reverse' : ''}`}
+        >
+          {/* Image */}
+          <div className="col-md-6 mb-3 mb-md-0 position-relative d-flex justify-content-center">
+            <img
+              src={step.img}
+              alt={step.title}
+              className="img-fluid rounded shadow-lg"
+              style={{ border: '5px solid #43c6ac', maxHeight: '300px', objectFit: 'cover' }}
+            />
+            <div
+              className="position-absolute top-50 translate-middle bg-primary text-white fw-bold text-center"
+              style={{
+                width: '60px',
+                height: '60px',
+                lineHeight: '60px',
+                borderRadius: '50%',
+                fontSize: '1rem',
+                left: index % 2 === 0 ? '-30px' : 'unset',
+                right: index % 2 !== 0 ? '-30px' : 'unset',
+              }}
+            >
+              {step.year}
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="col-md-6 d-flex flex-column justify-content-center text-center text-md-start">
+            <h3 className="fw-bold" style={{ color: '#0b2154' }}>{step.title}</h3>
+            <p className="text-muted">{step.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Hover Animation */}
+  <style jsx>{`
+    @media (min-width: 768px) {
+      img {
+        transition: transform 0.5s ease;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
+    }
+  `}</style>
+</section>
+
+
+{/* BOOK SERVICE FORM ENDS */}
 
 
 
@@ -1105,185 +1661,6 @@ const NewHome = () => {
 
 
 
-
-
-
-
-
-{/* BOOK SERVICE FORM STARTS */}
-
-<section className="position-relative">
-  {/* Background Pattern */}
-  <div
-    className="position-absolute w-100 h-100"
-    style={{
-      backgroundImage: 'url(https://thumbs.dreamstime.com/b/car-wheel-gears-wrenches-spring-eps-195036714.jpg)',
-      backgroundRepeat: 'repeat',
-      opacity: 0.05,
-      top: 0,
-      left: 0,
-      zIndex: 0,
-    }}
-  ></div>
-
-  <div className="container py-5 position-relative" style={{ zIndex: 1 }}>
-    <div className="row align-items-center gx-5">
-      {/* Left Side - Hero Image */}
-      <div className="col-lg-6 mb-5 mb-lg-0">
-        <img
-          src="https://img.freepik.com/premium-photo/indian-car-mechanic-standing-working-service-station-car-specialists-examining-lifted-car-professional-repairmen-wearing-mechanic-uniform-blue-color_255667-45756.jpg"
-          alt="Car Mechanic Working"
-          className="img-fluid rounded shadow"
-        />
-      </div>
-
-      {/* Right Side - Text + Floating Booking Form */}
-      <div className="col-lg-6">
-        <div className="mb-4">
-         <h1 className="display-5 fw-bold">
-  <span style={{ color: '#0b2154' }}>Trusted Car Repair</span>{' '}
-  <span style={{ color: '#43c6ac' }}>& Maintenance</span>
-</h1>
-
-        </div>
-
-        {/* Floating Form */}
-        <div className="position-relative mt-4">
-          <div
-            className="bg-white p-4 p-lg-5 rounded-4 shadow-lg border mx-auto"
-            style={{
-              maxWidth: '550px',
-              transform: 'translateY(0)',
-              transition: '0.3s',
-            }}
-          >
-            <h3 className=" mb-4 text-center fw-bold" style={{color:'#0b2154'}}>Book Your Service</h3>
-            <form onSubmit={handleSubmit}>
-        <div className="row g-3">
-          {/* Name */}
-          <div className="col-12 col-sm-6">
-            <input type="text" className="form-control form-control-lg rounded-pill shadow-sm" placeholder="Your Name" required />
-          </div>
-
-          {/* Email */}
-          <div className="col-12 col-sm-6">
-            <input type="email" className="form-control form-control-lg rounded-pill shadow-sm" placeholder="Your Email" required />
-          </div>
-
-          {/* Service Select */}
-          <div className="col-12 col-sm-6">
-            <select className="form-select form-select-lg rounded-pill shadow-sm" required>
-              <option defaultValue>Select Service</option>
-              <option value="1">Mechanical Service</option>
-              <option value="2">Body Shop Service</option>
-              <option value="3">Tyre Service</option>
-              <option value="4">Insurance Renewal</option>
-              <option value="5">Car Accessories</option>
-              <option value="6">Car Customization</option>
-              <option value="7">Car Detailing</option>
-            </select>
-          </div>
-
-          {/* Date */}
-          <div className="col-12 col-sm-6">
-            <input type="date" className="form-control form-control-lg rounded-pill shadow-sm" required />
-          </div>
-
-          {/* Special Requests */}
-          <div className="col-12">
-            <textarea className="form-control rounded-3 shadow-sm" placeholder="Special Requests" rows="3"></textarea>
-          </div>
-
-          <div className="col-12 text-center mt-3">
-                  <div
-                    className="g-recaptcha"
-                    data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"
-                    style={{
-                      transform: 'scale(0.85)',
-                      transformOrigin: '0 0',
-                      display: 'inline-block',
-                    }}
-                  ></div>
-          </div>
-
-
-          {/* Submit Button */}
-          <div className="col-12">
-            <button
-              className=" w-100 py-2 py-sm-3 rounded-pill fw-bold shadow"
-              type="submit" style={{color:'white', background:'#7662f4', border:'none'}}
-            >
-              {isSubmitting ? 'Submitting...' : 'Book Now'}
-            </button>
-          </div>
-        </div>
-      </form>
-
-
-       <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }}>
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title">Booking Submitted</h5>
-              <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
-            </div>
-            <div className="modal-body">
-              <p>Your service booking has been submitted successfully!</p>
-            </div>
-            <div className="modal-footer">
-              <button className="btn btn-primary" onClick={() => setShowModal(false)}>Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Services Grid */}
-    <div className="row mt-5 gx-4">
-      {[
-        { icon: 'fas fa-cogs', title: 'Mechanical Service', desc: 'Engine repair, oil change, and full maintenance.' },
-        { icon: 'fas fa-car-crash', title: 'Body Shop Service', desc: 'Dent repair, painting, and body restoration.' },
-        { icon: 'fas fa-circle-notch', title: 'Tyre Service', desc: 'Tyre replacement, balancing, and alignment.' },
-        { icon: 'fas fa-car', title: 'Car Detailing', desc: 'Interior & exterior detailing for a fresh look.' },
-        { icon: 'fas fa-shield-alt', title: 'Insurance Renewal', desc: 'Fast insurance renewal and processing.' },
-        { icon: 'fas fa-tools', title: 'Car Customization', desc: 'Custom parts, accessories, and upgrades.' },
-      ].map((service, index) => (
-        <div key={index} className="col-md-4 mb-4">
-          <div className="card h-100 border-0 shadow-sm text-center p-3">
-            <i className={`${service.icon} fa-2x mb-3`} style={{color:'#7662f4'}}></i>
-            <h5 className="fw-bold">{service.title}</h5>
-            <p className="text-muted">{service.desc}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Responsive floating effect */}
-  <style jsx>{`
-    @media (min-width: 992px) {
-      .position-relative.mt-4 > div {
-        transform: translateY(-50px);
-      }
-    }
-  `}</style>
-</section>
-
-
-{/* BOOK SERVICE FORM ENDS */}
-
-
-
-
-
-
-
-
-
 {/* SLIDER SECTION STARTS */}
 
 <section style={{paddingTop:'50px', background:'#f2f5ff', paddingBottom:'50px'}}>
@@ -1548,18 +1925,18 @@ const NewHome = () => {
 
 {/* OUR WORK PROCESS STARTS */}
 
-<section className="work-process-timeline py-5">
+{/* <section className="work-process-timeline py-5">
   <div className="container">
-    {/* Section Header */}
+   
     <div className="section-header text-center mb-5">
       <h6 className="text-primary text-uppercase">// Our Work Process //</h6>
       <h1 className="fw-bold">How we handle your vehicle from check-in to handover</h1>
     </div>
 
-    {/* Timeline */}
+  
     <div className="timeline">
 
-      {/* Step 1 */}
+    
       <div className="timeline-step">
         <div className="step-icon bg-primary text-white">
           <i className="fas fa-search"></i>
@@ -1572,7 +1949,7 @@ const NewHome = () => {
         <i className="fas fa-arrow-down text-secondary"></i>
       </div>
 
-      {/* Step 2 */}
+     
       <div className="timeline-step">
         <div className="step-icon border border-primary text-primary">
           <i className="fas fa-tools"></i>
@@ -1585,7 +1962,7 @@ const NewHome = () => {
         <i className="fas fa-arrow-down text-secondary"></i>
       </div>
 
-      {/* Step 3 */}
+    
       <div className="timeline-step">
         <div className="step-icon bg-primary text-white">
           <i className="fas fa-shield-alt"></i>
@@ -1598,7 +1975,7 @@ const NewHome = () => {
         <i className="fas fa-arrow-down text-secondary"></i>
       </div>
 
-      {/* Step 4 */}
+     
       <div className="timeline-step">
         <div className="step-icon border border-primary text-primary">
           <i className="fas fa-car-side"></i>
@@ -1610,9 +1987,8 @@ const NewHome = () => {
     </div>
   </div>
 
-  {/* CSS */}
+  
   <style jsx>{`
-    /* Default Desktop Horizontal */
     .timeline {
       display: flex;
       justify-content: space-between;
@@ -1644,7 +2020,6 @@ const NewHome = () => {
       align-items: center;
     }
 
-    /* Vertical Mobile Styles */
     @media (max-width: 767px) {
       .timeline {
         display: flex;
@@ -1669,8 +2044,10 @@ const NewHome = () => {
       }
     }
   `}</style>
-</section>
+</section> */}
 
+
+<WorkProcessTimeline/>
 
 {/* OUR WORK PROCESS ENDS */}
 
