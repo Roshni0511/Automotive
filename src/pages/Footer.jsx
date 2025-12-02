@@ -4,13 +4,13 @@ export default function Footer() {
   return (
     <div>
       {/* <!-- Footer Start --> */}
-    <div className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div className="container py-5">
-            <div className="row g-5">
-                <div className="col-lg-3 col-md-6">
-                    <h4 className="text-light mb-4">Address</h4>
-                  <p className="mb-2">
-  <i className="fa fa-map-marker-alt me-3"></i>
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                  <p class="mb-2">
+  <i class="fa fa-map-marker-alt me-3"></i>
   Surat, Gujarat
 </p>
 
@@ -55,18 +55,18 @@ export default function Footer() {
                     
                 </div>
              
-                <div className="col-lg-3 col-md-6">
-                    <h4 className="text-light mb-4">Quick Link</h4>
-                    <a className="btn btn-link" href="/">Home</a>
-                    <a className="btn btn-link" href="/About">About Us</a>
-                    <a className="btn btn-link" href="/Services">Services</a>
-                    <a className="btn btn-link" href="/Faq">Faq</a>
-                    <a className="btn btn-link" href="/Testimonial_page">Testimonials</a>
-                    <a className="btn btn-link" href="/LatestEvents">Latest Events</a>
-                    <a className="btn btn-link" href="/Gallery">Gallery</a>
-                    <a className="btn btn-link" href="/Blog">Blog</a>
-                    <a className="btn btn-link" href="/Newsletter">News Letters</a>
-                    <a className="btn btn-link" href="/Contact">Contact</a>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Quick Link</h4>
+                    <a class="btn btn-link" href="/">Home</a>
+                    <a class="btn btn-link" href="/About">About Us</a>
+                    <a class="btn btn-link" href="/Services">Services</a>
+                    <a class="btn btn-link" href="/Faq">Faq</a>
+                    <a class="btn btn-link" href="/Testimonial_page">Testimonials</a>
+                    {/* <a class="btn btn-link" href="/LatestEvents">Latest Events</a> */}
+                    <a class="btn btn-link" href="/Gallery">Gallery</a>
+                    <a class="btn btn-link" href="/Blog">Blog</a>
+                    {/* <a class="btn btn-link" href="/Newsletter">News Letters</a> */}
+                    <a class="btn btn-link" href="/Contact">Contact</a>
                 </div>
 
                 <div className="col-lg-3 col-md-6">

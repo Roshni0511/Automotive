@@ -47,7 +47,7 @@ export default function About() {
               >
                 <img
                   className="position-absolute img-fluid w-100 h-100"
-                  src="assets/img/about.jpg"
+                  src="assets/img/auto-new-img/about.jpg"
                   style={{ objectFit: "cover" }}
                   alt=""
                 />
@@ -161,7 +161,7 @@ export default function About() {
       <h4>Mechanic’s Special Services</h4>
       <img
         className="img-thumbnail mb-4 p-3"
-        src="assets/img/man-working-under-car.png"
+        src="assets/img/auto-new-img/man-working-under-car.jpg"
         alt="Image"
       />
       <p>

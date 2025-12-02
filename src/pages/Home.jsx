@@ -171,6 +171,8 @@ export default function Home() {
         {/* <!-- Carousel End --> */}
 
         {/* <!-- Service Start --> */}
+
+
         <div className="container-xxl py-5">
           <div className="container">
             <div className="row g-4">
@@ -233,6 +235,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
 
         {/* <!-- Service End --> */}
 
@@ -719,11 +722,36 @@ export default function Home() {
         </div>
         {/* <!-- Service End --> */}
 
+
+
+
+
+
+
+
+
+
         {/* <!-- Booking Start --> */}
         <Booking />
         {/* <!-- Booking End --> */}
+
+
+
+
+
+
+
+
+
+
+
         <Company_logo />
+
+
+
         {/* <!-- Features Start --> */}
+
+
         <div className="container pt-5 wow fadeInUp" data-wow-delay="0.1s">
           <div className="row">
             <div className="col-lg-5 mb-5 wow zoomIn" data-wow-delay="0.6s">
@@ -897,9 +925,36 @@ export default function Home() {
 
         {/* <!-- Features End --> */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Discovermore />
 
+
+
+
+
+
+
+
+
+
+
+
+
         {/* <!-- Team Start --> */}
+
+
         <div className="container-xxl py-5">
           <div className="container">
             <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -1053,11 +1108,45 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
         {/* <!-- Team End --> */}
+
+
+
+
+
+
+
+
+
+
+
+
           <Process />
           <Testimonial />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          {/* <!-- Blog Start --> */}
+
+
     <div className="container pt-5">
         <div className="d-flex flex-column text-center mb-5">
              <h6 className="text-primary text-uppercase">
@@ -1099,6 +1188,8 @@ export default function Home() {
        
       </div>
     </div>
+
+
     {/* <!-- Blog End --> */}
 
         <Footer />

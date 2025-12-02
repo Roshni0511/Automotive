@@ -30,7 +30,7 @@ const OurMission = () => {
   <div className="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
     <img
       className="position-absolute img-fluid w-100 h-100 image-hover-zoom"
-      src="assets/img/about.jpg"
+      src="assets/img/auto-new-img/about.jpg"
       style={{ objectFit: "cover" }}
       alt=""
     />

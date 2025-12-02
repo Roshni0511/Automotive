@@ -31,6 +31,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import My_Account from "./pages/My_Account";
 import User from "./pages/User";
+import NewHome from "./pages/NEW HOME PAGE/New_Home";
 
 
 function App() {
@@ -40,7 +41,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<NewHome/>} />
         <Route path="/About" element={<About />} />
         <Route path="/OurMission" element={<OurMission />} />
         <Route path="/OurVision" element={<OurVision />} />

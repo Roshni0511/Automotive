@@ -174,7 +174,7 @@ const Insurancerenewal = () => {
 
                 <div className="single-img mt-35 mb-70 mt-4">
                   <img
-                    src="/assets/img/servicess6.jpg"
+                    src="assets/img/auto-new-img/servicess6.jpg"
                     alt=""
                     style={{ border: "1px solid #dee2e6", padding: "10px" ,maxWidth:'-webkit-fill-available'}}
                   />
